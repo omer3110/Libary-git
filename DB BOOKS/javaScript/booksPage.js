@@ -126,7 +126,7 @@ document.querySelector('#new-book-form').addEventListener('submit', function (ev
 });
 document.querySelector('#update-book-form').addEventListener('submit', function (event) {
     event.preventDefault();
-    updateBook();
+    updateBookCopies();
 });
 document.querySelector('#delete-book-by-id').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -147,29 +147,43 @@ function newBook() {
         .catch(error => showMessage("Failed to add book!", false));
 }
 
-function updateBook() {
+async function updateBookCopies() {
     const bookId = document.querySelector('#updateID').value;
-    const bookName = document.querySelector('#updateBookName').value;
-    const author = document.querySelector('#updateAuthor').value;
-    const numPages = document.querySelector('#updateNumPages').value;
+    const action = document.querySelector('input[name="action"]:checked').value;
 
-    const payload = {};
-    if (bookName) payload.name = bookName;
-    if (author) payload.author = author;
-    if (numPages) payload.numPages = numPages;
+    try {
+        const response = await axios.get(`${urlBooks}/${bookId}`);
+        const book = response.data;
+        const numOfCopies = book.num_copies;
+        console.log(numOfCopies);
 
-    if (Object.keys(payload).length === 0) {
-        showMessage("No fields to update!", false);
-        return;
+        if (!book) {
+            showMessage(`Book with ID ${bookId} not found!`, false);
+            return;
+        }
+
+        if (action === 'decrease') {
+            if (book.num_copies <= 0) {
+                showMessage(`Book ${bookId} is out of stock!`, false);
+                return;
+            }
+        }
+        const changeAmount = action === 'increase' ? numOfCopies + 1 : numOfCopies - 1;
+        await axios.patch(`${urlBooks}/${bookId}`, { num_copies: changeAmount });
+
+        showMessage(`Book ${bookId} copies ${action}d successfully!`, true);
+        clearUpdateBookForm();
+        fetchAndBuildTable();
+    } catch (error) {
+        showMessage(`Failed to ${action} book ${bookId} copies!`, false);
+        console.error('Error:', error);
     }
+}
 
-    axios.put(`${urlBooks}/${bookId}`, payload)
-        .then(response => {
-            showMessage("Book updated successfully!", true);
-            clearUpdateBookForm();
-            fetchAndBuildTable();
-        })
-        .catch(error => showMessage("Failed to update book!", false));
+function clearUpdateBookForm() {
+    document.querySelector('#updateID').value = '';
+    document.querySelector('#increase').checked = false;
+    document.querySelector('#decrease').checked = false;
 }
 
 function deleteBook() {
@@ -214,4 +228,20 @@ function clearUpdateBookForm() {
     document.querySelector('#updateBookName').value = '';
     document.querySelector('#updateAuthor').value = '';
     document.querySelector('#updateNumPages').value = '';
+}
+
+document.querySelector('#searchBarForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    searchBook();
+});
+function searchBook() {
+    const searchValue = document.querySelector("#searchBar").value.trim(); // Get search value and remove leading/trailing whitespace
+    const searchParams = new URLSearchParams({ q: searchValue }); // Create URL search params with the search query
+    console.log(`${urlBooks}?${searchParams}`);
+    axios.get(`${urlBooks}?${searchParams}`)
+        .then(response => {
+
+            console.log(response.data);
+        })
+        .catch(error => console.log(error));
 }
