@@ -1,6 +1,6 @@
 body {
     position: relative;
-    background-image: url("/images/books.jpg");
+    background-image: url("/DB BOOKS/images/books.jpg");
     background-size: cover;
     min-height: 100vh;
 }
