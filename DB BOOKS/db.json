@@ -9,11 +9,12 @@
       "num_pages": 154,
       "short_description": "Climate Fiction and Cultural Analysis argues that the popularity of the term \"climate fiction\" has paradoxically exhausted the term’s descriptive power and that it has developed into a black box containing all kinds of fictions which depict climatic events and has consequently lost its true significance. Aware of the prospect of ecological collapse as well as our apparent inability to avert it, we face geophysical changes of drastic proportions that severely challenge our ability to imagine the consequences. This book argues that this crisis of imagination can be partly relieved by climate fiction, which may help us comprehend the potential impact of the crisis we are facing. Strictly assigning \"climate fiction\" to fictions that incorporate the climatological paradigm of anthropogenic global warming into their plots, this book sets out to salvage the term’s speculative quality. It argues that climate fiction should be regarded as no less than a vital supplement to climate science, because climate fiction makes visible and conceivable future modes of existence within worlds not only deemed likely by science, but which are scientifically anticipated. Focusing primarily on English and German language fictions, Climate Fiction and Cultural Analysis shows how Western climate fiction sketches various affective and cognitive relations to the world in its utilization of a small number of recurring imaginaries, or imagination forms. This book will be of great interest to students and scholars of ecocriticism, the environmental humanities, and literary and culture studies more generally.",
       "image": "http://books.google.com/books/content?id=5O6yDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
+      "num_copies": 1,
       "categories": [
         "Literary Criticism"
       ],
-      "ISBN": "9781000710137"
+      "ISBN": "9781000710137",
+      "num_copies_change": -1
     },
     {
       "id": "3",
@@ -24,7 +25,7 @@
       "num_pages": 201,
       "short_description": "In the half century before Walter Scott's Waverley , dozens of popular novelists produced historical fictions for circulating libraries. This book examines eighty-five popular historical novels published between 1762 and 1813, looking at how the conventions of the genre developed through a process of imitation and experimentation.",
       "image": "http://books.google.com/books/content?id=LQaMDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
+      "num_copies": 0,
       "categories": [
         "Fiction"
       ],
@@ -44,21 +45,6 @@
         "Science"
       ],
       "ISBN": "9783030293932"
-    },
-    {
-      "id": "5",
-      "name": "Asian American Fiction After 1965",
-      "authors": [
-        "Christopher T. Fan"
-      ],
-      "num_pages": 198,
-      "short_description": "After the 1965 Immigration and Nationality Act loosened discriminatory restrictions, people from Northeast Asian countries such as South Korea, Taiwan, Japan, and eventually China immigrated to the United States in large numbers. Highly skilled Asian immigrants flocked to professional-managerial occupations, especially in science, technology, engineering, and math. Asian American literature is now overwhelmingly defined by this generation’s children, who often struggled with parental and social expectations that they would pursue lucrative careers on their way to becoming writers. Christopher T. Fan offers a new way to understand Asian American fiction through the lens of the class and race formations that shaped its authors both in the United States and in Northeast Asia. In readings of writers including Ted Chiang, Chang-rae Lee, Ken Liu, Ling Ma, Ruth Ozeki, Kathy Wang, and Charles Yu, he examines how Asian American fiction maps the immigrant narrative of intergenerational conflict onto the “two cultures” conflict between the arts and sciences. Fan argues that the self-consciousness found in these writers’ works is a legacy of Japanese and American modernization projects that emphasized technical and scientific skills in service of rapid industrialization. He considers Asian American writers’ attraction to science fiction, the figure of the engineer and notions of the “postracial,” modernization theory and time travel, and what happens when the dream of a stable professional identity encounters the realities of deprofessionalization and proletarianization. Through a transnational and historical-materialist approach, this groundbreaking book illuminates what makes texts and authors “Asian American.”",
-      "image": "http://books.google.com/books/content?id=MKriEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9780231559782"
     },
     {
       "id": "6",
