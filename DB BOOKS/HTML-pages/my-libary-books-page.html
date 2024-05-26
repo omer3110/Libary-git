@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/HTML-pages/main-libary-page.html">Main Page</a>
+        <a href="/HTML-pages/my-libary-users-page.html">Users Page</a>
+    </nav>
+    <div class="main">
+        <h1>Books Management</h1>
+        <button onclick="showForm('new-book-form')">Create New Book</button>
+        <button onclick="showForm('update-book-form')">Update Book</button>
+        <button onclick="showForm('delete-book-form')">Delete Book</button>
+
+        <div id="new-book-form" class="form-container">
+            <form class="new-book-form">
+                <h3>Create new Book</h3>
+                <input id="newBookName" type="text" placeholder="Book Name" required>
+                <input id="newAuthor" type="text" placeholder="Author" required>
+                <input id="newNumPages" type="number" placeholder="Number of pages" required>
+                <button id="submitNewBook" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="update-book-form" class="form-container">
+            <form class="update-book-form">
+                <h3>Update a Book</h3>
+                <input id="updateID" type="text" placeholder="ID of book to update" required>
+                <input id="updateBookName" type="text" placeholder="Book Name">
+                <input id="updateAuthor" type="text" placeholder="Author">
+                <input id="updateNumPages" type="number" placeholder="Number of pages">
+                <button id="submitUpdateBook" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="delete-book-form" class="form-container">
+            <form id="delete-book-by-id">
+                <h3>Delete Book by ID</h3>
+                <input id="deleteID" type="text" placeholder="ID of book to delete" required>
+                <button id="submitDeleteBook" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="message"></div>
+        <h4>Books Table</h4>
+        <button id="get-button" onclick="fetchAndBuildTable()">Get All Books</button>
+        <div id="table-container"></div>
+    </div>
+
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="/javaScript/booksPage.js">
+    </script>
+</body>
+
+</html>
