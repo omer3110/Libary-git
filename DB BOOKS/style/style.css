@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/books.jpg");
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.main {
+    /* max-width: 800px; */
+    margin: 40px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.form-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.form-container.visible {
+    display: block;
+}
+
+input[type="text"],
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.hide-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.hide-button:hover {
+    background-color: #ba1111;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.form-container {
+    display: none;
+}
+
+.form-container.visible {
+    display: block;
+}
+
+.message {
+    /* margin: 20px 0; */
+    /* padding: 10px; */
+    background: #e7f3fe;
+
+    color: #31708f;
+}
+
+h4 {
+    margin-top: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #999999;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn-container button {
+    flex: 1;
+    margin: 0 10px;
+}
+
+#paging-handell {
+    display: flex;
+    gap: 5px;
+}
+
+@media (max-width: 600px) {
+    .btn-container {
+        flex-direction: column;
+    }
+
+    .btn-container button {
+        margin: 10px 0;
+    }
+}
