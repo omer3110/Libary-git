@@ -29,6 +29,7 @@ function fetchAndBuildTable() {
         })
         .catch(error => console.log(error));
 }
+
 function buildTable(data) {
     document.getElementById("get-button").style.display = 'none';
     tableContainer.innerHTML = "";
@@ -52,7 +53,7 @@ function buildTable(data) {
     const table = document.createElement("table");
     table.setAttribute("border", "1");
 
-    const headers = ["ID", "Book Name", "Authors", "Number of Pages", "Short Description", "Image", "Number of Copies", "Categories", "ISBN"];
+    const headers = ["Name", "Image"];
     const headerRow = document.createElement("tr");
     headers.forEach(headerText => {
         const th = document.createElement("th");
@@ -63,20 +64,55 @@ function buildTable(data) {
 
     data.forEach(book => {
         const row = document.createElement("tr");
-        row.appendChild(createCell(book.id));
-        row.appendChild(createCell(book.name));
-        row.appendChild(createCell(book.authors.join(', '))); // Join authors array into a string
-        row.appendChild(createCell(book.num_pages));
-        row.appendChild(createCell(book.short_description));
-        row.appendChild(createCell(book.image));
-        row.appendChild(createCell(book.num_copies));
-        row.appendChild(createCell(book.categories.join(', '))); // Join categories array into a string
-        row.appendChild(createCell(book.ISBN));
+
+        const nameCell = createCell(book.name);
+        nameCell.classList.add("book-name-cell");
+        nameCell.addEventListener('click', () => displayBookInfo(book)); // Add click event listener
+        row.appendChild(nameCell);
+
+        // creating the img with src and append it to row
+        const imageCell = document.createElement("td");
+        const image = document.createElement("img");
+        image.src = book.image;
+        image.style.maxHeight = "100px";
+        imageCell.appendChild(image);
+
+        row.appendChild(imageCell);
         table.appendChild(row);
     });
 
     tableContainer.appendChild(table);
 }
+
+function displayBookInfo(book) {
+
+    hideTable()
+
+    const modal = document.getElementById("modal");
+    const bookInfoDiv = document.getElementById("book-info");
+
+    bookInfoDiv.innerHTML = `
+        <h2>${book.name}</h2>
+        <p><strong>Author(s):</strong> ${book.authors}</p>
+        <p><strong>Number of Pages:</strong> ${book.num_pages}</p>
+        <p><strong>Short Description:</strong> ${book.short_description}</p>
+        <img src="${book.image}" alt="${book.name}" style="max-height: 100px;">
+        <p><strong>Number of Copies:</strong> ${book.num_copies}</p>
+        <p><strong>Categories:</strong> ${book.categories}</p>
+        <p><strong>ISBN:</strong> ${book.ISBN}</p>
+    `;
+
+    // Display the modal
+    modal.style.display = "block";
+
+    // Close the modal when clicking on the close button
+    const closeModalBtn = document.querySelector('.close-modal-btn');
+    closeModalBtn.style.display = "inline"
+    closeModalBtn.onclick = function() {
+        modal.style.display = "none";
+    };
+}
+
 
 function createCell(text) {
     const cell = document.createElement("td");

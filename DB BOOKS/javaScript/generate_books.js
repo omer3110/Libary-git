@@ -63,11 +63,11 @@ async function fetchBooksData() {
 }
 
 // Fetch books data and write to db.json
-fetchBooksData()
-    .then(() => {
-        const db = {
-            books
-        };
-        fs.writeFileSync('db.json', JSON.stringify(db, null, 4));
-        console.log(`db.json file with ${books.length} books has been created.`);
-    });
+// fetchBooksData()
+//     .then(() => {
+//         const db = {
+//             books
+//         };
+//         fs.writeFileSync('db.json', JSON.stringify(db, null, 4));
+//         console.log(`db.json file with ${books.length} books has been created.`);
+//     });

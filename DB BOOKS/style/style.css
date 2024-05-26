@@ -1,9 +1,14 @@
+@import url(reset.css);
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     background-color: #f4f4f9;
     margin: 0;
     padding: 0;
     background-image: url("/DB BOOKS/images/books.jpg");
+
 }
 
 nav {
@@ -132,6 +137,11 @@ tr:hover {
     margin-bottom: 20px;
 }
 
+.book-name-cell:hover {
+    cursor: pointer;
+    color: #6464e7;
+}
+
 .btn-container button {
     flex: 1;
     margin: 0 10px;
@@ -140,6 +150,14 @@ tr:hover {
 #paging-handell {
     display: flex;
     gap: 5px;
+}
+
+.close-modal-btn {
+    display: none;
+}
+
+.modal {
+    margin-top: 20px;
 }
 
 @media (max-width: 600px) {
