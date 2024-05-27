@@ -1,97 +1,6 @@
 {
   "books": [
     {
-      "id": "8",
-      "name": "Uncle John's Bathroom Reader Presents Flush Fiction",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 288,
-      "short_description": "Quick fiction for readers on the go! Quick fiction for readers on the go! Uncle John’s Bathroom Reader Presents Flush Fiction is a tantalizing collection of 88 short-short stories custom-picked for the Bathroom Reader aficionado. We scoured the nation for talented writers and asked them to send us their best quick reads. The result: mysteries, horror, sci-fi, adventure, plenty of laughs--and a few gasps--in these startling short stories. They’re like little movies for your mind! Some titles to entice you: * “Nothing” * “Mr. Agreeable” * “Dead Man’s Float” * “The Unseeing Eye” * “Checking out a Geezer” * “My First Foreign Woman and the Sea” * “Rusty the Pirate (A Historical Feghoot)” * “The Loom of Doom Galls Mainly in the Tomb” What are these stories about? Check out Flush Fiction and you won’t be disappointed!",
-      "image": "http://books.google.com/books/content?id=TClZDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 3,
-      "categories": [
-        "Fiction"
-      ],
-      "ISBN": "9781607106753"
-    },
-    {
-      "id": "9",
-      "name": "John Fowles's Fiction and the Poetics of Postmodernism",
-      "authors": [
-        "Mahmoud Salami"
-      ],
-      "num_pages": 312,
-      "short_description": "Salami presents, for instance, a critique of the self-conscious narrative of the diary form in The Collector, the intertextual relations of the multiplicity of voices, the problems of subjectivity, the reader's position, the politics of seduction, ideology, and history in The Magus and The French Lieutenant's Woman. The book also analyzes the ways in which Fowles uses and abuses the short-story genre, in which enigmas remain enigmatic and the author disappears to leave the characters free to construct their own texts. Salami centers, for example, on A Maggot, which embodies the postmodernist technique of dialogical narrative, the problem of narrativization of history, and the explicitly political critique of both past and present in terms of social and religious dissent. These political questions are also echoed in Fowles's nonfictional book The Aristos, in which he strongly rejects the totalization of narratives and the materialization of society.",
-      "image": "http://books.google.com/books/content?id=EquizXeXb3kC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Language Arts & Disciplines"
-      ],
-      "ISBN": "083863446X"
-    },
-    {
-      "id": "10",
-      "name": "Magical Realism in West African Fiction",
-      "authors": [
-        "Brenda Cooper"
-      ],
-      "num_pages": 272,
-      "short_description": "This study contextualizes magical realism within current debates and theories of postcoloniality and examines the fiction of three of its West African pioneers: Syl Cheney-Coker of Sierra Leone, Ben Okri of Nigeria and Kojo Laing of Ghana. Brenda Cooper explores the distinct elements of the genre in a West African context, and in relation to: * a range of global expressions of magical realism, from the work of Gabriel Garcia Marquez to that of Salman Rushdie * wider contemporary trends in African writing, with particular attention to how the realism of authors such as Chinua Achebe and Wole Soyinka has been connected with nationalist agendas. This is a fascinating and important work for all those working on African literature, magical realism, or postcoloniality.",
-      "image": "http://books.google.com/books/content?id=O0H9J_VchLAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9781134673780"
-    },
-    {
-      "id": "11",
-      "name": "Lewis Nkosi. The Black Psychiatrist | Flying Home: Fiction, Critical Perspectives and Homage",
-      "authors": [
-        "Astrid Starck-Adler",
-        "Dag Henrichsen"
-      ],
-      "num_pages": 469,
-      "short_description": "This rich volume is dedicated to the astounding South African writer and literary critic Lewis Nkosi (1936–2010). In this book, Nkosi’s celebrated one-act play “The Black Psychiatrist” is published together with its unpublished sequel “Flying Home,” a play on the satirically fictionalized inauguration of Mandela as South African president. Critical appraisals, tributes and recollections by scholars and friends reflect on the beat of his writing and life.﻿ An ideal volume for those encountering Lewis Nkosi for the first time as well as for those already devoted to his work. Edited by Astrid Starck, a literary scholar, and Dag Henrichsen, a historian. “Much has happened to me that is worth narrating, worth celebrating, in spite of the regrets and sorrows of exile. My life began under Apartheid until I attained the age of 22, and then subsequently lived in many places and societies, in Central Africa, Britain, the United States, Poland, and during a brief sojourn, in France and, finally, in Switzerland.” Lewis Nkosi in „Memoirs of a motherless child“",
-      "image": "http://books.google.com/books/content?id=NYQnEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Biography & Autobiography"
-      ],
-      "ISBN": "9783905758887"
-    },
-    {
-      "id": "12",
-      "name": "A Companion to Sensation Fiction",
-      "authors": [
-        "Pamela K. Gilbert"
-      ],
-      "num_pages": 878,
-      "short_description": "This comprehensive collection offers a complete introduction to one of the most popular literary forms of the Victorian period, its key authors and works, its major themes, and its lasting legacy. Places key authors and novels in their cultural and historical context Includes studies of major topics such as race, gender, melodrama, theatre, poetry, realism in fiction, and connections to other art forms Contributions from top international scholars approach an important literary genre from a range of perspectives Offers both a pre and post-history of the genre to situate it in the larger tradition of Victorian publishing and literature Incorporates coverage of traditional research and cutting-edge contemporary scholarship",
-      "image": "http://books.google.com/books/content?id=1M_XknhqA-MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 6,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9781444342215"
-    },
-    {
-      "id": "13",
-      "name": "Fiction on the Fringe",
-      "authors": [
-        "Grammatiki A. Karla"
-      ],
-      "num_pages": 217,
-      "short_description": "This collection of essays offers a comprehensive examination of texts that traditionally have been excluded from the main corpus of the ancient Greek novel and confined to the margins of the genre, such as the Life of Aesop, the Life of Alexander the Great, and the Acts of the Christian Martyrs. Through comparison and contrast, intertextual analysis and close examination, the boundaries of the dichotomy between the fringe vs. the canonical or erotic novel are explored, and so the generic identity of the texts in each group is more clearly outlined. The collective outcome brings the fringe from the periphery of scholarly research to the centre of critical attention, and provides methodological tools for the exploration of other fringe texts.",
-      "image": "http://books.google.com/books/content?id=FLnDOFpJqsMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9789004175471"
-    },
-    {
       "id": "15",
       "name": "British Experimental Women’s Fiction, 1945—1975",
       "authors": [
@@ -106,21 +15,6 @@
         "Literary Criticism"
       ],
       "ISBN": "9783030727666"
-    },
-    {
-      "id": "16",
-      "name": "Supernatural Fiction in Early Modern Drama and Culture",
-      "authors": [
-        "Ryan Curtis Friesen"
-      ],
-      "num_pages": 261,
-      "short_description": "Brings together authors of fiction with philosophers and academics in Early Modern England and compares their ways of describing and understanding the world; Explores popular culture as well as the culture of the learned and elite; Examines the intellectual consequences of the Reformation and compares the spiritual and doctrinal practices of the occult to those of orthodoxy. Magic and the supernatural are common themes in the philosophy and fiction of the sixteenth and seventeenth centuries. Supernatural Fiction in Early Modern Drama and Culture explores varieties of scepticism and belief exhibited by a selection of philosophers and playwrights, including Heinrich Cornelius Agrippa, Giordano Bruno, John Dee, Christopher Marlowe, William Shakespeare, Ben Jonson, and Thomas Middleton, explicating how each author defines the supernatural, whether he assumes magic to operate in the world, and how he uses occult principles to explain what can be known and what is ethical. Beliefs and claims concerning impossible phenomena and superhuman agency require literary historians to determine whether an occult system of magical operation is being described in a given text. Each chapter in this volume evaluates whether a chosen early modern author is endorsing magic as efficacious or divinely sanctioned, or criticizing it for being fraudulent or unholy. By examining works of fiction, it is possible to explore fantastic settings which were not intended to be synonymous with the early modern audiences everyday experience, settings where magic exists and operates according to the playwrights designs. This book also sets out to determine what historical sources provided given authors with knowledge of the occult and speculates on how aware an audience would have been of academic, classical, or popular contexts surrounding the text at hand.",
-      "image": "http://books.google.com/books/content?id=IdbFEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Drama"
-      ],
-      "ISBN": "9781837641581"
     },
     {
       "id": "17",
@@ -146,7 +40,7 @@
       "num_pages": 303,
       "short_description": "No Description",
       "image": "http://books.google.com/books/content?id=6ls4qRIkHq4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 4,
+      "num_copies": 5,
       "categories": [
         "Modernism (Literature)"
       ],
