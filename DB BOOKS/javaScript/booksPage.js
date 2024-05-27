@@ -80,12 +80,10 @@ function buildTable(data) {
         row.appendChild(imageCell);
         table.appendChild(row);
     });
-
     tableContainer.appendChild(table);
 }
 
 function displayBookInfo(book) {
-
     hideTable()
 
     const modal = document.getElementById("modal");
@@ -101,18 +99,16 @@ function displayBookInfo(book) {
         <p><strong>Categories:</strong> ${book.categories}</p>
         <p><strong>ISBN:</strong> ${book.ISBN}</p>
     `;
-
     // Display the modal
     modal.style.display = "block";
 
     // Close the modal when clicking on the close button
     const closeModalBtn = document.querySelector('.close-modal-btn');
     closeModalBtn.style.display = "inline"
-    closeModalBtn.onclick = function() {
+    closeModalBtn.onclick = function () {
         modal.style.display = "none";
     };
 }
-
 
 function createCell(text) {
     const cell = document.createElement("td");
@@ -145,6 +141,11 @@ function newBook() {
             fetchAndBuildTable();
         })
         .catch(error => showMessage("Failed to add book!", false));
+}
+function clearNewBookForm() {
+    document.querySelector('#newBookName').value = '';
+    document.querySelector('#newAuthor').value = '';
+    document.querySelector('#newNumPages').value = '';
 }
 
 async function updateBookCopies() {
@@ -217,30 +218,16 @@ function showMessage(message, isSuccess) {
     }, 3000);
 }
 
-function clearNewBookForm() {
-    document.querySelector('#newBookName').value = '';
-    document.querySelector('#newAuthor').value = '';
-    document.querySelector('#newNumPages').value = '';
-}
-
-function clearUpdateBookForm() {
-    document.querySelector('#updateID').value = '';
-    document.querySelector('#updateBookName').value = '';
-    document.querySelector('#updateAuthor').value = '';
-    document.querySelector('#updateNumPages').value = '';
-}
-
 document.querySelector('#searchBarForm').addEventListener('submit', function (event) {
     event.preventDefault();
     searchBook();
 });
 function searchBook() {
-    const searchValue = document.querySelector("#searchBar").value.trim(); // Get search value and remove leading/trailing whitespace
-    const searchParams = new URLSearchParams({ q: searchValue }); // Create URL search params with the search query
-    console.log(`${urlBooks}?${searchParams}`);
-    axios.get(`${urlBooks}?${searchParams}`)
+    const elemSearchValue = document.querySelector("#searchBar").value.trim(); // Get search value and remove leading/trailing whitespace
+    const searchParams = new URLSearchParams({ q: elemSearchValue }); // Create URL search params with the search query
+    console.log(`${urlBooks}?name_like=${encodeURIComponent(elemSearchValue)}`);
+    axios.get(`${urlBooks}?name_like=${encodeURIComponent(elemSearchValue)}`)
         .then(response => {
-
             console.log(response.data);
         })
         .catch(error => console.log(error));
