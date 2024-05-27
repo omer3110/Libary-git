@@ -1,7 +1,8 @@
 // Project 
 
 const urlBooks = "http://localhost:8001/books";
-const tableContainer = document.getElementById("table-container");
+const urlHistory = "http://localhost:8001/history";
+const booksContainer = document.getElementById("books-container");
 let elemMessage = document.querySelector('.message');
 let currentPage = 1;
 
@@ -33,12 +34,12 @@ function showForm(formId) {
 }
 
 function hideTable() {
-    tableContainer.style.display = 'none';
+    booksContainer.style.display = 'none';
     document.getElementById("get-button").style.display = 'block';
 }
 
 function fetchAndBuildTable() {
-    tableContainer.style.display = 'block';
+    booksContainer.style.display = 'block';
     axios.get(`${urlBooks}?_page=${currentPage}`)
         .then(response => {
             const data = response.data.data;
@@ -50,7 +51,7 @@ function fetchAndBuildTable() {
 
 function buildTable(data) {
     document.getElementById("get-button").style.display = 'none';
-    tableContainer.innerHTML = "";
+    booksContainer.innerHTML = "";
 
     const buttonContainer = document.createElement("div");
     buttonContainer.classList.add("button-container");
@@ -66,44 +67,33 @@ function buildTable(data) {
     pagingButtons.innerHTML = `<button onclick="previousHandler()"><</button><button onclick="nextHandler()">></button>`;
     buttonContainer.appendChild(pagingButtons);
 
-    tableContainer.appendChild(buttonContainer);
+    booksContainer.appendChild(buttonContainer);
 
-    const table = document.createElement("table");
-    table.setAttribute("border", "1");
+    const listOfBooksDiv = document.createElement("div");
+    listOfBooksDiv.classList.add("book-list");
 
-    const headers = ["Name", "Image"];
-    const headerRow = document.createElement("tr");
-    headers.forEach(headerText => {
-        const th = document.createElement("th");
-        th.textContent = headerText;
-        headerRow.appendChild(th);
-    });
-    table.appendChild(headerRow);
 
     data.forEach(book => {
-        const row = document.createElement("tr");
-
-        const nameCell = createCell(book.name);
-        nameCell.classList.add("book-name-cell");
-        nameCell.addEventListener('click', () => displayBookInfo(book)); // Add click event listener
-        row.appendChild(nameCell);
-
-        // creating the img with src and append it to row
-        const imageCell = document.createElement("td");
+        console.log(book);
+        const currentBook = document.createElement("div");
+        currentBook.classList.add("each-book-in-list");
         const image = document.createElement("img");
         image.src = book.image;
         image.style.maxHeight = "100px";
-        imageCell.appendChild(image);
+        const currentBookContentDiv = document.createElement("div")
+        currentBookContentDiv.classList.add('each-book-content-wrapper')
+        currentBookContentDiv.innerHTML = `<p>Book Name : ${book.name}</p> <p>Authors : ${book.authors}</p>`
+        currentBook.appendChild(image);
+        currentBook.appendChild(currentBookContentDiv)
 
-        row.appendChild(imageCell);
-        table.appendChild(row);
+
+        listOfBooksDiv.appendChild(currentBook)
+        currentBook.addEventListener('click', () => displayBookInfo(book)); // Add click event listener
     });
-    tableContainer.appendChild(table);
+    booksContainer.appendChild(listOfBooksDiv);
 }
 
 function displayBookInfo(book) {
-    hideTable()
-
     const modal = document.getElementById("modal");
     const bookInfoDiv = document.getElementById("book-info");
 
@@ -114,7 +104,7 @@ function displayBookInfo(book) {
         <p><strong>Number of Pages:</strong> ${book.num_pages}</p>
         <p><strong>Short Description:</strong> ${book.short_description}</p>
         <img src="${book.image}" alt="${book.name}" style="max-height: 100px;">
-        <div><p><strong>Number of Copies:</strong> ${book.num_copies}</p> <button onclick="updateBookCopies(${book.id}, 'increase')">+</button> <button onclick="updateBookCopies(${book.id}, 'decrease')">-</button></div>
+        <div><p class="num-of-copies"><strong>Number of Copies:</strong> ${book.num_copies}</p> <button onclick="updateBookCopies(${book.id}, 'increase')">+</button> <button onclick="updateBookCopies(${book.id}, 'decrease')">-</button></div>
         <p><strong>Categories:</strong> ${book.categories}</p>
         <p><strong>ISBN:</strong> ${book.ISBN}</p>
     `;
@@ -129,41 +119,36 @@ function displayBookInfo(book) {
     };
 }
 
-function createCell(text) {
-    const cell = document.createElement("td");
-    cell.textContent = text;
-    return cell;
-}
-
 document.querySelector('#new-book-form').addEventListener('submit', function (event) {
     event.preventDefault();
     newBook();
 });
-document.querySelector('#update-book-form').addEventListener('submit', function (event) {
-    event.preventDefault();
-    updateBookCopies();
-});
-document.querySelector('#delete-book-by-id').addEventListener('submit', function (event) {
-    event.preventDefault();
-    deleteBook();
-});
 
 function newBook() {
-    const bookName = document.querySelector('#newBookName').value;
-    const author = document.querySelector('#newAuthor').value;
-    const numPages = document.querySelector('#newNumPages').value;
-
-    axios.post(urlBooks, { name: bookName, author: author, numPages: numPages })
+    const bookName = document.querySelector('#BookName').value;
+    const authors = document.querySelector('#Authors').value;
+    const numPages = document.querySelector('#NumPages').value;
+    const description = document.querySelector('#description').value;
+    const image = document.querySelector('#img').value;
+    const numOfCopies = document.querySelector('#numOfCopies').value;
+    const categories = document.querySelector('#categories').value;
+    
+    axios.post(urlBooks, { name: bookName, authors: authors, num_pages: numPages, short_description : description,
+        image : image, num_copies : numOfCopies, categories : categories 
+      })
         .then(response => {
             showMessage("Book added successfully!", true);
+            console.log(response.data.id);
+            addToHistory("create", new Date, response.data.id)
             clearNewBookForm();
         })
-        .catch(error => showMessage("Failed to add book!", false));
+        .catch(error => showMessage("Failed to added!", false)); 
 }
 function clearNewBookForm() {
-    document.querySelector('#newBookName').value = '';
+    document.querySelector('#BookName').value = '';
     document.querySelector('#newAuthor').value = '';
     document.querySelector('#newNumPages').value = '';
+
 }
 
 async function updateBookCopies(id, action) {
@@ -184,11 +169,15 @@ async function updateBookCopies(id, action) {
         const currentAmountOfCopies = action === 'increase' ? numOfCopies + 1 : numOfCopies - 1;
         await axios.patch(`${urlBooks}/${id}`, { num_copies: currentAmountOfCopies });
         showMessage(`Book ${id} copies ${action}d successfully!`, true);
+        const elemNumOfCopies = document.querySelector('.num-of-copies')
+        elemNumOfCopies.innerHTML = `<strong>Number of Copies:</strong> ${currentAmountOfCopies}` // @@@@@@@@@@@@
+        addToHistory("update", new Date, id)
 
     } catch (error) {
         showMessage(`Failed to ${action} book ${bookId} copies!`, false);
         console.error('Error:', error);
     }
+
 }
 
 function clearUpdateBookForm() {
@@ -200,11 +189,20 @@ function clearUpdateBookForm() {
 function deleteBook(id) {
     axios.delete(`${urlBooks}/${id}`)
         .then(response => {
-            showMessage(`Book ${bookId} deleted successfully!`, true);
-            //document.querySelector('#deleteID').value = '';
-            //fetchAndBuildTable();
+            showMessage(`Book ${id} deleted successfully!`, true);
+            addToHistory("delete", new Date, id)
         })
-        .catch(error => showMessage(`Failed to delete book ${bookId}!`, false));
+        .catch(error => showMessage(`Failed to delete book ${id}!`, false));
+    
+}
+
+function addToHistory(operation, time, bookId) {
+    axios.post(urlHistory, { operation: operation, time: time, bookId: bookId })
+        .then(response => {
+            console.log("History added successfully!");
+            clearNewBookForm();
+        })
+        .catch(error => console.log("Coul not add history element"));
 }
 
 function nextHandler() {

@@ -47,21 +47,22 @@
                     </div>
                     <form class="new-book-form" class="pop-up">
                         <h3>Create new Book</h3>
-                        <label for="newBookName">Book name :</label>
-                        <input id="newBookName" type="text" placeholder="Book Name" required>
-                        <label for="newAuthor">Author :</label>
-                        <input id="newAuthor" type="text" placeholder="Author" required>
-                        <label for="newNumPages">Num of pages :</label>
-                        <input id="newNumPages" type="number" placeholder="Number of pages" required>
+                        <label for="BookName">Book name :</label>
+                        <input id="BookName" type="text" placeholder="Book Name" required>
+                        <label for="Authors">Authors :</label>
+                        <input id="Authors" type="text" placeholder="Authors" required>
+                        <label for="NumPages">Num of pages :</label>
+                        <input id="NumPages" type="number" placeholder="Number of pages" required>
                         <label for="description">Description :</label>
                         <input id="description" type="text" placeholder="Short description">
                         <label for="img">Img URL :</label>
                         <input id="img" type="text" placeholder="Img URL">
                         <label for="numOfCopies">Num of copies :</label>
                         <input id="numOfCopies" type="number" placeholder="Number of copies" required>
-                        <label for="category">Category :</label>
-                        <input id="category" type="text" placeholder="category" required>
+                        <label for="categories">Categories :</label>
+                        <input id="categories" type="text" placeholder="categories" required>
                         <button id="submitNewBook" type="submit">Submit</button>
+                        <div class="message"></div>
                     </form>
                 </div>
                 <form class="new-book-form-by-ISBN" class="pop-up">
@@ -72,14 +73,14 @@
         </div>
 
         <button id="get-button" onclick="fetchAndBuildTable()">Get All Books</button>
-        <div id="table-container">
+        <div class="modal-and-booklist-wrapper">
+        <div id="books-container">
         </div>
-
-
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <div id="book-info"></div>
-                <button class="close-modal-btn">Close</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div id="book-info"></div>
+                    <button class="close-modal-btn">Close</button>
+                </div>
             </div>
         </div>
     </div>
