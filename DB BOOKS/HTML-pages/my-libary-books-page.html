@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/DB BOOKS/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -16,7 +18,7 @@
     <div class="main">
         <h1>Books Management</h1>
         <button onclick="showForm('new-book-form')">Create New Book</button>
-        <button onclick="showForm('update-book-form')">Update Book</button>
+        <button onclick="showForm('update-book-form')">Update Book Amount</button>
         <button onclick="showForm('delete-book-form')">Delete Book</button>
 
         <div id="new-book-form" class="form-container">
@@ -31,7 +33,7 @@
 
         <div id="update-book-form" class="form-container">
             <form class="update-book-form">
-                <h3>Update a Book</h3>
+                <h3>Update Book Amount</h3>
                 <input id="updateID" type="text" placeholder="ID of book to update" required>
                 <input type="radio" id="increase" name="action" value="increase" required>
                 <label for="increase">Increase</label>
@@ -48,16 +50,29 @@
                 <button id="submitDeleteBook" type="submit">Submit</button>
             </form>
         </div>
+        <div class="search-container">
+            <form id="searchBarForm">
+                <input id="searchBar" type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
 
         <div class="message"></div>
         <h4>Books Table</h4>
         <button id="get-button" onclick="fetchAndBuildTable()">Get All Books</button>
         <div id="table-container"></div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div id="book-info"></div>
+                <button class="close-modal-btn">Close</button>
+            </div>
+        </div>
     </div>
 
-        <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
-        <script src="/DB BOOKS/javaScript/booksPage.js">
-        </script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="/DB BOOKS/javaScript/booksPage.js">
+    </script>
 </body>
 
 </html>
