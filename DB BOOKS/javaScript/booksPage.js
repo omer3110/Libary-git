@@ -1,3 +1,4 @@
+// Project 
 
 const urlBooks = "http://localhost:8001/books";
 const tableContainer = document.getElementById("table-container");
@@ -6,17 +7,17 @@ let currentPage = 1;
 
 const selectElement = document.getElementById("typeOfCreation");
 
-selectElement.addEventListener("change", function() {
+selectElement.addEventListener("change", function () {
     const creationByIsbnForm = document.querySelector(".new-book-form-by-ISBN");
     const creationManuallyForm = document.querySelector(".new-book-form");
     const selectedValue = selectElement.value;
     if (selectedValue === "manually-api") {
-        creationByIsbnForm.style.display= "none";
-        creationManuallyForm.style.display= "block";
+        creationByIsbnForm.style.display = "none";
+        creationManuallyForm.style.display = "block";
         creationManuallyForm.classList.add("new-book-form");
     } else if (selectedValue === "google-api") {
-        creationByIsbnForm.style.display= "block";
-        creationManuallyForm.style.display= "none";
+        creationByIsbnForm.style.display = "block";
+        creationManuallyForm.style.display = "none";
     }
 });
 
@@ -165,7 +166,7 @@ function clearNewBookForm() {
     document.querySelector('#newNumPages').value = '';
 }
 
-async function updateBookCopies(id , action) {
+async function updateBookCopies(id, action) {
     try {
         const response = await axios.get(`${urlBooks}/${id}`);
         const book = response.data;
@@ -226,4 +227,42 @@ function showMessage(message, isSuccess) {
     }, 3000);
 }
 
+document.querySelector('#searchBarForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    searchBook();
+});
+async function searchBook() {
+    const elemSearchValue = document.querySelector("#searchBar").value.trim(); // Get search value and remove leading/trailing whitespace
+    let booksResultsCounter = 0;
+    let pageForSearch = 1;
 
+    while (booksResultsCounter < 10) {
+        try {
+            const response = await axios.get(`${urlBooks}?_page=${pageForSearch}`);
+            const pageData = response.data.data;
+
+            for (const book of pageData) {
+                if (book.name.toLowerCase().includes(elemSearchValue.toLowerCase())) {
+                    printResult(book.id);
+                    booksResultsCounter++;
+                    if (booksResultsCounter >= 10) {
+                        break;
+                    }
+                }
+            }
+            pageForSearch++;
+        } catch (error) {
+            console.error(error);
+            break;
+        }
+    }
+    console.log(booksResultsCounter);
+}
+
+function printResult(id) {
+    axios.get(`${urlBooks}/${id}`)
+        .then(response => {
+            console.log(response.data);
+        })
+        .catch(error => console.log(error));
+}
