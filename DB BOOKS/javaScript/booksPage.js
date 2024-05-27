@@ -222,11 +222,36 @@ document.querySelector('#searchBarForm').addEventListener('submit', function (ev
     event.preventDefault();
     searchBook();
 });
-function searchBook() {
+async function searchBook() {
     const elemSearchValue = document.querySelector("#searchBar").value.trim(); // Get search value and remove leading/trailing whitespace
-    const searchParams = new URLSearchParams({ q: elemSearchValue }); // Create URL search params with the search query
-    console.log(`${urlBooks}?name_like=${encodeURIComponent(elemSearchValue)}`);
-    axios.get(`${urlBooks}?name_like=${encodeURIComponent(elemSearchValue)}`)
+    let booksResultsCounter = 0;
+    let pageForSearch = 1;
+
+    while (booksResultsCounter < 10) {
+        try {
+            const response = await axios.get(`${urlBooks}?_page=${pageForSearch}`);
+            const pageData = response.data.data;
+
+            for (const book of pageData) {
+                if (book.name.toLowerCase().includes(elemSearchValue.toLowerCase())) {
+                    printResult(book.id);
+                    booksResultsCounter++;
+                    if (booksResultsCounter >= 10) {
+                        break;
+                    }
+                }
+            }
+            pageForSearch++;
+        } catch (error) {
+            console.error(error);
+            break;
+        }
+    }
+    console.log(booksResultsCounter);
+}
+
+function printResult(id) {
+    axios.get(`${urlBooks}/${id}`)
         .then(response => {
             console.log(response.data);
         })
