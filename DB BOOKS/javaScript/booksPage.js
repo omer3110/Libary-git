@@ -136,20 +136,20 @@ function newBook() {
     axios.post(urlBooks, {
         name: bookName, authors: authors, num_pages: numPages, short_description: description,
         image: image, num_copies: numOfCopies, categories: categories
+    }).then(response => {
+        showMessage("Book added successfully!", true);
+        addToHistory("create", new Date, response.data.id)
+        clearNewBookForm();
     })
-        .then(response => {
-            showMessage("Book added successfully!", true);
-            console.log(response.data.id);
-            addToHistory("create", new Date, response.data.id)
-            clearNewBookForm();
-        })
-        .catch(error => showMessage("Failed to added!", false));
+    .catch(error => { 
+        showMessage("Failed to added!", false)});
+   
 }
+
 function clearNewBookForm() {
     document.querySelector('#BookName').value = '';
     document.querySelector('#newAuthor').value = '';
     document.querySelector('#newNumPages').value = '';
-
 }
 
 async function updateBookCopies(id, action) {
@@ -197,7 +197,7 @@ function addToHistory(operation, time, bookId) {
             console.log("History added successfully!");
             clearNewBookForm();
         })
-        .catch(error => console.log("Coul not add history element"));
+        .catch(error => console.log(`${error} , could not add book to history`));
 }
 
 function nextHandler() {
@@ -214,7 +214,8 @@ function previousHandler() {
 
 function showMessage(message, isSuccess) {
     elemMessage.textContent = message;
-    elemMessage.style.color = isSuccess ? '#45a049' : '#ba1111';
+    // elemMessage.style.color = isSuccess ? '#45a049' : '#ba1111';
+    isSuccess === true ? elemMessage.style.color = '#45a049' : elemMessage.style.color = '#ba1111';
     setTimeout(() => {
         elemMessage.textContent = '';
     }, 3000);
@@ -281,7 +282,7 @@ document.querySelector('#searchBarForm').addEventListener('submit', function (ev
 async function searchBook() {
     const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
     let booksResultsCounter = 0;
-    let pageForSearch = 1;
+    // let pageForSearch = 1;
     const resultsFoundArray = [];
     try {
         const response = await axios.get(urlBooks);
@@ -293,19 +294,20 @@ async function searchBook() {
         for (const book of pageData) {
             if (book.name.toLowerCase().includes(elemSearchValue)) {
                 // Check if the book is already in the resultsFoundArray
-                if (!resultsFoundArray.some(b => b.id === book.id)) {
+                if (!resultsFoundArray.some(currentBook => currentBook.id === book.id)) {
                     const bookData = await printResult(book.id);
                     if (bookData) {
                         resultsFoundArray.push(bookData);
                         booksResultsCounter++;
                         console.log(`Books found: ${booksResultsCounter}`, resultsFoundArray);
                         if (booksResultsCounter >= 10) {
+                            break;
                         }
                     }
                 }
             }
         }
-        pageForSearch++;
+        // pageForSearch++;
     } catch (error) {
         console.error('Error fetching books data:', error);
     }
@@ -322,3 +324,7 @@ async function printResult(id) {
         return null;
     }
 }
+
+
+
+

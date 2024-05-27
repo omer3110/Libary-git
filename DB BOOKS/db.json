@@ -9,7 +9,7 @@
       "num_pages": 335,
       "short_description": "How does Einstein’s description of space and time compare with Doctor Who? Can James Bond really escape from an armor-plated railroad car by cutting through the floor with a laser concealed in a wristwatch? What would it take to create a fully intelligent android, such as Star Trek’s Commander Data? Exploring Science Through Science Fiction addresses these and other intriguing questions, using science fiction as a springboard for discussing fundamental science concepts and cutting-edge science research. It includes references to original research papers, landmark scientific publications and technical documents, as well as a broad range of science literature at a more popular level. The revised second edition includes expanded discussions on topics such as gravitational waves and black holes, machine learning and quantum computing, gene editing, and more. In all, the second edition now features over 220 references to specific scenes in more than 160 sci-fi movies and TV episodes, spanning over 100 years of cinematic history. Designed as the primary text for a college-level course, this book will appeal to students across the fine arts, humanities, and hard sciences, as well as any reader with an interest in science and science fiction. Praise for the first edition: \"This journey from science fiction to science fact provides an engaging and surprisingly approachable read...\" (Jen Jenkins, Journal of Science Fiction, Vol. 2 (1), September 2017)",
       "image": "http://books.google.com/books/content?id=GJO7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 0,
+      "num_copies": 4,
       "categories": [
         "Science"
       ],
@@ -24,7 +24,7 @@
       "num_pages": 318,
       "short_description": "Desire and Domestic Fictionargues that far from being removed from historical events, novels by writers from Richardson to Woolf were themselves agents of the rise of the middle class. Drawing on texts that range from 18th-century female conduct books and contract theory to modern psychoanalytic case histories and theories of reading, Armstrong shows that the emergence of a particular form of female subjectivity capable of reigning over the household paved the way for the establishment of institutions which today are accepted centers of political power. Neither passive subjects nor embattled rebels, the middle-class women who were authors and subjects of the major tradition of British fiction were among the forgers of a new form of power that worked in, and through, their writing to replace prevailing notions of \"identity\" with a gender-determined subjectivity. She also examines the works of such novelists as Richardson, Jane Austen, and the Bront s to reveal the ways in which these authors rewrite the domestic practices and sexual relations of the past to create the historical context through which modern institutional power would seem not only natural but also humane, and therefore to be desired.",
       "image": "http://books.google.com/books/content?id=NYD5FSeERakC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
+      "num_copies": 6,
       "categories": [
         "Language Arts & Disciplines"
       ],
@@ -76,21 +76,6 @@
         "Language Arts & Disciplines"
       ],
       "ISBN": "083863446X"
-    },
-    {
-      "id": "10",
-      "name": "Magical Realism in West African Fiction",
-      "authors": [
-        "Brenda Cooper"
-      ],
-      "num_pages": 272,
-      "short_description": "This study contextualizes magical realism within current debates and theories of postcoloniality and examines the fiction of three of its West African pioneers: Syl Cheney-Coker of Sierra Leone, Ben Okri of Nigeria and Kojo Laing of Ghana. Brenda Cooper explores the distinct elements of the genre in a West African context, and in relation to: * a range of global expressions of magical realism, from the work of Gabriel Garcia Marquez to that of Salman Rushdie * wider contemporary trends in African writing, with particular attention to how the realism of authors such as Chinua Achebe and Wole Soyinka has been connected with nationalist agendas. This is a fascinating and important work for all those working on African literature, magical realism, or postcoloniality.",
-      "image": "http://books.google.com/books/content?id=O0H9J_VchLAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 3,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9781134673780"
     },
     {
       "id": "11",
@@ -7005,284 +6990,86 @@
       "image": "2",
       "num_copies": "22",
       "categories": "asd"
-    }
-  ],
-  "history": [
-    {
-      "id": "q",
-      "operation": "delete",
-      "time": "5/27/24",
-      "bookId": "1"
     },
     {
-      "id": "0739",
-      "operation": "delete",
-      "time": "2024-05-27T12:10:19.132Z",
-      "bookId": 4
+      "id": "1c1d",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "22",
+      "short_description": "asd",
+      "image": "2",
+      "num_copies": "2",
+      "categories": "asd"
     },
     {
-      "id": "2236",
-      "operation": "delete",
-      "time": "2024-05-27T12:10:27.444Z",
-      "bookId": 6
+      "id": "1cff",
+      "name": "asd",
+      "authors": "w",
+      "num_pages": "22",
+      "short_description": "asd",
+      "image": "asd",
+      "num_copies": "33",
+      "categories": "asd"
     },
     {
-      "id": "8475",
-      "operation": "delete",
-      "time": "2024-05-27T12:10:31.821Z",
-      "bookId": 8
+      "id": "58cc",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "asd",
+      "image": "asd",
+      "num_copies": "3",
+      "categories": "asd"
     },
     {
-      "id": "103d",
-      "operation": "create",
-      "time": "2024-05-27T12:27:18.065Z",
-      "bookId": "70e6"
+      "id": "fc73",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "2",
+      "image": "asd",
+      "num_copies": "2",
+      "categories": "asd"
     },
     {
-      "id": "bd89",
-      "operation": "create",
-      "time": "2024-05-27T12:27:58.864Z",
-      "bookId": "9b2b"
+      "id": "e35f",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "asd",
+      "image": "22",
+      "num_copies": "32",
+      "categories": "asd"
     },
     {
-      "id": "100a",
-      "operation": "delete",
-      "time": "2024-05-27T12:29:02.307Z",
-      "bookId": 9
+      "id": "87db",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "22",
+      "short_description": "asd",
+      "image": "asd",
+      "num_copies": "23",
+      "categories": "asd"
     },
     {
-      "id": "f1d6",
-      "operation": "update",
-      "time": "2024-05-27T12:32:27.053Z",
-      "bookId": 7
+      "id": "c815",
+      "name": "asda",
+      "authors": "asd",
+      "num_pages": "23",
+      "short_description": "asd",
+      "image": "1asd",
+      "num_copies": "23",
+      "categories": "asdd"
     },
     {
-      "id": "37b4",
-      "operation": "update",
-      "time": "2024-05-27T12:32:29.841Z",
-      "bookId": 7
-    },
-    {
-      "id": "f682",
-      "operation": "update",
-      "time": "2024-05-27T12:32:35.040Z",
-      "bookId": 7
-    },
-    {
-      "id": "770d",
-      "operation": "update",
-      "time": "2024-05-27T12:32:35.732Z",
-      "bookId": 7
-    },
-    {
-      "id": "d328",
-      "operation": "update",
-      "time": "2024-05-27T12:32:40.112Z",
-      "bookId": 7
-    },
-    {
-      "id": "6aed",
-      "operation": "update",
-      "time": "2024-05-27T12:32:47.911Z",
-      "bookId": 7
-    },
-    {
-      "id": "4b7f",
-      "operation": "update",
-      "time": "2024-05-27T12:32:53.269Z",
-      "bookId": 7
-    },
-    {
-      "id": "6312",
-      "operation": "update",
-      "time": "2024-05-27T12:38:26.696Z",
-      "bookId": 7
-    },
-    {
-      "id": "a7f4",
-      "operation": "update",
-      "time": "2024-05-27T12:38:27.290Z",
-      "bookId": 7
-    },
-    {
-      "id": "3b0d",
-      "operation": "update",
-      "time": "2024-05-27T12:38:28.024Z",
-      "bookId": 7
-    },
-    {
-      "id": "bc18",
-      "operation": "update",
-      "time": "2024-05-27T12:38:28.445Z",
-      "bookId": 7
-    },
-    {
-      "id": "2339",
-      "operation": "update",
-      "time": "2024-05-27T12:38:30.831Z",
-      "bookId": 7
-    },
-    {
-      "id": "6338",
-      "operation": "update",
-      "time": "2024-05-27T12:38:35.927Z",
-      "bookId": 7
-    },
-    {
-      "id": "4d62",
-      "operation": "update",
-      "time": "2024-05-27T12:38:36.207Z",
-      "bookId": 7
-    },
-    {
-      "id": "983c",
-      "operation": "update",
-      "time": "2024-05-27T12:38:36.403Z",
-      "bookId": 7
-    },
-    {
-      "id": "939f",
-      "operation": "update",
-      "time": "2024-05-27T12:38:39.104Z",
-      "bookId": 7
-    },
-    {
-      "id": "7149",
-      "operation": "update",
-      "time": "2024-05-27T12:38:44.339Z",
-      "bookId": 7
-    },
-    {
-      "id": "8aff",
-      "operation": "update",
-      "time": "2024-05-27T12:39:02.437Z",
-      "bookId": 7
-    },
-    {
-      "id": "a6a1",
-      "operation": "update",
-      "time": "2024-05-27T12:39:03.146Z",
-      "bookId": 7
-    },
-    {
-      "id": "3cf2",
-      "operation": "update",
-      "time": "2024-05-27T12:39:03.887Z",
-      "bookId": 7
-    },
-    {
-      "id": "97b2",
-      "operation": "update",
-      "time": "2024-05-27T12:39:46.585Z",
-      "bookId": 7
-    },
-    {
-      "id": "40f9",
-      "operation": "update",
-      "time": "2024-05-27T12:39:47.448Z",
-      "bookId": 7
-    },
-    {
-      "id": "91e6",
-      "operation": "update",
-      "time": "2024-05-27T12:40:02.577Z",
-      "bookId": 7
-    },
-    {
-      "id": "e2c4",
-      "operation": "update",
-      "time": "2024-05-27T12:40:08.998Z",
-      "bookId": 7
-    },
-    {
-      "id": "7f73",
-      "operation": "update",
-      "time": "2024-05-27T12:40:11.784Z",
-      "bookId": 7
-    },
-    {
-      "id": "87a9",
-      "operation": "update",
-      "time": "2024-05-27T12:42:11.959Z",
-      "bookId": 7
-    },
-    {
-      "id": "0aae",
-      "operation": "update",
-      "time": "2024-05-27T12:42:13.994Z",
-      "bookId": 7
-    },
-    {
-      "id": "0668",
-      "operation": "update",
-      "time": "2024-05-27T12:42:16.858Z",
-      "bookId": 7
-    },
-    {
-      "id": "51fc",
-      "operation": "update",
-      "time": "2024-05-27T12:42:17.408Z",
-      "bookId": 7
-    },
-    {
-      "id": "67b6",
-      "operation": "update",
-      "time": "2024-05-27T12:42:47.837Z",
-      "bookId": 7
-    },
-    {
-      "id": "d44c",
-      "operation": "update",
-      "time": "2024-05-27T12:42:57.403Z",
-      "bookId": 7
-    },
-    {
-      "id": "9e1c",
-      "operation": "update",
-      "time": "2024-05-27T12:43:08.471Z",
-      "bookId": 13
-    },
-    {
-      "id": "d25b",
-      "operation": "update",
-      "time": "2024-05-27T12:43:34.576Z",
-      "bookId": 7
-    },
-    {
-      "id": "a05a",
-      "operation": "update",
-      "time": "2024-05-27T12:43:39.492Z",
-      "bookId": 7
-    },
-    {
-      "id": "5fff",
-      "operation": "update",
-      "time": "2024-05-27T12:43:58.130Z",
-      "bookId": 7
-    },
-    {
-      "id": "2d73",
-      "operation": "update",
-      "time": "2024-05-27T12:44:00.500Z",
-      "bookId": 7
-    },
-    {
-      "id": "5ff0",
-      "operation": "update",
-      "time": "2024-05-27T12:44:01.172Z",
-      "bookId": 7
-    },
-    {
-      "id": "1d27",
-      "operation": "update",
-      "time": "2024-05-27T12:44:08.078Z",
-      "bookId": 10
-    },
-    {
-      "id": "c549",
-      "operation": "update",
-      "time": "2024-05-27T12:44:08.709Z",
-      "bookId": 10
+      "id": "1e30",
+      "name": "as",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "2",
+      "image": "2",
+      "num_copies": "2",
+      "categories": "2"
     }
   ],
   "history": [
@@ -7291,6 +7078,90 @@
       "operation": "delete",
       "time": "5/27/24",
       "bookId": "2"
+    },
+    {
+      "id": "53ee",
+      "operation": "update",
+      "time": "2024-05-27T12:56:54.395Z",
+      "bookId": 4
+    },
+    {
+      "id": "ba87",
+      "operation": "update",
+      "time": "2024-05-27T12:56:56.177Z",
+      "bookId": 4
+    },
+    {
+      "id": "6685",
+      "operation": "update",
+      "time": "2024-05-27T12:56:56.611Z",
+      "bookId": 4
+    },
+    {
+      "id": "371f",
+      "operation": "update",
+      "time": "2024-05-27T13:33:08.701Z",
+      "bookId": 4
+    },
+    {
+      "id": "a901",
+      "operation": "update",
+      "time": "2024-05-27T13:33:27.336Z",
+      "bookId": 4
+    },
+    {
+      "id": "78dc",
+      "operation": "update",
+      "time": "2024-05-27T13:33:36.116Z",
+      "bookId": 6
+    },
+    {
+      "id": "85e4",
+      "operation": "update",
+      "time": "2024-05-27T14:30:39.644Z",
+      "bookId": 4
+    },
+    {
+      "id": "012c",
+      "operation": "create",
+      "time": "2024-05-27T14:36:05.152Z",
+      "bookId": "1c1d"
+    },
+    {
+      "id": "45f3",
+      "operation": "create",
+      "time": "2024-05-27T14:38:43.097Z",
+      "bookId": "1cff"
+    },
+    {
+      "id": "0d18",
+      "operation": "create",
+      "time": "2024-05-27T14:40:44.559Z",
+      "bookId": "58cc"
+    },
+    {
+      "id": "d560",
+      "operation": "create",
+      "time": "2024-05-27T14:44:24.060Z",
+      "bookId": "fc73"
+    },
+    {
+      "id": "e988",
+      "operation": "create",
+      "time": "2024-05-27T14:47:04.983Z",
+      "bookId": "e35f"
+    },
+    {
+      "id": "d8d7",
+      "operation": "create",
+      "time": "2024-05-27T14:48:47.623Z",
+      "bookId": "c815"
+    },
+    {
+      "id": "0c5c",
+      "operation": "create",
+      "time": "2024-05-27T14:52:39.929Z",
+      "bookId": "1e30"
     }
   ]
 }
