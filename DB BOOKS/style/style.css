@@ -80,8 +80,8 @@ button {
 
 .form-container {
     display: none;
-    /* position: fixed; */
-    /* width: 80vw;
+     /* position: fixed; 
+     width: 80vw;
     height: 80vh;
     top: 50%;
     left: 50%;
@@ -90,7 +90,7 @@ button {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    z-index: 9999; */
+    z-index: 9999;  */
 }
 
 .form-container.visible {
@@ -130,19 +130,14 @@ button {
     color: #31708f;
 }
 
-.book-name-cell:hover {
-    cursor: pointer;
-    color: #6464e7;
-}
-
-.btn-container button {
-    flex: 1;
-    margin: 0 10px;
-}
-
 #paging-handell {
     display: flex;
     gap: 5px;
+}
+
+.modal-and-booklist-wrapper {
+    display: flex;
+    gap: 1rem;
 }
 
 .close-modal-btn {
@@ -150,7 +145,33 @@ button {
 }
 
 .modal {
-    margin-top: 20px;
+    max-width: 60vw;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.each-book-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+.each-book-in-list {
+    display: flex;
+    gap: 8px;
+    background-color: rgb(81, 76, 69);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.each-book-in-list:hover {
+    cursor: pointer;
+    background-color: #4b4343;
 }
 
 @media (max-width: 600px) {
