@@ -132,17 +132,18 @@ function newBook() {
     const image = document.querySelector('#img').value;
     const numOfCopies = document.querySelector('#numOfCopies').value;
     const categories = document.querySelector('#categories').value;
-    
-    axios.post(urlBooks, { name: bookName, authors: authors, num_pages: numPages, short_description : description,
-        image : image, num_copies : numOfCopies, categories : categories 
-      })
+
+    axios.post(urlBooks, {
+        name: bookName, authors: authors, num_pages: numPages, short_description: description,
+        image: image, num_copies: numOfCopies, categories: categories
+    })
         .then(response => {
             showMessage("Book added successfully!", true);
             console.log(response.data.id);
             addToHistory("create", new Date, response.data.id)
             clearNewBookForm();
         })
-        .catch(error => showMessage("Failed to added!", false)); 
+        .catch(error => showMessage("Failed to added!", false));
 }
 function clearNewBookForm() {
     document.querySelector('#BookName').value = '';
@@ -174,16 +175,10 @@ async function updateBookCopies(id, action) {
         addToHistory("update", new Date, id)
 
     } catch (error) {
-        showMessage(`Failed to ${action} book ${bookId} copies!`, false);
+        showMessage(`Failed to ${action} book ${id} copies!`, false);
         console.error('Error:', error);
     }
 
-}
-
-function clearUpdateBookForm() {
-    document.querySelector('#updateID').value = '';
-    document.querySelector('#increase').checked = false;
-    document.querySelector('#decrease').checked = false;
 }
 
 function deleteBook(id) {
@@ -193,7 +188,7 @@ function deleteBook(id) {
             addToHistory("delete", new Date, id)
         })
         .catch(error => showMessage(`Failed to delete book ${id}!`, false));
-    
+
 }
 
 function addToHistory(operation, time, bookId) {
@@ -229,38 +224,101 @@ document.querySelector('#searchBarForm').addEventListener('submit', function (ev
     event.preventDefault();
     searchBook();
 });
+// async function searchBook() {
+//     const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
+//     let booksResultsCounter = 0;
+//     let pageForSearch = 1;
+//     const resultsFoundArray = [];
+
+//     while (booksResultsCounter < 10) {
+//         try {
+//             const response = await axios.get(`${urlBooks}?_page=${pageForSearch}&_limit=40`);
+//             console.log(`Fetching page: ${pageForSearch}`, response);
+
+//             const pageData = response.data;
+//             console.log(pageData.length);
+//             if (!Array.isArray(pageData) || pageData.length === 0) {
+//                 console.log("No more pages to fetch.");
+//                 break; // Exit the loop if no more pages to fetch
+//             }
+//             for (const book of pageData) {
+//                 if (book.name.toLowerCase().includes(elemSearchValue)) {
+//                     // Check if the book is already in the resultsFoundArray
+//                     if (!resultsFoundArray.some(b => b.id === book.id)) {
+//                         const bookData = await printResult(book.id);
+//                         if (bookData) {
+//                             resultsFoundArray.push(bookData);
+//                             booksResultsCounter++;
+//                             console.log(`Books found: ${booksResultsCounter}`, resultsFoundArray);
+//                             if (booksResultsCounter >= 10) {
+//                                 break;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//             pageForSearch++;
+//         } catch (error) {
+//             console.error('Error fetching books data:', error);
+//             break;
+//         }
+//     }
+
+//     console.log('Final results:', resultsFoundArray);
+// }
+
+// async function printResult(id) {
+//     try {
+//         const response = await axios.get(`${urlBooks}/${id}`);
+//         return response.data;
+//     } catch (error) {
+//         console.error(`Error fetching book with ID ${id}:`, error);
+//         return null;
+//     }
+// }
+
+
 async function searchBook() {
-    const elemSearchValue = document.querySelector("#searchBar").value.trim(); // Get search value and remove leading/trailing whitespace
+    const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
     let booksResultsCounter = 0;
     let pageForSearch = 1;
-
-    while (booksResultsCounter < 10) {
-        try {
-            const response = await axios.get(`${urlBooks}?_page=${pageForSearch}`);
-            const pageData = response.data.data;
-
-            for (const book of pageData) {
-                if (book.name.toLowerCase().includes(elemSearchValue.toLowerCase())) {
-                    printResult(book.id);
-                    booksResultsCounter++;
-                    if (booksResultsCounter >= 10) {
-                        break;
+    const resultsFoundArray = [];
+    try {
+        const response = await axios.get(urlBooks);
+        const pageData = response.data;
+        console.log(pageData.length);
+        if (!Array.isArray(pageData) || pageData.length === 0) {
+            console.log("No more pages to fetch.");
+        }
+        for (const book of pageData) {
+            if (book.name.toLowerCase().includes(elemSearchValue)) {
+                // Check if the book is already in the resultsFoundArray
+                if (!resultsFoundArray.some(b => b.id === book.id)) {
+                    const bookData = await printResult(book.id);
+                    if (bookData) {
+                        resultsFoundArray.push(bookData);
+                        booksResultsCounter++;
+                        console.log(`Books found: ${booksResultsCounter}`, resultsFoundArray);
+                        if (booksResultsCounter >= 10) {
+                        }
                     }
                 }
             }
-            pageForSearch++;
-        } catch (error) {
-            console.error(error);
-            break;
         }
+        pageForSearch++;
+    } catch (error) {
+        console.error('Error fetching books data:', error);
     }
-    console.log(booksResultsCounter);
+    console.log('Final results:', resultsFoundArray);
+    buildTable(resultsFoundArray);
 }
 
-function printResult(id) {
-    axios.get(`${urlBooks}/${id}`)
-        .then(response => {
-            console.log(response.data);
-        })
-        .catch(error => console.log(error));
+async function printResult(id) {
+    try {
+        const response = await axios.get(`${urlBooks}/${id}`);
+        return response.data;
+    } catch (error) {
+        console.error(`Error fetching book with ID ${id}:`, error);
+        return null;
+    }
 }

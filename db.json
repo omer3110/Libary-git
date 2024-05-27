@@ -1,129 +1,6 @@
 {
   "books": [
     {
-      "id": "4",
-      "name": "Exploring Science Through Science Fiction",
-      "authors": [
-        "Barry B. Luokkala"
-      ],
-      "num_pages": 335,
-      "short_description": "How does Einstein’s description of space and time compare with Doctor Who? Can James Bond really escape from an armor-plated railroad car by cutting through the floor with a laser concealed in a wristwatch? What would it take to create a fully intelligent android, such as Star Trek’s Commander Data? Exploring Science Through Science Fiction addresses these and other intriguing questions, using science fiction as a springboard for discussing fundamental science concepts and cutting-edge science research. It includes references to original research papers, landmark scientific publications and technical documents, as well as a broad range of science literature at a more popular level. The revised second edition includes expanded discussions on topics such as gravitational waves and black holes, machine learning and quantum computing, gene editing, and more. In all, the second edition now features over 220 references to specific scenes in more than 160 sci-fi movies and TV episodes, spanning over 100 years of cinematic history. Designed as the primary text for a college-level course, this book will appeal to students across the fine arts, humanities, and hard sciences, as well as any reader with an interest in science and science fiction. Praise for the first edition: \"This journey from science fiction to science fact provides an engaging and surprisingly approachable read...\" (Jen Jenkins, Journal of Science Fiction, Vol. 2 (1), September 2017)",
-      "image": "http://books.google.com/books/content?id=GJO7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 0,
-      "categories": [
-        "Science"
-      ],
-      "ISBN": "9783030293932"
-    },
-    {
-      "id": "6",
-      "name": "Desire and Domestic Fiction",
-      "authors": [
-        "Nancy Armstrong"
-      ],
-      "num_pages": 318,
-      "short_description": "Desire and Domestic Fictionargues that far from being removed from historical events, novels by writers from Richardson to Woolf were themselves agents of the rise of the middle class. Drawing on texts that range from 18th-century female conduct books and contract theory to modern psychoanalytic case histories and theories of reading, Armstrong shows that the emergence of a particular form of female subjectivity capable of reigning over the household paved the way for the establishment of institutions which today are accepted centers of political power. Neither passive subjects nor embattled rebels, the middle-class women who were authors and subjects of the major tradition of British fiction were among the forgers of a new form of power that worked in, and through, their writing to replace prevailing notions of \"identity\" with a gender-determined subjectivity. She also examines the works of such novelists as Richardson, Jane Austen, and the Bront s to reveal the ways in which these authors rewrite the domestic practices and sexual relations of the past to create the historical context through which modern institutional power would seem not only natural but also humane, and therefore to be desired.",
-      "image": "http://books.google.com/books/content?id=NYD5FSeERakC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Language Arts & Disciplines"
-      ],
-      "ISBN": "9780195041798"
-    },
-    {
-      "id": "7",
-      "name": "Genesis: History, Fiction, or Neither?",
-      "authors": [
-        "James K. Hoffmeier",
-        "Gordon John Wenham",
-        "Kenton Sparks"
-      ],
-      "num_pages": 174,
-      "short_description": "The nature of the Genesis narrative has sparked much debate among Christians. This book introduces three predominant interpretive genres and their implications for biblical understanding. Each contributor identifies their position on the genre or genres of Genesis, chapters 1-11, addresses why their interpretation is respectful of and appropriate to the text, and contributes examples of its application to a variety of passages. The positions include: Theological History(Genesis can be taken seriously as both history and theology) – defended by James K. Hoffmeier. Proto-History (the early Genesis narratives consist of a variety of literary genres; which, nonetheless, do not obscure the book's theological teaching) – defended by Gordon J. Wenham. Ancient Historiography (an understanding of Genesis that seeks to reconcile the limitations of its human authors with the nature of it being the Word of God) defended by Kenton L. Sparks. General editor and Old Testament scholar Charles Halton explains the importance of genre and provides historical insight in the introduction and helpful summaries of each position in the conclusion. In the reader-friendly Counterpoints format, this book helps readers to reflect on the strengths and weaknesses of each view and draw informed conclusions in this much-debated topic.",
-      "image": "http://books.google.com/books/content?id=nfN9BAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Religion"
-      ],
-      "ISBN": "9780310514954"
-    },
-    {
-      "id": "8",
-      "name": "Uncle John's Bathroom Reader Presents Flush Fiction",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 288,
-      "short_description": "Quick fiction for readers on the go! Quick fiction for readers on the go! Uncle John’s Bathroom Reader Presents Flush Fiction is a tantalizing collection of 88 short-short stories custom-picked for the Bathroom Reader aficionado. We scoured the nation for talented writers and asked them to send us their best quick reads. The result: mysteries, horror, sci-fi, adventure, plenty of laughs--and a few gasps--in these startling short stories. They’re like little movies for your mind! Some titles to entice you: * “Nothing” * “Mr. Agreeable” * “Dead Man’s Float” * “The Unseeing Eye” * “Checking out a Geezer” * “My First Foreign Woman and the Sea” * “Rusty the Pirate (A Historical Feghoot)” * “The Loom of Doom Galls Mainly in the Tomb” What are these stories about? Check out Flush Fiction and you won’t be disappointed!",
-      "image": "http://books.google.com/books/content?id=TClZDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Fiction"
-      ],
-      "ISBN": "9781607106753"
-    },
-    {
-      "id": "9",
-      "name": "John Fowles's Fiction and the Poetics of Postmodernism",
-      "authors": [
-        "Mahmoud Salami"
-      ],
-      "num_pages": 312,
-      "short_description": "Salami presents, for instance, a critique of the self-conscious narrative of the diary form in The Collector, the intertextual relations of the multiplicity of voices, the problems of subjectivity, the reader's position, the politics of seduction, ideology, and history in The Magus and The French Lieutenant's Woman. The book also analyzes the ways in which Fowles uses and abuses the short-story genre, in which enigmas remain enigmatic and the author disappears to leave the characters free to construct their own texts. Salami centers, for example, on A Maggot, which embodies the postmodernist technique of dialogical narrative, the problem of narrativization of history, and the explicitly political critique of both past and present in terms of social and religious dissent. These political questions are also echoed in Fowles's nonfictional book The Aristos, in which he strongly rejects the totalization of narratives and the materialization of society.",
-      "image": "http://books.google.com/books/content?id=EquizXeXb3kC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Language Arts & Disciplines"
-      ],
-      "ISBN": "083863446X"
-    },
-    {
-      "id": "10",
-      "name": "Magical Realism in West African Fiction",
-      "authors": [
-        "Brenda Cooper"
-      ],
-      "num_pages": 272,
-      "short_description": "This study contextualizes magical realism within current debates and theories of postcoloniality and examines the fiction of three of its West African pioneers: Syl Cheney-Coker of Sierra Leone, Ben Okri of Nigeria and Kojo Laing of Ghana. Brenda Cooper explores the distinct elements of the genre in a West African context, and in relation to: * a range of global expressions of magical realism, from the work of Gabriel Garcia Marquez to that of Salman Rushdie * wider contemporary trends in African writing, with particular attention to how the realism of authors such as Chinua Achebe and Wole Soyinka has been connected with nationalist agendas. This is a fascinating and important work for all those working on African literature, magical realism, or postcoloniality.",
-      "image": "http://books.google.com/books/content?id=O0H9J_VchLAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 3,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9781134673780"
-    },
-    {
-      "id": "11",
-      "name": "Lewis Nkosi. The Black Psychiatrist | Flying Home: Fiction, Critical Perspectives and Homage",
-      "authors": [
-        "Astrid Starck-Adler",
-        "Dag Henrichsen"
-      ],
-      "num_pages": 469,
-      "short_description": "This rich volume is dedicated to the astounding South African writer and literary critic Lewis Nkosi (1936–2010). In this book, Nkosi’s celebrated one-act play “The Black Psychiatrist” is published together with its unpublished sequel “Flying Home,” a play on the satirically fictionalized inauguration of Mandela as South African president. Critical appraisals, tributes and recollections by scholars and friends reflect on the beat of his writing and life.﻿ An ideal volume for those encountering Lewis Nkosi for the first time as well as for those already devoted to his work. Edited by Astrid Starck, a literary scholar, and Dag Henrichsen, a historian. “Much has happened to me that is worth narrating, worth celebrating, in spite of the regrets and sorrows of exile. My life began under Apartheid until I attained the age of 22, and then subsequently lived in many places and societies, in Central Africa, Britain, the United States, Poland, and during a brief sojourn, in France and, finally, in Switzerland.” Lewis Nkosi in „Memoirs of a motherless child“",
-      "image": "http://books.google.com/books/content?id=NYQnEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Biography & Autobiography"
-      ],
-      "ISBN": "9783905758887"
-    },
-    {
-      "id": "13",
-      "name": "Fiction on the Fringe",
-      "authors": [
-        "Grammatiki A. Karla"
-      ],
-      "num_pages": 217,
-      "short_description": "This collection of essays offers a comprehensive examination of texts that traditionally have been excluded from the main corpus of the ancient Greek novel and confined to the margins of the genre, such as the Life of Aesop, the Life of Alexander the Great, and the Acts of the Christian Martyrs. Through comparison and contrast, intertextual analysis and close examination, the boundaries of the dichotomy between the fringe vs. the canonical or erotic novel are explored, and so the generic identity of the texts in each group is more clearly outlined. The collective outcome brings the fringe from the periphery of scholarly research to the centre of critical attention, and provides methodological tools for the exploration of other fringe texts.",
-      "image": "http://books.google.com/books/content?id=FLnDOFpJqsMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 4,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9789004175471"
-    },
-    {
       "id": "15",
       "name": "British Experimental Women’s Fiction, 1945—1975",
       "authors": [
@@ -138,21 +15,6 @@
         "Literary Criticism"
       ],
       "ISBN": "9783030727666"
-    },
-    {
-      "id": "16",
-      "name": "Supernatural Fiction in Early Modern Drama and Culture",
-      "authors": [
-        "Ryan Curtis Friesen"
-      ],
-      "num_pages": 261,
-      "short_description": "Brings together authors of fiction with philosophers and academics in Early Modern England and compares their ways of describing and understanding the world; Explores popular culture as well as the culture of the learned and elite; Examines the intellectual consequences of the Reformation and compares the spiritual and doctrinal practices of the occult to those of orthodoxy. Magic and the supernatural are common themes in the philosophy and fiction of the sixteenth and seventeenth centuries. Supernatural Fiction in Early Modern Drama and Culture explores varieties of scepticism and belief exhibited by a selection of philosophers and playwrights, including Heinrich Cornelius Agrippa, Giordano Bruno, John Dee, Christopher Marlowe, William Shakespeare, Ben Jonson, and Thomas Middleton, explicating how each author defines the supernatural, whether he assumes magic to operate in the world, and how he uses occult principles to explain what can be known and what is ethical. Beliefs and claims concerning impossible phenomena and superhuman agency require literary historians to determine whether an occult system of magical operation is being described in a given text. Each chapter in this volume evaluates whether a chosen early modern author is endorsing magic as efficacious or divinely sanctioned, or criticizing it for being fraudulent or unholy. By examining works of fiction, it is possible to explore fantastic settings which were not intended to be synonymous with the early modern audiences everyday experience, settings where magic exists and operates according to the playwrights designs. This book also sets out to determine what historical sources provided given authors with knowledge of the occult and speculates on how aware an audience would have been of academic, classical, or popular contexts surrounding the text at hand.",
-      "image": "http://books.google.com/books/content?id=IdbFEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Drama"
-      ],
-      "ISBN": "9781837641581"
     },
     {
       "id": "17",
@@ -6997,292 +6859,82 @@
       ]
     },
     {
-      "id": "9b2b",
-      "name": "aasd",
-      "authors": "asd",
-      "num_pages": "22",
-      "short_description": "asd",
-      "image": "2",
-      "num_copies": "22",
-      "categories": "asd"
-    }
-  ],
-  "history": [
-    {
-      "id": "q",
-      "operation": "delete",
-      "time": "5/27/24",
-      "bookId": "1"
+      "id": "e94c",
+      "name": "s",
+      "author": "s",
+      "numPages": "1"
     },
     {
-      "id": "0739",
-      "operation": "delete",
-      "time": "2024-05-27T12:10:19.132Z",
-      "bookId": 4
+      "id": "7555",
+      "name": "asd",
+      "author": "asd",
+      "numPages": "12"
     },
     {
-      "id": "2236",
-      "operation": "delete",
-      "time": "2024-05-27T12:10:27.444Z",
-      "bookId": 6
+      "id": "cb91",
+      "name": "as",
+      "author": "2",
+      "numPages": "3"
     },
     {
-      "id": "8475",
-      "operation": "delete",
-      "time": "2024-05-27T12:10:31.821Z",
-      "bookId": 8
+      "id": "957c",
+      "name": "asd",
+      "author": "asd",
+      "numPages": "123"
     },
     {
-      "id": "103d",
-      "operation": "create",
-      "time": "2024-05-27T12:27:18.065Z",
-      "bookId": "70e6"
+      "id": "9c00",
+      "name": "asd",
+      "author": "asd",
+      "numPages": "2"
     },
     {
-      "id": "bd89",
-      "operation": "create",
-      "time": "2024-05-27T12:27:58.864Z",
-      "bookId": "9b2b"
+      "id": "33ad",
+      "name": "asd",
+      "author": "21",
+      "numPages": "22"
     },
     {
-      "id": "100a",
-      "operation": "delete",
-      "time": "2024-05-27T12:29:02.307Z",
-      "bookId": 9
+      "id": "6dd8",
+      "name": "asd",
+      "author": "12",
+      "numPages": "12"
     },
     {
-      "id": "f1d6",
-      "operation": "update",
-      "time": "2024-05-27T12:32:27.053Z",
-      "bookId": 7
+      "id": "f9b9",
+      "name": "qwe",
+      "author": "1",
+      "numPages": "2"
     },
     {
-      "id": "37b4",
-      "operation": "update",
-      "time": "2024-05-27T12:32:29.841Z",
-      "bookId": 7
+      "id": "482f",
+      "name": "asd",
+      "author": "asd",
+      "numPages": "2"
     },
     {
-      "id": "f682",
-      "operation": "update",
-      "time": "2024-05-27T12:32:35.040Z",
-      "bookId": 7
+      "id": "4d17",
+      "name": "asd",
+      "author": "asd",
+      "numPages": "2"
     },
     {
-      "id": "770d",
-      "operation": "update",
-      "time": "2024-05-27T12:32:35.732Z",
-      "bookId": 7
+      "id": "6462",
+      "name": "asd",
+      "author": "1",
+      "numPages": "2"
     },
     {
-      "id": "d328",
-      "operation": "update",
-      "time": "2024-05-27T12:32:40.112Z",
-      "bookId": 7
+      "id": "caa4",
+      "name": "asd",
+      "author": "s",
+      "numPages": "2"
     },
     {
-      "id": "6aed",
-      "operation": "update",
-      "time": "2024-05-27T12:32:47.911Z",
-      "bookId": 7
-    },
-    {
-      "id": "4b7f",
-      "operation": "update",
-      "time": "2024-05-27T12:32:53.269Z",
-      "bookId": 7
-    },
-    {
-      "id": "6312",
-      "operation": "update",
-      "time": "2024-05-27T12:38:26.696Z",
-      "bookId": 7
-    },
-    {
-      "id": "a7f4",
-      "operation": "update",
-      "time": "2024-05-27T12:38:27.290Z",
-      "bookId": 7
-    },
-    {
-      "id": "3b0d",
-      "operation": "update",
-      "time": "2024-05-27T12:38:28.024Z",
-      "bookId": 7
-    },
-    {
-      "id": "bc18",
-      "operation": "update",
-      "time": "2024-05-27T12:38:28.445Z",
-      "bookId": 7
-    },
-    {
-      "id": "2339",
-      "operation": "update",
-      "time": "2024-05-27T12:38:30.831Z",
-      "bookId": 7
-    },
-    {
-      "id": "6338",
-      "operation": "update",
-      "time": "2024-05-27T12:38:35.927Z",
-      "bookId": 7
-    },
-    {
-      "id": "4d62",
-      "operation": "update",
-      "time": "2024-05-27T12:38:36.207Z",
-      "bookId": 7
-    },
-    {
-      "id": "983c",
-      "operation": "update",
-      "time": "2024-05-27T12:38:36.403Z",
-      "bookId": 7
-    },
-    {
-      "id": "939f",
-      "operation": "update",
-      "time": "2024-05-27T12:38:39.104Z",
-      "bookId": 7
-    },
-    {
-      "id": "7149",
-      "operation": "update",
-      "time": "2024-05-27T12:38:44.339Z",
-      "bookId": 7
-    },
-    {
-      "id": "8aff",
-      "operation": "update",
-      "time": "2024-05-27T12:39:02.437Z",
-      "bookId": 7
-    },
-    {
-      "id": "a6a1",
-      "operation": "update",
-      "time": "2024-05-27T12:39:03.146Z",
-      "bookId": 7
-    },
-    {
-      "id": "3cf2",
-      "operation": "update",
-      "time": "2024-05-27T12:39:03.887Z",
-      "bookId": 7
-    },
-    {
-      "id": "97b2",
-      "operation": "update",
-      "time": "2024-05-27T12:39:46.585Z",
-      "bookId": 7
-    },
-    {
-      "id": "40f9",
-      "operation": "update",
-      "time": "2024-05-27T12:39:47.448Z",
-      "bookId": 7
-    },
-    {
-      "id": "91e6",
-      "operation": "update",
-      "time": "2024-05-27T12:40:02.577Z",
-      "bookId": 7
-    },
-    {
-      "id": "e2c4",
-      "operation": "update",
-      "time": "2024-05-27T12:40:08.998Z",
-      "bookId": 7
-    },
-    {
-      "id": "7f73",
-      "operation": "update",
-      "time": "2024-05-27T12:40:11.784Z",
-      "bookId": 7
-    },
-    {
-      "id": "87a9",
-      "operation": "update",
-      "time": "2024-05-27T12:42:11.959Z",
-      "bookId": 7
-    },
-    {
-      "id": "0aae",
-      "operation": "update",
-      "time": "2024-05-27T12:42:13.994Z",
-      "bookId": 7
-    },
-    {
-      "id": "0668",
-      "operation": "update",
-      "time": "2024-05-27T12:42:16.858Z",
-      "bookId": 7
-    },
-    {
-      "id": "51fc",
-      "operation": "update",
-      "time": "2024-05-27T12:42:17.408Z",
-      "bookId": 7
-    },
-    {
-      "id": "67b6",
-      "operation": "update",
-      "time": "2024-05-27T12:42:47.837Z",
-      "bookId": 7
-    },
-    {
-      "id": "d44c",
-      "operation": "update",
-      "time": "2024-05-27T12:42:57.403Z",
-      "bookId": 7
-    },
-    {
-      "id": "9e1c",
-      "operation": "update",
-      "time": "2024-05-27T12:43:08.471Z",
-      "bookId": 13
-    },
-    {
-      "id": "d25b",
-      "operation": "update",
-      "time": "2024-05-27T12:43:34.576Z",
-      "bookId": 7
-    },
-    {
-      "id": "a05a",
-      "operation": "update",
-      "time": "2024-05-27T12:43:39.492Z",
-      "bookId": 7
-    },
-    {
-      "id": "5fff",
-      "operation": "update",
-      "time": "2024-05-27T12:43:58.130Z",
-      "bookId": 7
-    },
-    {
-      "id": "2d73",
-      "operation": "update",
-      "time": "2024-05-27T12:44:00.500Z",
-      "bookId": 7
-    },
-    {
-      "id": "5ff0",
-      "operation": "update",
-      "time": "2024-05-27T12:44:01.172Z",
-      "bookId": 7
-    },
-    {
-      "id": "1d27",
-      "operation": "update",
-      "time": "2024-05-27T12:44:08.078Z",
-      "bookId": 10
-    },
-    {
-      "id": "c549",
-      "operation": "update",
-      "time": "2024-05-27T12:44:08.709Z",
-      "bookId": 10
+      "id": "bb2d",
+      "name": "asd",
+      "author": "asd",
+      "numPages": "2"
     }
   ],
   "history": [
@@ -7291,6 +6943,12 @@
       "operation": "delete",
       "time": "5/27/24",
       "bookId": "2"
+    },
+    {
+      "id": "3b41",
+      "operation": "update",
+      "time": "2024-05-27T12:50:06.895Z",
+      "bookId": 18
     }
   ]
 }
