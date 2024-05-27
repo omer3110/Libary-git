@@ -40,7 +40,7 @@
       "num_pages": 303,
       "short_description": "No Description",
       "image": "http://books.google.com/books/content?id=6ls4qRIkHq4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
+      "num_copies": 4,
       "categories": [
         "Modernism (Literature)"
       ],
@@ -6943,6 +6943,12 @@
       "operation": "delete",
       "time": "5/27/24",
       "bookId": "2"
+    },
+    {
+      "id": "3b41",
+      "operation": "update",
+      "time": "2024-05-27T12:50:06.895Z",
+      "bookId": 18
     }
   ]
 }
