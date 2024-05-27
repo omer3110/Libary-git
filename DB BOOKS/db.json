@@ -1,21 +1,6 @@
 {
   "books": [
     {
-      "id": "2",
-      "name": "Climate Fiction and Cultural Analysis",
-      "authors": [
-        "Gregers Andersen"
-      ],
-      "num_pages": 154,
-      "short_description": "Climate Fiction and Cultural Analysis argues that the popularity of the term \"climate fiction\" has paradoxically exhausted the term’s descriptive power and that it has developed into a black box containing all kinds of fictions which depict climatic events and has consequently lost its true significance. Aware of the prospect of ecological collapse as well as our apparent inability to avert it, we face geophysical changes of drastic proportions that severely challenge our ability to imagine the consequences. This book argues that this crisis of imagination can be partly relieved by climate fiction, which may help us comprehend the potential impact of the crisis we are facing. Strictly assigning \"climate fiction\" to fictions that incorporate the climatological paradigm of anthropogenic global warming into their plots, this book sets out to salvage the term’s speculative quality. It argues that climate fiction should be regarded as no less than a vital supplement to climate science, because climate fiction makes visible and conceivable future modes of existence within worlds not only deemed likely by science, but which are scientifically anticipated. Focusing primarily on English and German language fictions, Climate Fiction and Cultural Analysis shows how Western climate fiction sketches various affective and cognitive relations to the world in its utilization of a small number of recurring imaginaries, or imagination forms. This book will be of great interest to students and scholars of ecocriticism, the environmental humanities, and literary and culture studies more generally.",
-      "image": "http://books.google.com/books/content?id=5O6yDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 3,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9781000710137"
-    },
-    {
       "id": "4",
       "name": "Exploring Science Through Science Fiction",
       "authors": [
@@ -24,7 +9,7 @@
       "num_pages": 335,
       "short_description": "How does Einstein’s description of space and time compare with Doctor Who? Can James Bond really escape from an armor-plated railroad car by cutting through the floor with a laser concealed in a wristwatch? What would it take to create a fully intelligent android, such as Star Trek’s Commander Data? Exploring Science Through Science Fiction addresses these and other intriguing questions, using science fiction as a springboard for discussing fundamental science concepts and cutting-edge science research. It includes references to original research papers, landmark scientific publications and technical documents, as well as a broad range of science literature at a more popular level. The revised second edition includes expanded discussions on topics such as gravitational waves and black holes, machine learning and quantum computing, gene editing, and more. In all, the second edition now features over 220 references to specific scenes in more than 160 sci-fi movies and TV episodes, spanning over 100 years of cinematic history. Designed as the primary text for a college-level course, this book will appeal to students across the fine arts, humanities, and hard sciences, as well as any reader with an interest in science and science fiction. Praise for the first edition: \"This journey from science fiction to science fact provides an engaging and surprisingly approachable read...\" (Jen Jenkins, Journal of Science Fiction, Vol. 2 (1), September 2017)",
       "image": "http://books.google.com/books/content?id=GJO7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
+      "num_copies": 0,
       "categories": [
         "Science"
       ],
@@ -132,7 +117,7 @@
       "num_pages": 878,
       "short_description": "This comprehensive collection offers a complete introduction to one of the most popular literary forms of the Victorian period, its key authors and works, its major themes, and its lasting legacy. Places key authors and novels in their cultural and historical context Includes studies of major topics such as race, gender, melodrama, theatre, poetry, realism in fiction, and connections to other art forms Contributions from top international scholars approach an important literary genre from a range of perspectives Offers both a pre and post-history of the genre to situate it in the larger tradition of Victorian publishing and literature Incorporates coverage of traditional research and cutting-edge contemporary scholarship",
       "image": "http://books.google.com/books/content?id=1M_XknhqA-MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
+      "num_copies": 6,
       "categories": [
         "Literary Criticism"
       ],
@@ -7040,6 +7025,84 @@
       "categories": [
         "Uncategorized"
       ]
+    },
+    {
+      "id": "e94c",
+      "name": "s",
+      "author": "s",
+      "numPages": "1"
+    },
+    {
+      "id": "7555",
+      "name": "asd",
+      "author": "asd",
+      "numPages": "12"
+    },
+    {
+      "id": "cb91",
+      "name": "as",
+      "author": "2",
+      "numPages": "3"
+    },
+    {
+      "id": "957c",
+      "name": "asd",
+      "author": "asd",
+      "numPages": "123"
+    },
+    {
+      "id": "9c00",
+      "name": "asd",
+      "author": "asd",
+      "numPages": "2"
+    },
+    {
+      "id": "33ad",
+      "name": "asd",
+      "author": "21",
+      "numPages": "22"
+    },
+    {
+      "id": "6dd8",
+      "name": "asd",
+      "author": "12",
+      "numPages": "12"
+    },
+    {
+      "id": "f9b9",
+      "name": "qwe",
+      "author": "1",
+      "numPages": "2"
+    },
+    {
+      "id": "482f",
+      "name": "asd",
+      "author": "asd",
+      "numPages": "2"
+    },
+    {
+      "id": "4d17",
+      "name": "asd",
+      "author": "asd",
+      "numPages": "2"
+    },
+    {
+      "id": "6462",
+      "name": "asd",
+      "author": "1",
+      "numPages": "2"
+    },
+    {
+      "id": "caa4",
+      "name": "asd",
+      "author": "s",
+      "numPages": "2"
+    },
+    {
+      "id": "bb2d",
+      "name": "asd",
+      "author": "asd",
+      "numPages": "2"
     }
   ]
 }

@@ -4,6 +4,22 @@ const tableContainer = document.getElementById("table-container");
 let elemMessage = document.querySelector('.message');
 let currentPage = 1;
 
+const selectElement = document.getElementById("typeOfCreation");
+
+selectElement.addEventListener("change", function() {
+    const creationByIsbnForm = document.querySelector(".new-book-form-by-ISBN");
+    const creationManuallyForm = document.querySelector(".new-book-form");
+    const selectedValue = selectElement.value;
+    if (selectedValue === "manually-api") {
+        creationByIsbnForm.style.display= "none";
+        creationManuallyForm.style.display= "block";
+        creationManuallyForm.classList.add("new-book-form");
+    } else if (selectedValue === "google-api") {
+        creationByIsbnForm.style.display= "block";
+        creationManuallyForm.style.display= "none";
+    }
+});
+
 function showForm(formId) {
     const forms = document.querySelectorAll('.form-container');
     forms.forEach(form => {
@@ -25,6 +41,7 @@ function fetchAndBuildTable() {
     axios.get(`${urlBooks}?_page=${currentPage}`)
         .then(response => {
             const data = response.data.data;
+            console.log(response.data);
             buildTable(data);
         })
         .catch(error => console.log(error));
@@ -90,12 +107,13 @@ function displayBookInfo(book) {
     const bookInfoDiv = document.getElementById("book-info");
 
     bookInfoDiv.innerHTML = `
+        <button onclick="deleteBook(${book.id})">Delete book</button>
         <h2>${book.name}</h2>
         <p><strong>Author(s):</strong> ${book.authors}</p>
         <p><strong>Number of Pages:</strong> ${book.num_pages}</p>
         <p><strong>Short Description:</strong> ${book.short_description}</p>
         <img src="${book.image}" alt="${book.name}" style="max-height: 100px;">
-        <p><strong>Number of Copies:</strong> ${book.num_copies}</p>
+        <div><p><strong>Number of Copies:</strong> ${book.num_copies}</p> <button onclick="updateBookCopies(${book.id}, 'increase')">+</button> <button onclick="updateBookCopies(${book.id}, 'decrease')">-</button></div>
         <p><strong>Categories:</strong> ${book.categories}</p>
         <p><strong>ISBN:</strong> ${book.ISBN}</p>
     `;
@@ -138,7 +156,6 @@ function newBook() {
         .then(response => {
             showMessage("Book added successfully!", true);
             clearNewBookForm();
-            fetchAndBuildTable();
         })
         .catch(error => showMessage("Failed to add book!", false));
 }
@@ -148,33 +165,25 @@ function clearNewBookForm() {
     document.querySelector('#newNumPages').value = '';
 }
 
-async function updateBookCopies() {
-    const bookId = document.querySelector('#updateID').value;
-    const action = document.querySelector('input[name="action"]:checked').value;
-
+async function updateBookCopies(id , action) {
     try {
-        const response = await axios.get(`${urlBooks}/${bookId}`);
+        const response = await axios.get(`${urlBooks}/${id}`);
         const book = response.data;
         const numOfCopies = book.num_copies;
-        console.log(numOfCopies);
-
         if (!book) {
-            showMessage(`Book with ID ${bookId} not found!`, false);
+            showMessage(`Book with ID ${id} not found!`, false);
             return;
         }
-
         if (action === 'decrease') {
             if (book.num_copies <= 0) {
-                showMessage(`Book ${bookId} is out of stock!`, false);
+                showMessage(`Book ${id} is out of stock!`, false);
                 return;
             }
         }
-        const changeAmount = action === 'increase' ? numOfCopies + 1 : numOfCopies - 1;
-        await axios.patch(`${urlBooks}/${bookId}`, { num_copies: changeAmount });
+        const currentAmountOfCopies = action === 'increase' ? numOfCopies + 1 : numOfCopies - 1;
+        await axios.patch(`${urlBooks}/${id}`, { num_copies: currentAmountOfCopies });
+        showMessage(`Book ${id} copies ${action}d successfully!`, true);
 
-        showMessage(`Book ${bookId} copies ${action}d successfully!`, true);
-        clearUpdateBookForm();
-        fetchAndBuildTable();
     } catch (error) {
         showMessage(`Failed to ${action} book ${bookId} copies!`, false);
         console.error('Error:', error);
@@ -187,13 +196,12 @@ function clearUpdateBookForm() {
     document.querySelector('#decrease').checked = false;
 }
 
-function deleteBook() {
-    const bookId = document.querySelector('#deleteID').value;
-    axios.delete(`${urlBooks}/${bookId}`)
+function deleteBook(id) {
+    axios.delete(`${urlBooks}/${id}`)
         .then(response => {
             showMessage(`Book ${bookId} deleted successfully!`, true);
-            document.querySelector('#deleteID').value = '';
-            fetchAndBuildTable();
+            //document.querySelector('#deleteID').value = '';
+            //fetchAndBuildTable();
         })
         .catch(error => showMessage(`Failed to delete book ${bookId}!`, false));
 }
@@ -218,17 +226,4 @@ function showMessage(message, isSuccess) {
     }, 3000);
 }
 
-document.querySelector('#searchBarForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-    searchBook();
-});
-function searchBook() {
-    const elemSearchValue = document.querySelector("#searchBar").value.trim(); // Get search value and remove leading/trailing whitespace
-    const searchParams = new URLSearchParams({ q: elemSearchValue }); // Create URL search params with the search query
-    console.log(`${urlBooks}?name_like=${encodeURIComponent(elemSearchValue)}`);
-    axios.get(`${urlBooks}?name_like=${encodeURIComponent(elemSearchValue)}`)
-        .then(response => {
-            console.log(response.data);
-        })
-        .catch(error => console.log(error));
-}
+
