@@ -80,7 +80,7 @@ button {
 
 .form-container {
     display: none;
-     /* position: fixed; 
+    /* position: fixed; 
      width: 80vw;
     height: 80vh;
     top: 50%;
@@ -101,7 +101,8 @@ button {
     display: flex;
     flex-direction: column;
 }
-.new-book-form-by-ISBN{
+
+.new-book-form-by-ISBN {
     display: none;
 }
 
@@ -167,6 +168,7 @@ button {
     background-color: rgb(81, 76, 69);
     border-radius: 5px;
     padding: 20px;
+    width: 40vw;
 }
 
 .each-book-in-list:hover {

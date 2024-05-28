@@ -38,30 +38,59 @@ function hideTable() {
     document.getElementById("get-button").style.display = 'block';
 }
 
+function resposeToMappedArray(apiResponse, fromSearch) {
+    // if (fromSearch == false) {
+    //     const apiResponse = apiResponse.data;
+    // }
+    console.log(apiResponse);
+
+    const totalPages = Math.ceil(apiResponse.length / 10);
+    console.log(totalPages);
+    for (let i = 0; i < totalPages; i++) {
+        const newPageArray = [];
+        const startIndex = i * 10;
+        const endIndex = Math.min(startIndex + 10, apiResponse.length);
+        for (let j = startIndex; j < endIndex; j++) {
+            newPageArray.push(apiResponse[j]);
+        }
+        totalResponseArray.push(newPageArray);
+    }
+
+    console.log(totalResponseArray);
+    return totalResponseArray;
+}
+
+let totalResponseArray = [];
 function fetchAndBuildTable() {
+    currentPage = 1;
+    totalResponseArray = [];
     booksContainer.style.display = 'block';
-    axios.get(`${urlBooks}?_page=${currentPage}`)
+    axios.get(urlBooks)
         .then(response => {
-            const data = response.data;
-            console.log(response.data.pages);
-            buildTable(data);
+            console.log(response);
+            totalResponseArray = resposeToMappedArray(response.data, false);
+
+            console.log(totalResponseArray);
+            buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
         })
         .catch(error => console.log(error));
 }
-
-function buildTable(data) {
-    let totalPages;
-    console.log(typeof (data));
-    if (Array.isArray(data)) {
-        totalPages = Math.ceil(data.length / 10)
-        console.log(data.length)
-        console.log(totalPages);
-    }
-    else {
-        totalPages = data.pages;
-        data = data.data;
+function nextHandler(totalPages) {
+    const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
+    if (currentPage < totalResponseArray.length) {
+        currentPage++;
+        buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
     }
 
+}
+
+function previousHandler() {
+    if (currentPage > 1) {
+        currentPage--;
+        buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
+    }
+}
+function buildTable(data, totalPages) {
     document.getElementById("get-button").style.display = 'none';
     booksContainer.innerHTML = "";
 
@@ -76,30 +105,35 @@ function buildTable(data) {
 
     const pagingButtons = document.createElement("div");
     pagingButtons.setAttribute("id", "paging-handell");
-    pagingButtons.innerHTML = `<div>page ${currentPage} out of ${totalPages}</div><button onclick="previousHandler()"><</button><button onclick="nextHandler()">></button><div>`;
+    pagingButtons.innerHTML = `<div>page ${currentPage} out of ${totalPages}</div><button onclick="previousHandler()"><</button><button onclick="nextHandler(${totalPages})">></button><div>`;
     buttonContainer.appendChild(pagingButtons);
 
     booksContainer.appendChild(buttonContainer);
 
     const listOfBooksDiv = document.createElement("div");
     listOfBooksDiv.classList.add("book-list");
-
-    data.forEach(book => {
+    console.log(data);
+    // Replace data.forEach with a for loop
+    for (let i = 0; i < data.length; i++) {
+        const book = data[i];
         const currentBook = document.createElement("div");
         currentBook.classList.add("each-book-in-list");
+
         const image = document.createElement("img");
         image.src = book.image;
         image.style.maxHeight = "100px";
-        const currentBookContentDiv = document.createElement("div")
-        currentBookContentDiv.classList.add('each-book-content-wrapper')
-        currentBookContentDiv.innerHTML = `<p>Book Name : ${book.name}</p> <p>Authors : ${book.authors}</p>`
+
+        const currentBookContentDiv = document.createElement("div");
+        currentBookContentDiv.classList.add('each-book-content-wrapper');
+        currentBookContentDiv.innerHTML = `<p>Book Name : ${book.name}</p> <p>Authors : ${book.authors}</p>`;
+
         currentBook.appendChild(image);
-        currentBook.appendChild(currentBookContentDiv)
+        currentBook.appendChild(currentBookContentDiv);
 
-
-        listOfBooksDiv.appendChild(currentBook)
+        listOfBooksDiv.appendChild(currentBook);
         currentBook.addEventListener('click', () => displayBookInfo(book)); // Add click event listener
-    });
+    }
+
     booksContainer.appendChild(listOfBooksDiv);
 }
 
@@ -209,17 +243,7 @@ function addToHistory(operation, time, bookId) {
         .catch(error => console.log("Coul not add history element"));
 }
 
-function nextHandler() {
-    currentPage++;
-    fetchAndBuildTable();
-}
 
-function previousHandler() {
-    if (currentPage > 1) {
-        currentPage--;
-        fetchAndBuildTable();
-    }
-}
 
 function showMessage(message, isSuccess) {
     elemMessage.textContent = message;
@@ -233,6 +257,53 @@ document.querySelector('#searchBarForm').addEventListener('submit', function (ev
     event.preventDefault();
     searchBook();
 });
+
+async function searchBook() {
+    totalResponseArray = [];
+
+    const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
+    let booksResultsCounter = 0;
+    const resultsFoundArray = [];
+
+    try {
+        const response = await axios.get(urlBooks);
+        const allBooks = response.data;
+        // Filter the books based on the search value
+        for (const book of allBooks) {
+            // Convert book name to lowercase for case-insensitive search
+            const bookName = book.name.toLowerCase();
+            if (bookName.includes(elemSearchValue)) {
+                const bookData = await printResult(book.id);
+                if (bookData) {
+                    resultsFoundArray.push(bookData);
+                    booksResultsCounter++;
+                }
+            }
+        }
+    } catch (error) {
+        console.error('Error fetching books data:', error);
+    }
+
+    console.log('Final results:', resultsFoundArray);
+    let final = resposeToMappedArray(resultsFoundArray, true);
+    console.log(final);
+    console.log(final.length);
+
+    buildTable(final[currentPage - 1], final.length)
+}
+
+
+async function printResult(id) {
+    currentPage = 1;
+    try {
+        const response = await axios.get(`${urlBooks}/${id}`);
+        return response.data;
+    } catch (error) {
+        console.error(`Error fetching book with ID ${id}:`, error);
+        return null;
+    }
+}
+
 // async function searchBook() {
 //     const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
 //     let booksResultsCounter = 0;
@@ -287,43 +358,3 @@ document.querySelector('#searchBarForm').addEventListener('submit', function (ev
 // }
 
 
-async function searchBook() {
-    const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
-    let booksResultsCounter = 0;
-    const resultsFoundArray = [];
-
-    try {
-        const response = await axios.get(urlBooks);
-        const allBooks = response.data;
-
-        // Filter the books based on the search value
-        for (const book of allBooks) {
-            // Convert book name to lowercase for case-insensitive search
-            const bookName = book.name.toLowerCase();
-            if (bookName.includes(elemSearchValue)) {
-                const bookData = await printResult(book.id);
-                if (bookData) {
-                    resultsFoundArray.push(bookData);
-                    booksResultsCounter++;
-                }
-            }
-        }
-    } catch (error) {
-        console.error('Error fetching books data:', error);
-    }
-
-    console.log('Final results:', resultsFoundArray);
-    buildTable(resultsFoundArray);
-}
-
-
-async function printResult(id) {
-    currentPage = 1;
-    try {
-        const response = await axios.get(`${urlBooks}/${id}`);
-        return response.data;
-    } catch (error) {
-        console.error(`Error fetching book with ID ${id}:`, error);
-        return null;
-    }
-}
