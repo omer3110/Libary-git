@@ -90,7 +90,7 @@ button {
 
 /* buttons + form second div  */
 
-.actions-buttons-and-form {
+.buttons-div-container {
     align-items: center;
     display: flex;
     gap: 40px;

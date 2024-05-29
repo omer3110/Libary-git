@@ -48,7 +48,6 @@ function hideTable() {
 function showHistory() {
     currentPage = 1;
     totalResponseArray = [];
-    booksContainer.style.display = 'block';
     axios.get(urlHistory)
         .then(response => {
             console.log(response);
@@ -112,18 +111,10 @@ function previousHandler(type) {
     }
 }
 function buildTable(data, totalPages) {
-    booksContainer.style.display = 'block';
-    document.getElementById("get-button").style.display = 'none';
     booksContainer.innerHTML = "";
 
     const buttonContainer = document.createElement("div");
     buttonContainer.classList.add("button-container");
-
-    const hideButton = document.createElement("button");
-    hideButton.classList.add("hide-button");
-    hideButton.textContent = "Hide List";
-    hideButton.addEventListener('click', hideTable);
-    buttonContainer.appendChild(hideButton);
 
     const pagingButtons = document.createElement("div");
     pagingButtons.setAttribute("id", "paging-handell");
@@ -145,7 +136,7 @@ function buildTable(data, totalPages) {
         image.style.maxHeight = "100px";
         const currentBookContentDiv = document.createElement("div");
         currentBookContentDiv.classList.add('each-book-content-wrapper');
-        currentBookContentDiv.innerHTML = `<div class="book-name-and-fav-icon-wrapper"><p>Book Name : ${book.name}</p>< </div><p>Authors : ${book.authors}</p>`;
+        currentBookContentDiv.innerHTML = `<div class="book-name-and-fav-icon-wrapper"><p>Book Name : ${book.name}</p></div><p>Authors : ${book.authors}</p>`;
         let favoriteIcon = document.createElement("span");
         favoriteIcon.innerHTML= '☆';
         favoriteIcon.classList.add('favorite-icon')
@@ -236,12 +227,7 @@ async function fetchFavoritesWithBookList(bookId, elem) {
     }
 }
 
-
-
-
-
 function buildHistory(data, totalPages) {
-    document.getElementById("get-button").style.display = 'none';
     booksContainer.innerHTML = "";
 
     const buttonContainer = document.createElement("div");
@@ -331,9 +317,11 @@ function newBook() {
     })
         .then(response => {
             showMessage("Book added successfully!", true);
-            console.log(response.data.id);
             addToHistory("create", new Date, response.data.id)
-            clearNewBookForm();
+            setTimeout(() => {
+                hideForm('new-book-form-container')
+                clearNewBookForm()
+            }, 1000)
         })
         .catch(error => showMessage("Failed to added!", false));
 }
