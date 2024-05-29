@@ -51,7 +51,7 @@ button {
 .favorite-icon {
     font-size: 36px;
     cursor: pointer;
-    color: #ccc;
+    color: #262323;
     /* Unfilled color */
     transition: color 0.3s;
 }

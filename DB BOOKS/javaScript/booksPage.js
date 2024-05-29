@@ -51,14 +51,15 @@ function showHistory() {
     booksContainer.style.display = 'block';
     axios.get(urlHistory)
         .then(response => {
-            totalResponseArray = resposeToMappedArray(response.data, false);
+            console.log(response);
+            totalResponseArray = resposeToMappedArray(response.data);
             console.log(totalResponseArray);
             buildHistory(totalResponseArray[currentPage - 1], totalResponseArray.length);
         })
         .catch(error => console.log(error));
 }
 
-function resposeToMappedArray(apiResponse, fromSearch) {
+function resposeToMappedArray(apiResponse) {
     const totalPages = Math.ceil(apiResponse.length / 5);
     for (let i = 0; i < totalPages; i++) {
         const newPageArray = [];
@@ -79,7 +80,7 @@ function fetchAndBuildTable() {
     // booksContainer.style.display = 'block';
     axios.get(urlBooks)
         .then(response => {
-            totalResponseArray = resposeToMappedArray(response.data, false);
+            totalResponseArray = resposeToMappedArray(response.data);
             console.log(totalResponseArray);
             buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
         })
@@ -144,20 +145,28 @@ function buildTable(data, totalPages) {
         image.style.maxHeight = "100px";
         const currentBookContentDiv = document.createElement("div");
         currentBookContentDiv.classList.add('each-book-content-wrapper');
-        currentBookContentDiv.innerHTML = `<div class="book-name-and-fav-icon-wrapper"><p>Book Name : ${book.name}</p><span class="favorite-icon" onclick="toggleFavorite(this,${book.id})">☆</span> </div><p>Authors : ${book.authors}</p>`;
+        currentBookContentDiv.innerHTML = `<div class="book-name-and-fav-icon-wrapper"><p>Book Name : ${book.name}</p>< </div><p>Authors : ${book.authors}</p>`;
+        let favoriteIcon = document.createElement("span");
+        favoriteIcon.innerHTML= '☆';
+        favoriteIcon.classList.add('favorite-icon')
+        favoriteIcon.addEventListener('click', () => toggleFavorite(favoriteIcon , book.id)); // Add click event listener
+        currentBookContentDiv.appendChild(favoriteIcon);
 
         currentBook.appendChild(image);
         currentBook.appendChild(currentBookContentDiv);
+        fetchFavoritesWithBookList(book.id, favoriteIcon)
 
         listOfBooksDiv.appendChild(currentBook);
         currentBook.addEventListener('click', () => displayBookInfo(book)); // Add click event listener
     }
     booksContainer.appendChild(listOfBooksDiv);
 }
-function toggleFavorite(element, bookId) {
-    if (element.classList.contains("filled")) {
 
+function toggleFavorite(element, bookId) {
+    console.log(element);
+    if (element.classList.contains("filled")) {
         console.log("Favorite marked");
+        removeBookFromFavJson(bookId);
         // Do something when the star is filled (marked as favorite)
     } else {
         console.log("Favorite unmarked");
@@ -196,8 +205,41 @@ function removeBookFromFavJson(bookId) {
         .catch(error => showMessage(`Failed to remove book ${bookId}!`, false));
 }
 function showFavorites() {
+    currentPage = 1;
+    totalResponseArray = [];
+    booksContainer.style.display = 'block';
 
+    axios.get(urlFavorites)
+            .then(response => {
+                //localStorage.setItem("favorite-books", JSON.stringify(favoriteBooksArray));
+                console.log(response);
+                response = response.data;
+                let favResponse = resposeToMappedArray(response);
+                console.log(favResponse);
+                buildTable(favResponse[currentPage - 1], favResponse.length)
+
+            })
+            .catch(error => console.error('Error:', error));
 }
+
+
+async function fetchFavoritesWithBookList(bookId, elem) {
+    try {
+        const response = await axios.get(urlFavorites);
+        const favArr = response.data;
+        const isFavorite = favArr.some(favBook => favBook.id === bookId);
+        if (isFavorite) {
+            elem.classList.add("filled");
+        }
+    } catch (error) {
+        console.log("Error fetching favorites:", error);
+    }
+}
+
+
+
+
+
 function buildHistory(data, totalPages) {
     document.getElementById("get-button").style.display = 'none';
     booksContainer.innerHTML = "";
@@ -253,9 +295,6 @@ function displayBookInfo(book) {
             <div><p class="num-of-copies"><strong>Number of Copies:</strong> ${response.num_copies}</p> <button onclick="updateBookCopies(${response.id}, 'increase')">+</button> <button onclick="updateBookCopies(${response.id}, 'decrease')">-</button></div>
             <p><strong>Categories:</strong> ${response.categories}</p> </div>
          </div>
-        <p><strong>Short Description:</strong> ${response.short_description}</p>
-        <p><strong>ISBN:</strong> ${response.ISBN}</p>
-        <button onclick="deleteBook(${response.id})">Delete book</button>
         <p><strong>Short Description:</strong> ${response.short_description}</p>
         <p><strong>ISBN:</strong> ${response.ISBN}</p>
         <button onclick="deleteBook(${response.id})">Delete book</button>
@@ -342,6 +381,7 @@ function deleteBook(id) {
     const elemDeleteBookMessage = document.querySelector('.delete-book-message')
     axios.delete(`${urlBooks}/${id}`)
         .then(response => {
+            removeBookFromFavJson(id)
             addToHistory("delete", new Date, id)
             elemDeleteBookMessage.style.color = 'red'
             elemDeleteBookMessage.textContent = "Deleting Book..."
@@ -350,10 +390,9 @@ function deleteBook(id) {
                 elemDeleteBookMessage.textContent = ""
                 modal.innerHTML = `<p>Feel free to search a book...<i class="fa-regular fa-face-smile"></i></p>`;
                 modal.style.display = 'flex'
-
             } , 1000);
         })
-        .catch(error => showMessage(`Failed to delete book ${id}!`, false));
+        .catch(error => showMessage(`Failed to delete book ${id}!`, false));    
 
 }
 
@@ -449,7 +488,7 @@ async function searchBook() {
         }
         else {
             console.log('Final results:', resultsFoundArray);
-            let final = resposeToMappedArray(resultsFoundArray, true);
+            let final = resposeToMappedArray(resultsFoundArray);
             console.log(final);
             console.log(final.length);
 

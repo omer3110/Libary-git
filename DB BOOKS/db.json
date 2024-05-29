@@ -1,96 +1,6 @@
 {
   "books": [
     {
-      "id": "54",
-      "name": "The American Book Buyer, 1945-1975",
-      "authors": [
-        "Mary A. Wolos"
-      ],
-      "num_pages": 230,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=36wQAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Booksellers and bookselling"
-      ]
-    },
-    {
-      "id": "57",
-      "name": "Charles Urban",
-      "authors": [
-        "Luke McKernan"
-      ],
-      "num_pages": 245,
-      "short_description": "Based on original research from Charles Urban’s own papers, this is the first biography of this influential film maker and innovator. It is also a historical study of the development of the non-fiction film in Britain and America in the early years of cinema, told through the experiences of the leading pioneer of the form. Charles Urban was a renowned figure in his time, and he has remained a name in film history chiefly for his development of Kinemacolor, the world’s first successful natural colour moving picture system. He was also a pioneer in the filming of war, science, travel, actuality and news, a fervent advocate of the value of film as an educative force, and a controversial but important innovator of film propaganda in wartime. The book uses Urban’s story as a means of showing how the non-fiction film developed in the period 1897-1925, and the dilemmas that it faced within a cinema culture in which the entertainment fiction film was dominant. Urban’s solutions – some successful, some less so – illustrate the groundwork that led to the development of documentary film. The book considers the roles of film as informer, educator and generator of propaganda, and the social and aesthetic function of colour in the years when cinema was still working out what it was capable of and how best to reach audiences. Luke McKernan also curates a web resource on Charles Urban at www.charlesurban.com Winner of the Kraszna-Krausz Moving Image Book Award 2014.",
-      "image": "http://books.google.com/books/content?id=6tWtBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Performing Arts"
-      ],
-      "ISBN": "9780859899857"
-    },
-    {
-      "id": "58",
-      "name": "Foolproof! Indie Publishing",
-      "authors": [
-        "J. S. Chapman"
-      ],
-      "num_pages": 147,
-      "short_description": "WHEN IT COMES TO INDIE PUBLISHING, IT USED TO BE HARD AND EXPENSIVE TO PUBLISH YOUR OWN BOOK. But thanks to the digital publishing revolution, not only is it easy, it’s easy on the wallet … provided you know how to get it done. FOOLPROOF! INDIE PUBLISHING: The Cheapskate Guide for Publishing Your Way to Success promises to: · Demystify the digital bookscape · Show you how to put your books up for sale without going broke · Explain the macro picture so you can micromanage your career · Guide you from written word to published author Before charging headlong into self-publishing, you must first educate yourself about the digital bookscape. The indie publishing world is much larger than you might have imagined … filled with a vast network of bookstores, publishing services, distributors, aggregators, and vanity presses … along with countless specialists and experts who want your business. This book will provide all the information needed to be an indie author without going into debt. Simple terms, valuable resources, and easy-to-follow instructions will guide you from initial preparation to formatting and finally to publication. If you want to guide your own writing career and be your own boss, FOOLPROOF! INDIE PUBLISHING may be the only book you’ll ever need. It’s been written for cost-conscious authors who want to maximize earnings and minimize expenses the do-it-yourself way. In this book, you’ll learn about — · Publishing on a shoestring while making a professional splash · Earnings potential and the power of exponential sales · Why keywords and categories are critical to publishing success · How to do it yourself and why you should · Formatting your books for easy self-publishing · Where to publish your books · Ways to increase your productivity · Basics of marketing & advertising · What’s hot and what’s not in fiction and nonfiction · Selling yourself and your books · Putting your ebook up on Amazon with step-by-step instructions · Building your platform with social media · Determining whether you should ‘go wide’ or ‘go exclusive’ · Why Amazon may be the only place you need to publish your books If you can turn on your computer, you can self-publish your book. Find out how to do it by getting your copy of FOOLPROOF! INDIE PUBLISHING now!",
-      "image": "http://books.google.com/books/content?id=dWsrEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Language Arts & Disciplines"
-      ],
-      "ISBN": "N/A"
-    },
-    {
-      "id": "59",
-      "name": "1968: Today’s Authors Explore a Year of Rebellion, Revolution, and Change",
-      "authors": [
-        "Marc Aronson",
-        "Susan Campbell Bartoletti"
-      ],
-      "num_pages": 208,
-      "short_description": "Welcome to 1968 — a revolution in a book. Essays, memoirs, and more by fourteen award-winning authors offer unique perspectives on one of the world’s most tumultuous years. Nineteen sixty-eight was a pivotal year that grew more intense with each day. As thousands of Vietnamese and Americans were killed in war, students across four continents took over colleges and city streets. Assassins murdered Dr. King and Robert F. Kennedy. Demonstrators turned out in Prague and Chicago, and in Mexico City, young people and Olympic athletes protested. In those intense months, generations battled and the world wobbled on the edge of some vast change that was exhilarating one day and terrifying the next. To capture that extraordinary year, editors Marc Aronson and Susan Campbell Bartoletti created an anthology that showcases many genres of nonfiction. Some contributors use a broad canvas, others take a close look at a moment, and matched essays examine the same experience from different points of view. As we face our own moments of crisis and division, 1968 reminds us that we’ve clashed before and found a way forward — and that looking back can help map a way ahead. With contributions by: Jennifer Anthony Marc Aronson Susan Campbell Bartoletti Loree Griffin Burns Paul Fleischman Omar Figueras Laban Carrick Hill Mark Kurlansky Lenore Look David Lubar Kate MacMillan Kekla Magoon Jim Murphy Elizabeth Partridge",
-      "image": "http://books.google.com/books/content?id=00ReDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Juvenile Nonfiction"
-      ],
-      "ISBN": "9781536203295"
-    },
-    {
-      "id": "60",
-      "name": "Common Core",
-      "authors": [
-        "Jocelyn A. Chadwick"
-      ],
-      "num_pages": 225,
-      "short_description": "Common Core: Paradigmatic Shifts is a timely and protean educator resource and reference, designed to be of immediate use in the classroom and in Professional Learning Communities. In addition, this book also provides a “looking glass,” allowing educators to peer briefly back in history to ascertain the origin of standards, as they came to be in the United States educational system, and as they earnestly impacted English language arts. Common Core: Paradigmatic Shifts identifies and provides curricular approaches speaking to teachers’ concerns regarding content preparedness. In addition, this book includes teacher narratives from around the country, describing their approaches and strategies with the Common Core initiative and its impact on their students, as well as those who do not use the Core. Essentially, Common Core: Paradigmatic Shifts will spark further proactive, engaged, and reconstructive conversation among teachers regarding both students and themselves. Ignited by the advent of the Core, their conversation today is about just how do they use standards to create vibrant, engaged, immersive, and relevant instruction that lives beyond the traditional walls of the classroom. Common Core: Paradigmatic Shifts will prove to be a “go to” resource that provides useful information and instructional approaches beyond Common Core.",
-      "image": "http://books.google.com/books/content?id=5J7zBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Language Arts & Disciplines"
-      ],
-      "ISBN": "9781443875776"
-    },
-    {
-      "id": "61",
-      "name": "Best Practices for Elementary Classrooms",
-      "authors": [
-        "Randi Stone"
-      ],
-      "num_pages": 264,
-      "short_description": "There is no better way to learn the craft of teaching than by watching an expert teacher at work. In this sequel to Randi Stone's Best Classroom Practices, nationally recognized, award-winning elementary teachers showcase selected practices from their classroom repertoire to share with their colleagues. Learn what it takes to build a productive, engaged community of learners from some of the nation's best teachers in their own words. This inspirational, one-stop guide covers everything from classroom management to teaching reading, writing, math, science, social studies, music, art, technology, and physical education. You will find: - Detailed, successful teaching strategies with lists of relevant standards and materials needed - Innovative activities, projects, lesson plans, and units of study for every content area - Classroom strategies across the curriculum, including ideas for involving parents and ways to make inclusion work Best Practices for Elementary Classrooms provides a wide array of excellent lessons to choose from, road-tested by your award-winning colleagues.",
-      "image": "http://books.google.com/books/content?id=HS6CDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Education"
-      ],
-      "ISBN": "9781632209597"
-    },
-    {
       "id": "62",
       "name": "Arthurian Romances",
       "authors": [
@@ -512,21 +422,6 @@
         "Travel"
       ],
       "ISBN": "9781628841176"
-    },
-    {
-      "id": "90",
-      "name": "British Mystery Classics - Complete Collection (Including Martin Hewitt Series, The Dorrington Deed Box & The Green Eye of Goona) - Illustrated",
-      "authors": [
-        "Arthur Morrison"
-      ],
-      "num_pages": 4050,
-      "short_description": "This carefully crafted ebook: \"British Mystery Classics - Complete Collection (Including Martin Hewitt Series, The Dorrington Deed Box & The Green Eye of Goona) - Illustrated\" is formatted for your eReader with a functional and detailed table of contents. Arthur Morrison (1863-1945) was an English writer and journalist known for his detective stories, featuring the detective Martin Hewitt, low-key, realistic, lower class answer to Sherlock Holmes. Martin Hewitt stories are similar in style to those of Conan Doyle, cleverly plotted and very amusing. Morrison is also known for his realistic novels and stories about working-class life in London's East End, A Child of the Jago being the best known. Table of Contents: Martin Hewitt Series: Martin Hewitt, Investigator The Lenton Croft Robberies The Loss of Sammy Crockett The Case of Mr. Foggatt The Case of the Dixon Torpedo The Quinton Jewel Affair The Stanway Cameo Mystery The Affair of the Tortoise Chronicles of Martin Hewitt The Ivy Cottage Mystery The Nicobar Bullion Case The Holford Will Case The Case of the Missing Hand The Case of Laker, Absconded The Case of the Lost Foreigner Adventures of Martin Hewitt The Affair of Mrs. Seton's Child The Case of Mr. Geldard's Elopement The Case of the Dead Skipper The Case of the \"Flitterbat Lancers\" The Case of the Late Mr. Rewse The Case of the Ward Lane Tabernacle The Red Triangle The Affair of Samuel's Diamonds The Case of Mr. Jacob Mason The Case of the Lever Key The Case of the Burnt Barn The Case of the Admiralty Code The Adventure of Channel Marsh Other Detective Stories: The Dorrington Deed Box The Narrative of Mr. James Rigby The Case of Janissary The Case of \"The Mirror of Portugal\" The Affair of the \"Avalanche Bicycle & Tyre Co., Ltd.\" The Case of Mr. Loftus Deacon Old Cater's Money The Green Eye of Goona The First Magnum Mr. Norie's Magnum Mr. Clifton's Magnum The Steward's Magnum—and Another Mr. Pooley's Magnum A Box of Oddments Mr. Smith's Magnums The Green Eye",
-      "image": "http://books.google.com/books/content?id=J3grDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Fiction"
-      ],
-      "ISBN": "9788026853565"
     },
     {
       "id": "91",
@@ -7096,7 +6991,614 @@
       "operation": "delete",
       "time": "2024-05-29T08:50:12.617Z",
       "bookId": 55
+    },
+    {
+      "id": "378d",
+      "operation": "delete",
+      "time": "2024-05-29T09:03:37.910Z",
+      "bookId": 54
+    },
+    {
+      "id": "852d",
+      "operation": "delete",
+      "time": "2024-05-29T09:05:18.088Z",
+      "bookId": 59
+    },
+    {
+      "id": "5429",
+      "operation": "delete",
+      "time": "2024-05-29T09:05:23.986Z",
+      "bookId": 60
+    },
+    {
+      "id": "e855",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:05:30.418Z",
+      "bookId": null
+    },
+    {
+      "id": "014b",
+      "operation": "delete",
+      "time": "2024-05-29T09:05:58.961Z",
+      "bookId": 57
+    },
+    {
+      "id": "bf53",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:07:07.358Z",
+      "bookId": null
+    },
+    {
+      "id": "dfc4",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:07:22.750Z",
+      "bookId": null
+    },
+    {
+      "id": "87ed",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:08:09.460Z",
+      "bookId": null
+    },
+    {
+      "id": "b1f5",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:09:41.206Z",
+      "bookId": null
+    },
+    {
+      "id": "ed38",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T09:09:47.774Z",
+      "bookId": 58
+    },
+    {
+      "id": "008e",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:09:56.091Z",
+      "bookId": null
+    },
+    {
+      "id": "0b95",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:09:57.707Z",
+      "bookId": null
+    },
+    {
+      "id": "fae9",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:14:03.777Z",
+      "bookId": "757c"
+    },
+    {
+      "id": "b700",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:15:16.562Z",
+      "bookId": null
+    },
+    {
+      "id": "4c8e",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:21:14.898Z",
+      "bookId": null
+    },
+    {
+      "id": "563a",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:21:15.804Z",
+      "bookId": null
+    },
+    {
+      "id": "3ccd",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:21:17.107Z",
+      "bookId": "62"
+    },
+    {
+      "id": "8479",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:25:03.806Z",
+      "bookId": "63"
+    },
+    {
+      "id": "f5a0",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:25:04.726Z",
+      "bookId": "62"
+    },
+    {
+      "id": "f352",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:25:05.960Z",
+      "bookId": "64"
+    },
+    {
+      "id": "9d91",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:34:16.474Z",
+      "bookId": "75"
+    },
+    {
+      "id": "1b74",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:35:46.109Z",
+      "bookId": null
+    },
+    {
+      "id": "5b6a",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:35:57.944Z",
+      "bookId": "85"
+    },
+    {
+      "id": "694d",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:36:27.654Z",
+      "bookId": "80"
+    },
+    {
+      "id": "b271",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T09:36:29.032Z",
+      "bookId": 80
+    },
+    {
+      "id": "2728",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:39:08.339Z",
+      "bookId": null
+    },
+    {
+      "id": "c1cf",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T09:39:08.765Z",
+      "bookId": 58
+    },
+    {
+      "id": "d798",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T09:39:09.558Z",
+      "bookId": null
+    },
+    {
+      "id": "ad92",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T09:39:09.902Z",
+      "bookId": 61
+    },
+    {
+      "id": "e954",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T10:18:02.133Z",
+      "bookId": null
+    },
+    {
+      "id": "5ea6",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T10:18:03.273Z",
+      "bookId": 58
+    },
+    {
+      "id": "819d",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T10:18:19.084Z",
+      "bookId": null
+    },
+    {
+      "id": "aad1",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T10:18:20.548Z",
+      "bookId": 58
+    },
+    {
+      "id": "aebe",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T10:18:26.248Z",
+      "bookId": null
+    },
+    {
+      "id": "16df",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T10:18:28.929Z",
+      "bookId": 58
+    },
+    {
+      "id": "1948",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T10:18:40.555Z",
+      "bookId": null
+    },
+    {
+      "id": "82d7",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T10:18:42.198Z",
+      "bookId": 58
+    },
+    {
+      "id": "2473",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T10:18:43.701Z",
+      "bookId": null
+    },
+    {
+      "id": "915c",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T10:18:56.555Z",
+      "bookId": 58
+    },
+    {
+      "id": "c2ed",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T10:18:57.373Z",
+      "bookId": null
+    },
+    {
+      "id": "0f1f",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T10:18:58.828Z",
+      "bookId": 58
+    },
+    {
+      "id": "ff47",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T10:18:59.768Z",
+      "bookId": null
+    },
+    {
+      "id": "ae96",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T10:19:17.578Z",
+      "bookId": 58
+    },
+    {
+      "id": "33b6",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T10:19:18.741Z",
+      "bookId": null
+    },
+    {
+      "id": "dfaa",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T10:19:20.192Z",
+      "bookId": 58
+    },
+    {
+      "id": "3676",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T10:19:22.035Z",
+      "bookId": null
+    },
+    {
+      "id": "111d",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T10:19:23.535Z",
+      "bookId": 58
+    },
+    {
+      "id": "42be",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T10:46:55.905Z",
+      "bookId": null
+    },
+    {
+      "id": "eae1",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T10:47:00.088Z",
+      "bookId": 58
+    },
+    {
+      "id": "948f",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:14:10.602Z",
+      "bookId": null
+    },
+    {
+      "id": "c7fc",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:14:13.654Z",
+      "bookId": null
+    },
+    {
+      "id": "b775",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:14:15.493Z",
+      "bookId": 58
+    },
+    {
+      "id": "ab62",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:14:56.855Z",
+      "bookId": null
+    },
+    {
+      "id": "70df",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:14:57.424Z",
+      "bookId": 58
+    },
+    {
+      "id": "1d70",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:15:08.166Z",
+      "bookId": "64"
+    },
+    {
+      "id": "e919",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:15:56.218Z",
+      "bookId": null
+    },
+    {
+      "id": "ae57",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:15:57.113Z",
+      "bookId": 58
+    },
+    {
+      "id": "3993",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:16:20.871Z",
+      "bookId": "64"
+    },
+    {
+      "id": "867e",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:29:02.012Z",
+      "bookId": "65"
+    },
+    {
+      "id": "3671",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:29:07.155Z",
+      "bookId": "66"
+    },
+    {
+      "id": "64c2",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:29:10.005Z",
+      "bookId": "65"
+    },
+    {
+      "id": "d0dd",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:29:11.109Z",
+      "bookId": "66"
+    },
+    {
+      "id": "3103",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:29:13.664Z",
+      "bookId": "65"
+    },
+    {
+      "id": "be52",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:29:23.723Z",
+      "bookId": null
+    },
+    {
+      "id": "43a0",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:29:24.701Z",
+      "bookId": null
+    },
+    {
+      "id": "7fe7",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:29:25.826Z",
+      "bookId": "62"
+    },
+    {
+      "id": "2f29",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:29:26.786Z",
+      "bookId": "63"
+    },
+    {
+      "id": "58ca",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:29:27.653Z",
+      "bookId": "64"
+    },
+    {
+      "id": "c247",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:29:33.965Z",
+      "bookId": "62"
+    },
+    {
+      "id": "54ca",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:29:35.020Z",
+      "bookId": null
+    },
+    {
+      "id": "5e56",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:29:39.539Z",
+      "bookId": "75"
+    },
+    {
+      "id": "fd7b",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:29:40.380Z",
+      "bookId": "85"
+    },
+    {
+      "id": "8bb9",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:29:41.457Z",
+      "bookId": "64"
+    },
+    {
+      "id": "7134",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:29:42.484Z",
+      "bookId": "64"
+    },
+    {
+      "id": "029f",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:29:43.286Z",
+      "bookId": "65"
+    },
+    {
+      "id": "be63",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:29:53.030Z",
+      "bookId": null
+    },
+    {
+      "id": "35e1",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:29:54.027Z",
+      "bookId": null
+    },
+    {
+      "id": "0c3e",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:32:16.531Z",
+      "bookId": "65"
+    },
+    {
+      "id": "9525",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:32:18.889Z",
+      "bookId": "67"
+    },
+    {
+      "id": "f1a2",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:32:28.094Z",
+      "bookId": "70"
+    },
+    {
+      "id": "fe4d",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:32:34.900Z",
+      "bookId": "71"
+    },
+    {
+      "id": "d7ba",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:35:02.173Z",
+      "bookId": null
+    },
+    {
+      "id": "366e",
+      "operation": "delete",
+      "time": "2024-05-29T11:35:21.476Z",
+      "bookId": 90
+    },
+    {
+      "id": "c4d3",
+      "operation": "delete",
+      "time": "2024-05-29T11:35:55.369Z",
+      "bookId": 58
+    },
+    {
+      "id": "082c",
+      "operation": "delete",
+      "time": "2024-05-29T11:38:01.236Z",
+      "bookId": 61
+    },
+    {
+      "id": "4c79",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T11:38:01.272Z",
+      "bookId": 61
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "id": "58",
+      "name": "Foolproof! Indie Publishing",
+      "authors": [
+        "J. S. Chapman"
+      ],
+      "num_pages": 147,
+      "short_description": "WHEN IT COMES TO INDIE PUBLISHING, IT USED TO BE HARD AND EXPENSIVE TO PUBLISH YOUR OWN BOOK. But thanks to the digital publishing revolution, not only is it easy, it’s easy on the wallet … provided you know how to get it done. FOOLPROOF! INDIE PUBLISHING: The Cheapskate Guide for Publishing Your Way to Success promises to: · Demystify the digital bookscape · Show you how to put your books up for sale without going broke · Explain the macro picture so you can micromanage your career · Guide you from written word to published author Before charging headlong into self-publishing, you must first educate yourself about the digital bookscape. The indie publishing world is much larger than you might have imagined … filled with a vast network of bookstores, publishing services, distributors, aggregators, and vanity presses … along with countless specialists and experts who want your business. This book will provide all the information needed to be an indie author without going into debt. Simple terms, valuable resources, and easy-to-follow instructions will guide you from initial preparation to formatting and finally to publication. If you want to guide your own writing career and be your own boss, FOOLPROOF! INDIE PUBLISHING may be the only book you’ll ever need. It’s been written for cost-conscious authors who want to maximize earnings and minimize expenses the do-it-yourself way. In this book, you’ll learn about — · Publishing on a shoestring while making a professional splash · Earnings potential and the power of exponential sales · Why keywords and categories are critical to publishing success · How to do it yourself and why you should · Formatting your books for easy self-publishing · Where to publish your books · Ways to increase your productivity · Basics of marketing & advertising · What’s hot and what’s not in fiction and nonfiction · Selling yourself and your books · Putting your ebook up on Amazon with step-by-step instructions · Building your platform with social media · Determining whether you should ‘go wide’ or ‘go exclusive’ · Why Amazon may be the only place you need to publish your books If you can turn on your computer, you can self-publish your book. Find out how to do it by getting your copy of FOOLPROOF! INDIE PUBLISHING now!",
+      "image": "http://books.google.com/books/content?id=dWsrEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Language Arts & Disciplines"
+      ],
+      "ISBN": "N/A"
+    },
+    {
+      "id": "65",
+      "name": "Stimulating Non-Fiction Writing!",
+      "authors": [
+        "Emma Hughes-Evans",
+        "Simon Brownhill"
+      ],
+      "num_pages": 166,
+      "short_description": "Stimulating Non-Fiction Writing! Inspiring Children Aged 7-11 offers innovative and exciting ways to engage children in non-fiction writing, giving professionals the confidence and practical advice that they need to support children in producing quality non-fiction texts in the classroom. Packed full of interesting ideas, resource suggestions and practical activities, the book explores the various ways professionals can purposefully encourage ‘child authors’ to develop their non-fiction writing skills. Tried-and-tested resources, ‘Gold star!’ tips and practical suggestions are underpinned by research-informed teaching strategies and academic information to strengthen professional practice associated with the teaching of non-fiction writing. By taking a stimulating approach to each text type and linking activities to known texts and stimuli, the book offers differentiated advice for working with children in Lower and Upper Key stage 2. Chapters consider text types that include: Instructions Persuasive texts Non-chronological reports Correspondence texts Discussion texts This new text is the perfect guide for inspiring children aged 7-11 in the classroom and will energise and enrich classroom provision and practice by being an essential resource for teachers and students on teacher training courses.",
+      "image": "http://books.google.com/books/content?id=rtKFDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Education"
+      ],
+      "ISBN": "9781351581424"
+    },
+    {
+      "id": "67",
+      "name": "Navigator Non-Fiction Year 4: Eye See",
+      "authors": [
+        "Pearson Education"
+      ],
+      "num_pages": 38,
+      "short_description": "Navigator is a KS2 reading scheme which covers fiction and non-fiction. It provides material to give pupils a 20-minute guided reading sesson per week during each school year.",
+      "image": "http://books.google.com/books/content?id=N2xau48wxecC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Uncategorized"
+      ],
+      "ISBN": "9780433065463"
+    },
+    {
+      "id": "70",
+      "name": "Reaching Adolescents",
+      "authors": [
+        "Arthea J. S. Reed"
+      ],
+      "num_pages": 600,
+      "short_description": "A basic text for young and adult/adolescent literature courses. An exciting new young adult literature text...one that offers a holistic, inclusive approach to incorporating the popular books young adults like to read into a solid English language arts curriculum. A student-centered, whole language emphasis advocates a curriculum that encourages student response to literature and helps develop crucial critical thinking skills. The author suggests numerous approaches to using young adult literature, explores and demonstrates a variety of teaching methods, and discusses an array of literature appropriate for a wide range of students in a number of subject areas, including literature written specifically for children and young adults, popular adult literature, and the classics.",
+      "image": "http://books.google.com/books/content?id=IeUL6Pr7zeQC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Education"
+      ],
+      "ISBN": "0023988614"
+    },
+    {
+      "id": "71",
+      "name": "More Than a Game",
+      "authors": [
+        "Chris Crowe"
+      ],
+      "num_pages": 196,
+      "short_description": "Contains a bibliography of books for young adults that deal with sports and includes over 3,000 titles.",
+      "image": "http://books.google.com/books/content?id=dS7uAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Literary Criticism"
+      ]
+    },
+    {
+      "id": "90",
+      "name": "British Mystery Classics - Complete Collection (Including Martin Hewitt Series, The Dorrington Deed Box & The Green Eye of Goona) - Illustrated",
+      "authors": [
+        "Arthur Morrison"
+      ],
+      "num_pages": 4050,
+      "short_description": "This carefully crafted ebook: \"British Mystery Classics - Complete Collection (Including Martin Hewitt Series, The Dorrington Deed Box & The Green Eye of Goona) - Illustrated\" is formatted for your eReader with a functional and detailed table of contents. Arthur Morrison (1863-1945) was an English writer and journalist known for his detective stories, featuring the detective Martin Hewitt, low-key, realistic, lower class answer to Sherlock Holmes. Martin Hewitt stories are similar in style to those of Conan Doyle, cleverly plotted and very amusing. Morrison is also known for his realistic novels and stories about working-class life in London's East End, A Child of the Jago being the best known. Table of Contents: Martin Hewitt Series: Martin Hewitt, Investigator The Lenton Croft Robberies The Loss of Sammy Crockett The Case of Mr. Foggatt The Case of the Dixon Torpedo The Quinton Jewel Affair The Stanway Cameo Mystery The Affair of the Tortoise Chronicles of Martin Hewitt The Ivy Cottage Mystery The Nicobar Bullion Case The Holford Will Case The Case of the Missing Hand The Case of Laker, Absconded The Case of the Lost Foreigner Adventures of Martin Hewitt The Affair of Mrs. Seton's Child The Case of Mr. Geldard's Elopement The Case of the Dead Skipper The Case of the \"Flitterbat Lancers\" The Case of the Late Mr. Rewse The Case of the Ward Lane Tabernacle The Red Triangle The Affair of Samuel's Diamonds The Case of Mr. Jacob Mason The Case of the Lever Key The Case of the Burnt Barn The Case of the Admiralty Code The Adventure of Channel Marsh Other Detective Stories: The Dorrington Deed Box The Narrative of Mr. James Rigby The Case of Janissary The Case of \"The Mirror of Portugal\" The Affair of the \"Avalanche Bicycle & Tyre Co., Ltd.\" The Case of Mr. Loftus Deacon Old Cater's Money The Green Eye of Goona The First Magnum Mr. Norie's Magnum Mr. Clifton's Magnum The Steward's Magnum—and Another Mr. Pooley's Magnum A Box of Oddments Mr. Smith's Magnums The Green Eye",
+      "image": "http://books.google.com/books/content?id=J3grDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Fiction"
+      ],
+      "ISBN": "9788026853565"
+    }
+  ]
 }
