@@ -52,16 +52,8 @@
 
                 <button class="close-form-btn" onclick="hideForm('new-book-form-container')">Close</button>
 
-                <div>
-                    <label for="typeOfCreation">Type of creation</label>
-                    <select name="typeOfCreation" id="typeOfCreation">
-                        <option value="manually-api">Manually</option>
-                        <option value="google-api">By ISBN</option>
-                    </select>
-                </div>
-
                 <form class="new-book-form pop-up">
-                    <h3>Create new Book</h3>
+                    <h2 class="h2-in-form">Create new Book</h2>
                     <div>
                         <label for="BookName">Book name :</label>
                         <input id="BookName" type="text" placeholder="Book Name" required>
@@ -90,18 +82,11 @@
                         <label for="categories">Categories :</label>
                         <input id="categories" type="text" placeholder="categories" required>
                     </div>
-                    <button id="submitNewBook" type="submit">Submit</button>
+                    <button class="submit-new-book-button" id="submitNewBook" type="submit">Submit</button>
                     <div class="message"></div>
                 </form>
             </div>
-            <form class="new-book-form-by-ISBN pop-up">
-                <input id="ISBN" type="text" placeholder="ISBN" required>
-                <button id="submitNewBook" type="submit">Submit</button>
-            </form>
         </div>
-
-
-        <!-- <button id="get-button" onclick="fetchAndBuildTable()">Get All Books</button> -->
 
         <div class="modal-and-booklist-wrapper">
 
@@ -118,7 +103,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>

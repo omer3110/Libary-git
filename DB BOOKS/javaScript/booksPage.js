@@ -1,5 +1,4 @@
-// Project 
-
+// Global URL's
 const urlBooks = "http://localhost:8001/books";
 const urlHistory = "http://localhost:8001/history";
 const urlFavorites = "http://localhost:8001/favorites";
@@ -11,21 +10,29 @@ const selectElement = document.getElementById("typeOfCreation");
 let elemSuccessMessage = document.querySelector(".success-message");
 let fellFreeMessage = document.getElementById('feel-free');
 
-selectElement.addEventListener("change", function () {
-    const creationByIsbnForm = document.querySelector(".new-book-form-by-ISBN");
-    const creationManuallyForm = document.querySelector(".new-book-form");
-    const selectedValue = selectElement.value;
-    if (selectedValue === "manually-api") {
-        creationByIsbnForm.style.display = "none";
-        creationManuallyForm.style.display = "block";
-        creationManuallyForm.classList.add("new-book-form");
-    } else if (selectedValue === "google-api") {
-        creationByIsbnForm.style.display = "block";
-        creationManuallyForm.style.display = "none";
-    }
+let totalResponseArray = [];
+
+document.querySelector('#new-book-form-container').addEventListener('submit', function (event) {
+    event.preventDefault();
+    newBook();
 });
 
-function showForm(formId) {
+document.querySelector('#searchBarForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    searchBook();
+});
+
+function showLoader() {
+    const loader = document.querySelector('.loader');
+    loader.style.display = 'block';
+}
+
+function hideLoader() {
+    const loader = document.querySelector('.loader');
+    loader.style.display = 'none';
+}
+
+function showForm(formId) { // this function shows the form of create book when triggered
     const form = document.getElementById(formId)
     form.style.display = "flex"
     form.style.flexDirection = "column"
@@ -37,12 +44,7 @@ function hideForm(formId) {
     form.style.display = "none"
 }
 
-function hideTable() {
-    booksContainer.style.display = 'none';
-    document.getElementById("get-button").style.display = 'block';
-}
-
-function resposeToMappedArray(apiResponse) {
+function resposeToMappedArray(apiResponse) { // this function gets api data and returns it as an array
     const totalPages = Math.ceil(apiResponse.length / 5);
     for (let i = 0; i < totalPages; i++) {
         const newPageArray = [];
@@ -56,20 +58,36 @@ function resposeToMappedArray(apiResponse) {
     return totalResponseArray;
 }
 
-let totalResponseArray = [];
-function fetchAndBuildTable() {
+function fetchAndBuildTable() { // this function makes api request and build the list of books
+
+    booksContainer.innerHTML = `<div class="loader">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>`;
+    showLoader()
+    booksContainer.style.display = 'flex'
+    booksContainer.style.flexDirection = 'column'
+    booksContainer.style.alignItems = 'space-around'
+    const elemLoader = document.querySelector('.loader')
+    elemLoader.style.alignSelf = 'center'
+
     currentPage = 1;
     totalResponseArray = [];
-    // booksContainer.style.display = 'block';
     axios.get(urlBooks)
         .then(response => {
-            totalResponseArray = resposeToMappedArray(response.data);
-            console.log(totalResponseArray);
-            buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
+            setTimeout(() => {
+                totalResponseArray = resposeToMappedArray(response.data);
+                buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
+            }, 1500);
+     
         })
-        .catch(error => console.log(error));
+        .catch(error => console.log(error))
 }
-function nextHandler(type) {
+
+function nextHandler(type) { // next handler of paging
     if (type == 'history') {
         if (currentPage < totalResponseArray.length) {
             currentPage++;
@@ -82,7 +100,7 @@ function nextHandler(type) {
     }
 }
 
-function previousHandler(type) {
+function previousHandler(type) { // previos handler of paging
     if (type === 'history') {
         if (currentPage > 1) {
             currentPage--;
@@ -94,7 +112,8 @@ function previousHandler(type) {
         buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
     }
 }
-function buildTable(data, totalPages) {
+
+function buildTable(data, totalPages) { // this func recives data and print the list of books
     booksContainer.innerHTML = "";
 
     const buttonContainer = document.createElement("div");
@@ -109,7 +128,7 @@ function buildTable(data, totalPages) {
 
     const listOfBooksDiv = document.createElement("div");
     listOfBooksDiv.classList.add("book-list");
-    // Replace data.forEach with a for loop
+    // for loop that runs on every book of the data
     for (let i = 0; i < data.length; i++) {
         const book = data[i];
         const currentBook = document.createElement("div");
@@ -120,7 +139,7 @@ function buildTable(data, totalPages) {
         image.style.maxHeight = "100px";
         const currentBookContentDiv = document.createElement("div");
         currentBookContentDiv.classList.add('each-book-content-wrapper');
-        currentBookContentDiv.innerHTML = `<div class="book-name-and-fav-icon-wrapper"><p>Book Name : ${book.name}</p></div><p>Authors : ${book.authors}</p>`;
+        currentBookContentDiv.innerHTML = `<div class="book-name-and-fav-icon-wrapper"><p><strong>Book Name :</strong> ${book.name}</p></div><p><strong>Authors :</strong> ${book.authors}</p>`;
         let favoriteIcon = document.createElement("span");
         favoriteIcon.innerHTML = '☆';
         favoriteIcon.classList.add('favorite-icon')
@@ -137,39 +156,33 @@ function buildTable(data, totalPages) {
     booksContainer.appendChild(listOfBooksDiv);
 }
 
-function toggleFavorite(element, bookId) {
-    console.log(element);
+function toggleFavorite(element, bookId) { // this func toggle when favorite star is triggered
     if (element.classList.contains("filled")) {
         console.log("Favorite marked");
         removeBookFromFavJson(bookId);
-        // Do something when the star is filled (marked as favorite)
     } else {
         console.log("Favorite unmarked");
-        console.log(bookId);
         let url = `${urlBooks}/${bookId}`
         axios.get(url)
             .then(response => {
                 response = response.data;
                 addBookToFavJson(response);
-                console.log(response);
             })
             .catch(error => console.error('Error:', error));
-        // Do something when the star is unfilled (unmarked as favorite)
     }
     element.classList.toggle("filled");
 }
 
-function addBookToFavJson(bookData) {
-    console.log(bookData);
+function addBookToFavJson(bookData) { // add the favorite book to history
     axios.post(urlFavorites, bookData)
         .then(response => {
             showMessage("Book added successfully!", true);
-            console.log(response.data.id);
             addToHistory("Add to favorites", response.data.id, response.data.name, new Date);
         })
         .catch(error => showMessage("Failed to added!", false));
 }
-function removeBookFromFavJson(bookId) {
+
+function removeBookFromFavJson(bookId) { // remove the favorite book from history
     let url = `${urlFavorites}/${bookId}`;
     axios.delete(url)
         .then(response => {
@@ -177,7 +190,8 @@ function removeBookFromFavJson(bookId) {
         })
         .catch(error => showMessage(`Failed to remove book ${bookId}!`, false));
 }
-function showFavorites() {
+
+function showFavorites() { // this func print the favorite book list to page
     currentPage = 1;
     totalResponseArray = [];
     booksContainer.style.display = 'block';
@@ -185,7 +199,6 @@ function showFavorites() {
     axios.get(urlFavorites)
         .then(response => {
             response = response.data;
-            console.log(response);
             if (response.length == 0) {
                 const listOfBooksDiv = document.querySelector(".book-list")
                 const pagingButtons = document.getElementById("paging-handell");
@@ -194,14 +207,12 @@ function showFavorites() {
             }
             else {
                 let favResponse = resposeToMappedArray(response);
-                console.log(favResponse);
                 buildTable(favResponse[currentPage - 1], favResponse.length)
             }
         })
         .catch(error => console.error('Error:', error));
 }
-
-async function fetchFavoritesWithBookList(bookId, elem) {
+async function fetchFavoritesWithBookList(bookId, elem) { // this func render the favorite books so they be marked when page refreshing
     try {
         const response = await axios.get(urlFavorites);
         const favArr = response.data;
@@ -214,14 +225,12 @@ async function fetchFavoritesWithBookList(bookId, elem) {
     }
 }
 
-function showHistory() {
+function showHistory() { // this func print the history of actions
     currentPage = 1;
     totalResponseArray = [];
     axios.get(urlHistory)
         .then(response => {
-            console.log(response);
             totalResponseArray = resposeToMappedArray(response.data);
-            console.log(totalResponseArray);
             buildHistory(totalResponseArray[currentPage - 1], totalResponseArray.length);
         })
         .catch(error => console.log(error));
@@ -259,7 +268,7 @@ function buildHistory(data, totalPages) {
     booksContainer.appendChild(listOfBooksDiv);
 }
 
-function addToHistory(operation, bookId, bookName, time) {
+function addToHistory(operation, bookId, bookName, time) { // add to history
     axios.post(urlHistory, { operation: operation, bookId: bookId, bookName: bookName, time: time })
         .then(response => {
             console.log("History added successfully!");
@@ -267,24 +276,27 @@ function addToHistory(operation, bookId, bookName, time) {
         .catch(error => console.error('Error adding to history:', error));
 }
 
-function displayBookInfo(book) {
+function displayBookInfo(book) { // display the book info on page when clicked
     const modal = document.getElementById("modal");
     const bookInfoDiv = document.getElementById("book-info");
     const url = `${urlBooks}/${book.id}`;
+
+
+
     axios.get(url)
         .then(response => {
             response = response.data
             bookInfoDiv.innerHTML = `
         <h2>${response.name}</h2>
         <div class="img-and-info"><img src="${response.image}" alt="${response.name}" style="max-height: 600px;">
-            <div> <p><strong>Author(s):</strong> ${response.authors}</p>
+            <div class="right-to-img-info"> <p><strong>Author(s):</strong> ${response.authors}</p>
             <p><strong>Number of Pages:</strong> ${response.num_pages}</p>
-            <div><p class="num-of-copies"><strong>Number of Copies:</strong> ${response.num_copies}</p> <button onclick="updateBookCopies(${response.id}, 'increase')">+</button> <button onclick="updateBookCopies(${response.id}, 'decrease')">-</button></div>
+            <div class="copies-and-buttons"><p class="num-of-copies"><strong>Number of Copies:</strong> ${response.num_copies}</p><div class="increase-and-decrease-buttons"><button onclick="updateBookCopies(${response.id}, 'increase')">+</button> <button onclick="updateBookCopies(${response.id}, 'decrease')">-</button></div></div>
             <p><strong>Categories:</strong> ${response.categories}</p> </div>
          </div>
         <p><strong>Short Description:</strong> ${response.short_description}</p>
         <p><strong>ISBN:</strong> ${response.ISBN}</p>
-        <button onclick="deleteBook(${response.id})">Delete book</button>
+        <button class="delete-book-button" onclick="deleteBook(${response.id})">Delete book</button>
     `;
             modal.style.display = "block";
         })
@@ -294,17 +306,13 @@ function displayBookInfo(book) {
     const closeModalBtn = document.querySelector('.close-modal-btn');
     closeModalBtn.style.display = "inline"
     closeModalBtn.onclick = function () {
-        //modal.style.display = "none";
+        closeModalBtn.style.display = "none";
         bookInfoDiv.innerHTML = `<p id="feel-free">Feel free to search a book... <i class="fa-regular fa-face-smile"></i></p>`;
+        modal.style.display = "flex"
     };
 }
 
-document.querySelector('#new-book-form-container').addEventListener('submit', function (event) {
-    event.preventDefault();
-    newBook();
-});
-
-function newBook() {
+function newBook() { // add new book to the list
     const bookName = document.querySelector('#BookName').value;
     const authors = document.querySelector('#Authors').value;
     const numPages = document.querySelector('#NumPages').value;
@@ -327,7 +335,8 @@ function newBook() {
         })
         .catch(error => showMessage("Failed to added!", false));
 }
-function clearNewBookForm() {
+
+function clearNewBookForm() { 
     document.querySelector('#BookName').value = '';
     document.querySelector('#Authors').value = '';
     document.querySelector('#NumPages').value = '';
@@ -337,9 +346,9 @@ function clearNewBookForm() {
     document.querySelector('#categories').value = '';
 }
 
-async function updateBookCopies(id, action) {
+async function updateBookCopies(id, action) { // update book copies
     try {
-        const response = await axios.get(`${urlBooks} /${id}`);
+        const response = await axios.get(`${urlBooks}/${id}`);
         const book = response.data;
         const numOfCopies = book.num_copies;
         if (!book) {
@@ -397,12 +406,7 @@ function showMessage(message, isSuccess) {
     }, 3000);
 }
 
-document.querySelector('#searchBarForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-    searchBook();
-});
-
-async function searchBook() {
+async function searchBook() { // this func search a book by name
     const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
     if (elemSearchValue !== "") {
 
@@ -434,9 +438,6 @@ async function searchBook() {
         else {
             console.log('Final results:', resultsFoundArray);
             let final = resposeToMappedArray(resultsFoundArray);
-            console.log(final);
-            console.log(final.length);
-
             buildTable(final[currentPage - 1], final.length)
         }
     }
@@ -445,57 +446,5 @@ async function searchBook() {
 fetchAndBuildTable();
 
 
-// async function searchBook() {
-//     const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
-//     let booksResultsCounter = 0;
-//     let pageForSearch = 1;
-//     const resultsFoundArray = [];
-
-//     while (booksResultsCounter < 10) {
-//         try {
-//             const response = await axios.get(`${urlBooks}?_page=${pageForSearch}&_limit=40`);
-//             console.log(`Fetching page: ${pageForSearch}`, response);
-
-//             const pageData = response.data;
-//             console.log(pageData.length);
-//             if (!Array.isArray(pageData) || pageData.length === 0) {
-//                 console.log("No more pages to fetch.");
-//                 break; // Exit the loop if no more pages to fetch
-//             }
-//             for (const book of pageData) {
-//                 if (book.name.toLowerCase().includes(elemSearchValue)) {
-//                     // Check if the book is already in the resultsFoundArray
-//                     if (!resultsFoundArray.some(b => b.id === book.id)) {
-//                         const bookData = await printResult(book.id);
-//                         if (bookData) {
-//                             resultsFoundArray.push(bookData);
-//                             booksResultsCounter++;
-//                             console.log(`Books found: ${booksResultsCounter}`, resultsFoundArray);
-//                             if (booksResultsCounter >= 10) {
-//                                 break;
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//             pageForSearch++;
-//         } catch (error) {
-//             console.error('Error fetching books data:', error);
-//             break;
-//         }
-//     }
-
-//     console.log('Final results:', resultsFoundArray);
-// }
-
-// async function printResult(id) {
-//     try {
-//         const response = await axios.get(`${urlBooks}/${id}`);
-//         return response.data;
-//     } catch (error) {
-//         console.error(`Error fetching book with ID ${id}:`, error);
-//         return null;
-//     }
-// }
 
 
