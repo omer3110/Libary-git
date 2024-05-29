@@ -38,11 +38,12 @@
         </div>
 
 
-        <div>
+        <div class="buttons-div-container">
             <button onclick="showForm('new-book-form-container')"><i class="fa-solid fa-book"></i> Create New Book
             </button>
             <button onclick="showHistory()">Show History</button>
             <button onclick="showFavorites()">☆ My Favorites Books </button>
+            <button id="get-button" onclick="fetchAndBuildTable()">Get All Books</button>
         </div>
 
         <div>
@@ -99,7 +100,7 @@
         </div>
 
 
-        <button id="get-button" onclick="fetchAndBuildTable()">Get All Books</button>
+        <!-- <button id="get-button" onclick="fetchAndBuildTable()">Get All Books</button> -->
 
         <div class="modal-and-booklist-wrapper">
 
@@ -109,8 +110,8 @@
             <div id="modal" class="modal">
                 <div class="modal-content">
                     <button class="close-modal-btn">Close</button>
-                    <div id="book-info" class=""><img src="/DB BOOKS/images/backgroundbook.jpg" alt=""></div>
-
+                    <div id="book-info" class="book-info-before-show"><p>Feel free to search a book... <i class="fa-regular fa-face-smile"></i></p></div>
+                    <p class="delete-book-message"></p>
                 </div>
             </div>
         </div>
