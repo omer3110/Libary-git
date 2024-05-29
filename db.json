@@ -1,110 +1,6 @@
 {
   "books": [
     {
-      "id": "17",
-      "name": "Mary, A Fiction and The Wrongs of Woman, or Maria",
-      "authors": [
-        "Mary Wollstonecraft"
-      ],
-      "num_pages": 357,
-      "short_description": "Mary Wollstonecraft wrote these two novellas at the beginning and end of her years of writing and political activism. Though written at different times, they explore some of the same issues: ideals of femininity as celebrated by the cult of sensibility, the unequal education of women, and domestic subjugation. Mary counters the contemporary trend of weak, emotional heroines with the story of an intelligent and creative young woman who educates herself through her close friendships with men and women. Darker and more overtly feminist, The Wrongs of Woman is set in an insane asylum, where a young woman has been wrongly imprisoned by her husband. By presenting the novellas in light of such texts as Wollstonecraft’s letters, her polemical and educational prose, similar works by other feminists and political reformists, the literature of sentiment, and contemporary medical texts, this edition encourages an appreciation of the complexity and sophistication of Wollstonecraft’s writing goals as a radical feminist in the 1790s.",
-      "image": "http://books.google.com/books/content?id=3VO7AAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 4,
-      "categories": [
-        "Fiction"
-      ],
-      "ISBN": "9781460401316"
-    },
-    {
-      "id": "18",
-      "name": "The Self as Object in Modernist Fiction",
-      "authors": [
-        "Timo Müller"
-      ],
-      "num_pages": 303,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=6ls4qRIkHq4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 4,
-      "categories": [
-        "Modernism (Literature)"
-      ],
-      "ISBN": "9783826043529"
-    },
-    {
-      "id": "19",
-      "name": "Rewriting White Masculinities in Contemporary Fiction and Film",
-      "authors": [
-        "Josep M. Armengol"
-      ],
-      "num_pages": 182,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=Sxz9EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Uncategorized"
-      ],
-      "ISBN": "9783031533495"
-    },
-    {
-      "id": "20",
-      "name": "The Reality - Fiction Opposition in Children's Literature",
-      "authors": [
-        "Adrian Zagler"
-      ],
-      "num_pages": 81,
-      "short_description": "Bachelor Thesis from the year 2010 in the subject English Language and Literature Studies - Literature, grade: 1, University of Graz, language: English, abstract: Since the 1970s, scholarly interest in children's literature has grown, and numerous studies looking into the complexity and thematic and structural depth of the texts have been published. Simultaneously, the notion of metareferentiality has sparked interest among scholars from various disciplines. Metareferentiality, though not unique to the twentieth and the twenty-first centuries, is said to be one of the key cultural phenomena of our time. And yet, these two fields of interest, namely children's literature and metareferentiality, have only very rarely been studied in the same context. Metareferential elements in children's books are often seen as phenomena of dream worlds. Thus, they allow a traditional, non-critical reading in which the metareferential elements do not necessarily trigger medial awareness in the readers but can be explained logically and within the framework of the represented story worlds. Consequently, the epistemological status of reality would not be threatened by these texts. However, as this paper aims to prove, such a reading (for instance) of the Alice-stories, Die Unendliche Geschichte and The Book of Lost Things, although undeniably possible, falls short of the true scope of the texts. As will be shown, all four books address the question of the status of fiction with reference to its opposition to reality, albeit in different ways. In their treatment of the subject, they are clearly metafictional texts with epistemological and ontological concerns that require experienced readers to fully grasp their messages. Nevertheless, they are still publicly perceived as children's literature and are enjoyed by children and adults alike. After some general remarks on the genre of children's literature and on metareferentiality, this paper focuses on a particular form of metarefere",
-      "image": "http://books.google.com/books/content?id=HlWTGIGF-28C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Uncategorized"
-      ],
-      "ISBN": "9783640789542"
-    },
-    {
-      "id": "21",
-      "name": "Science Fiction and Digital Technologies in Argentine and Brazilian Culture",
-      "authors": [
-        "E. King"
-      ],
-      "num_pages": 377,
-      "short_description": "Fictional narratives produced in Latin America often borrow tropes from contemporary science fiction to examine the shifts in the nature of power in neoliberal society. King examines how this leads towards a market-governed control society and also explores new models of agency beyond that of the individual.",
-      "image": "http://books.google.com/books/content?id=qXEhAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9781137338761"
-    },
-    {
-      "id": "22",
-      "name": "Hugo Gernsback, Father of Modern Science Fiction",
-      "authors": [
-        "Mark Siegel"
-      ],
-      "num_pages": 104,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=PaVaAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Literary Criticism"
-      ]
-    },
-    {
-      "id": "23",
-      "name": "Art and Knowledge",
-      "authors": [
-        "James O. Young"
-      ],
-      "num_pages": 193,
-      "short_description": "This is an interesting, as well as controversial, exploration of what art is and why it is valuable. Young reflects on the essence of art and argues that it provides insight into human nature. This text will be of interest to all philosophers.",
-      "image": "http://books.google.com/books/content?id=uxuCAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Art"
-      ],
-      "ISBN": "9781134519309"
-    },
-    {
       "id": "24",
       "name": "Analog Science Fiction/science Fact",
       "authors": [
@@ -119,21 +15,6 @@
       ]
     },
     {
-      "id": "25",
-      "name": "The Magazine of Fantasy and Science Fiction",
-      "authors": [
-        "Anthony Boucher",
-        "J. Francis McComas"
-      ],
-      "num_pages": 500,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=14W0AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Fantasy fiction"
-      ]
-    },
-    {
       "id": "26",
       "name": "Catalogue of the Oakland Free Public Library",
       "authors": [
@@ -145,20 +26,6 @@
       "num_copies": 5,
       "categories": [
         "Uncategorized"
-      ]
-    },
-    {
-      "id": "27",
-      "name": "Documents of the ... Legislature of the State of New Jersey",
-      "authors": [
-        "New Jersey. Legislature"
-      ],
-      "num_pages": 1592,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=zzVNAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "New Jersey"
       ]
     },
     {
@@ -424,7 +291,7 @@
       "num_pages": 152,
       "short_description": "Exploring Nonfiction with Young Learners explores the four basic nonfiction structures that the youngest learners are most likely to encounter: descriptive, recount/collection, procedural, and explanatory texts. This book also includes information to help teach four, more complex structures that younger readers sometimes encounter during read-alouds: comparison, response, causation/cause and effect, and persuasive genres. This book is organized to help plan lessons using each type of nonfiction structure. Strategies and suggestions for activities to use before, during and after reading are included. Templates and graphic organizers are also provided in order to facilitate planning, and offer additional resources. Detailed information about each text structure as well as mentor texts to illustrate each type is included. Text structures, as well as text access features, are defined and located in easy reference charts. Whole class and small group planning ideas are included throughout the book in order to allow for differentiation. Additionally, assessment ideas, sample think-alouds, lesson planning templates, and sample lessons with completed graphic organizers are included for each text structure.",
       "image": "http://books.google.com/books/content?id=nCJPpH3-2bIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 4,
+      "num_copies": 5,
       "categories": [
         "Education"
       ],
@@ -520,21 +387,6 @@
         "Education"
       ],
       "ISBN": "9781135675875"
-    },
-    {
-      "id": "52",
-      "name": "Flip for Non-Fiction Comprehension",
-      "authors": [
-        "Emily Cayuso"
-      ],
-      "num_pages": 66,
-      "short_description": "Fifty-five lessons focus on the specific strategies, text features, and text structures necessary for K-5 students to access and understand non-fiction texts. These ready-to-use comprehension ideas expand literacy center work, enhance reading comprehension, and can be implemented before, during, or after reading. From comparing attributes and creating outlines to using a glossary and analyzing an index, Flip for Non-Fiction Comprehension will build students' text knowledge and improve their understanding.",
-      "image": "http://books.google.com/books/content?id=1Gwj5k_YGScC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Education"
-      ],
-      "ISBN": "9781934338377"
     },
     {
       "id": "53",
@@ -6921,23 +6773,43 @@
       "numPages": "2"
     },
     {
-      "id": "9de7",
-      "name": "aaa",
-      "authors": "aaa",
-      "num_pages": "2312",
-      "short_description": "wqwqwqw",
-      "image": "wqwqwqwq",
-      "num_copies": "2",
-      "categories": "fdsa"
+      "id": "aeca",
+      "name": "rtyilu",
+      "authors": "ret",
+      "num_pages": "577",
+      "short_description": "tre",
+      "image": "etre",
+      "num_copies": "4",
+      "categories": "jnhbg"
     },
     {
-      "id": "5ff4",
+      "id": "0d57",
+      "name": "rtyu",
+      "authors": "ertyi",
+      "num_pages": "52",
+      "short_description": "12",
+      "image": "13",
+      "num_copies": "31",
+      "categories": "2"
+    },
+    {
+      "id": "4de6",
       "name": "OMER",
-      "authors": "omer1",
-      "num_pages": "123",
-      "short_description": "hvn c",
-      "image": "nnnnn  j",
-      "num_copies": "32",
+      "authors": "ertyi",
+      "num_pages": "52",
+      "short_description": "12",
+      "image": "13",
+      "num_copies": "31",
+      "categories": "2"
+    },
+    {
+      "id": "03e4",
+      "name": "xxxxx",
+      "authors": "ertyi",
+      "num_pages": "52",
+      "short_description": "12",
+      "image": "13",
+      "num_copies": "31",
       "categories": "2"
     }
   ],
@@ -6955,52 +6827,372 @@
       "bookId": 18
     },
     {
-      "id": "50a5",
+      "id": "d756",
       "operation": "update",
-      "time": "2024-05-27T12:55:53.496Z",
-      "bookId": 15
+      "time": "2024-05-29T06:43:35.211Z",
+      "bookId": 18
     },
     {
-      "id": "561c",
+      "id": "4672",
       "operation": "update",
-      "time": "2024-05-27T12:56:33.439Z",
-      "bookId": 15
-    },
-    {
-      "id": "76f4",
-      "operation": "create",
-      "time": "2024-05-27T14:28:36.089Z",
-      "bookId": "9de7"
-    },
-    {
-      "id": "1ec2",
-      "operation": "update",
-      "time": "2024-05-27T14:29:11.553Z",
-      "bookId": 15
-    },
-    {
-      "id": "4b29",
-      "operation": "delete",
-      "time": "2024-05-27T14:29:37.527Z",
-      "bookId": 15
-    },
-    {
-      "id": "3d93",
-      "operation": "create",
-      "time": "2024-05-28T17:06:34.680Z",
-      "bookId": "5ff4"
-    },
-    {
-      "id": "66be",
-      "operation": "update",
-      "time": "2024-05-28T17:54:59.148Z",
-      "bookId": 45
-    },
-    {
-      "id": "9b29",
-      "operation": "update",
-      "time": "2024-05-28T17:55:07.069Z",
+      "time": "2024-05-29T06:43:37.775Z",
       "bookId": 17
+    },
+    {
+      "id": "82ab",
+      "operation": "update",
+      "time": "2024-05-29T07:30:55.039Z",
+      "bookId": 15
+    },
+    {
+      "id": "4a3a",
+      "operation": "update",
+      "time": "2024-05-29T07:30:57.919Z",
+      "bookId": 15
+    },
+    {
+      "id": "7cde",
+      "operation": "update",
+      "time": "2024-05-29T07:31:04.529Z",
+      "bookId": 15
+    },
+    {
+      "id": "cbdf",
+      "operation": "update",
+      "time": "2024-05-29T07:31:11.600Z",
+      "bookId": 17
+    },
+    {
+      "id": "247d",
+      "operation": "update",
+      "time": "2024-05-29T07:38:01.078Z",
+      "bookId": 17
+    },
+    {
+      "id": "8f26",
+      "operation": "create",
+      "time": "2024-05-29T07:38:40.023Z",
+      "bookId": "aeca"
+    },
+    {
+      "id": "e0d1",
+      "operation": "update",
+      "time": "2024-05-29T07:39:07.384Z",
+      "bookId": 15
+    },
+    {
+      "id": "1714",
+      "operation": "update",
+      "time": "2024-05-29T07:39:36.614Z",
+      "bookId": 15
+    },
+    {
+      "id": "d2a6",
+      "operation": "update",
+      "time": "2024-05-29T07:39:44.192Z",
+      "bookId": 15
+    },
+    {
+      "id": "bbd7",
+      "operation": "update",
+      "time": "2024-05-29T07:39:49.873Z",
+      "bookId": 17
+    },
+    {
+      "id": "711d",
+      "operation": "delete",
+      "time": "2024-05-29T07:40:05.859Z",
+      "bookId": 19
+    },
+    {
+      "id": "c9b7",
+      "operation": "delete",
+      "time": "2024-05-29T07:40:09.400Z",
+      "bookId": 20
+    },
+    {
+      "id": "f048",
+      "operation": "update",
+      "time": "2024-05-29T07:41:17.029Z",
+      "bookId": 15
+    },
+    {
+      "id": "81c3",
+      "operation": "update",
+      "time": "2024-05-29T07:41:59.917Z",
+      "bookId": 15
+    },
+    {
+      "id": "20ef",
+      "operation": "update",
+      "time": "2024-05-29T07:42:09.743Z",
+      "bookId": 18
+    },
+    {
+      "id": "b627",
+      "operation": "update",
+      "time": "2024-05-29T07:42:12.322Z",
+      "bookId": 15
+    },
+    {
+      "id": "b809",
+      "operation": "update",
+      "time": "2024-05-29T07:42:47.057Z",
+      "bookId": 15
+    },
+    {
+      "id": "9c70",
+      "operation": "update",
+      "time": "2024-05-29T07:43:48.203Z",
+      "bookId": 15
+    },
+    {
+      "id": "ab98",
+      "operation": "update",
+      "time": "2024-05-29T07:44:19.046Z",
+      "bookId": 15
+    },
+    {
+      "id": "7ce6",
+      "operation": "update",
+      "time": "2024-05-29T07:44:21.420Z",
+      "bookId": 15
+    },
+    {
+      "id": "b798",
+      "operation": "update",
+      "time": "2024-05-29T07:46:26.996Z",
+      "bookId": 15
+    },
+    {
+      "id": "f12b",
+      "operation": "update",
+      "time": "2024-05-29T07:46:31.258Z",
+      "bookId": 15
+    },
+    {
+      "id": "e6ce",
+      "operation": "update",
+      "time": "2024-05-29T07:47:36.695Z",
+      "bookId": 15
+    },
+    {
+      "id": "fab1",
+      "operation": "update",
+      "time": "2024-05-29T07:47:38.040Z",
+      "bookId": 15
+    },
+    {
+      "id": "e014",
+      "operation": "create",
+      "time": "2024-05-29T07:48:38.360Z",
+      "bookId": "0d57"
+    },
+    {
+      "id": "3380",
+      "operation": "create",
+      "time": "2024-05-29T07:50:13.892Z",
+      "bookId": "4de6"
+    },
+    {
+      "id": "dc53",
+      "operation": "create",
+      "time": "2024-05-29T07:50:41.982Z",
+      "bookId": "03e4"
+    },
+    {
+      "id": "d8d0",
+      "operation": "delete",
+      "time": "2024-05-29T07:51:30.464Z",
+      "bookId": 15
+    },
+    {
+      "id": "b664",
+      "operation": "delete",
+      "time": "2024-05-29T07:51:34.186Z",
+      "bookId": 17
+    },
+    {
+      "id": "ff23",
+      "operation": "delete",
+      "time": "2024-05-29T07:51:36.557Z",
+      "bookId": 18
+    },
+    {
+      "id": "1a58",
+      "operation": "delete",
+      "time": "2024-05-29T07:51:45.222Z",
+      "bookId": 52
+    },
+    {
+      "id": "8528",
+      "operation": "delete",
+      "time": "2024-05-29T07:53:23.970Z",
+      "bookId": 22
+    },
+    {
+      "id": "4560",
+      "operation": "delete",
+      "time": "2024-05-29T07:54:29.735Z",
+      "bookId": 23
+    },
+    {
+      "id": "d159",
+      "operation": "delete",
+      "time": "2024-05-29T07:54:38.688Z",
+      "bookId": 25
+    },
+    {
+      "id": "7fea",
+      "operation": "delete",
+      "time": "2024-05-29T07:54:46.186Z",
+      "bookId": 27
+    },
+    {
+      "id": "ed0d",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T08:45:59.209Z",
+      "bookId": "24"
+    },
+    {
+      "id": "6e41",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T08:46:00.779Z",
+      "bookId": "24"
+    },
+    {
+      "id": "0918",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T08:46:02.059Z",
+      "bookId": "24"
+    },
+    {
+      "id": "1ea1",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T08:46:32.147Z",
+      "bookId": "26"
+    },
+    {
+      "id": "69a0",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T08:50:27.159Z",
+      "bookId": "24"
+    },
+    {
+      "id": "a776",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T08:51:12.208Z",
+      "bookId": "26"
+    },
+    {
+      "id": "4d39",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T08:52:27.485Z",
+      "bookId": "24"
+    },
+    {
+      "id": "91af",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T08:52:28.396Z",
+      "bookId": "24"
+    },
+    {
+      "id": "fa8d",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T08:52:29.234Z",
+      "bookId": "24"
+    },
+    {
+      "id": "f658",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T08:52:30.025Z",
+      "bookId": "24"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "24",
+      "name": "Analog Science Fiction/science Fact",
+      "authors": [
+        "Unknown"
+      ],
+      "num_pages": 1082,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=i04EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Science fiction"
+      ]
+    },
+    {
+      "id": "26",
+      "name": "Catalogue of the Oakland Free Public Library",
+      "authors": [
+        "Oakland Free Library"
+      ],
+      "num_pages": 224,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=GZm9AAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Uncategorized"
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Analog Science Fiction/science Fact",
+      "authors": [
+        "Unknown"
+      ],
+      "num_pages": 1082,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=i04EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Science fiction"
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Analog Science Fiction/science Fact",
+      "authors": [
+        "Unknown"
+      ],
+      "num_pages": 1082,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=i04EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Science fiction"
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Analog Science Fiction/science Fact",
+      "authors": [
+        "Unknown"
+      ],
+      "num_pages": 1082,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=i04EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Science fiction"
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Analog Science Fiction/science Fact",
+      "authors": [
+        "Unknown"
+      ],
+      "num_pages": 1082,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=i04EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Science fiction"
+      ]
     }
   ]
 }

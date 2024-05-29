@@ -2,9 +2,13 @@
 
 const urlBooks = "http://localhost:8001/books";
 const urlHistory = "http://localhost:8001/history";
+const urlFavorites = "http://localhost:8001/favorites";
+
 const booksContainer = document.getElementById("books-container");
 let elemMessage = document.querySelector('.message');
 let currentPage = 1;
+let favoriteBooksArray = JSON.parse(localStorage.getItem("favorite-books")) || [];
+
 
 const selectElement = document.getElementById("typeOfCreation");
 
@@ -21,6 +25,7 @@ selectElement.addEventListener("change", function () {
         creationManuallyForm.style.display = "none";
     }
 });
+
 
 
 function showForm(formId) {
@@ -137,10 +142,9 @@ function buildTable(data, totalPages) {
         const image = document.createElement("img");
         image.src = book.image;
         image.style.maxHeight = "100px";
-
         const currentBookContentDiv = document.createElement("div");
         currentBookContentDiv.classList.add('each-book-content-wrapper');
-        currentBookContentDiv.innerHTML = `<p>Book Name : ${book.name}</p> <p>Authors : ${book.authors}</p>`;
+        currentBookContentDiv.innerHTML = `<div class="book-name-and-fav-icon-wrapper"><p>Book Name : ${book.name}</p><span class="favorite-icon" onclick="toggleFavorite(this,${book.id})">☆</span> </div><p>Authors : ${book.authors}</p>`;
 
         currentBook.appendChild(image);
         currentBook.appendChild(currentBookContentDiv);
@@ -150,7 +154,50 @@ function buildTable(data, totalPages) {
     }
     booksContainer.appendChild(listOfBooksDiv);
 }
+function toggleFavorite(element, bookId) {
+    if (element.classList.contains("filled")) {
 
+        console.log("Favorite marked");
+        // Do something when the star is filled (marked as favorite)
+    } else {
+        console.log("Favorite unmarked");
+        console.log(bookId);
+        let url = `${urlBooks}/${bookId}`
+        axios.get(url)
+            .then(response => {
+                response = response.data;
+                favoriteBooksArray.push(response);
+                addBookToFavJson(response);
+                localStorage.setItem("favorite-books", JSON.stringify(favoriteBooksArray));
+                console.log(response);
+            })
+            .catch(error => console.error('Error:', error));
+        // Do something when the star is unfilled (unmarked as favorite)
+    }
+    element.classList.toggle("filled");
+
+}
+function addBookToFavJson(bookData) {
+    console.log(bookData);
+    axios.post(urlFavorites, bookData)
+        .then(response => {
+            showMessage("Book added successfully!", true);
+            console.log(response.data.id);
+            addToHistory("Add to favorites", new Date, response.data.id)
+        })
+        .catch(error => showMessage("Failed to added!", false));
+}
+function removeBookFromFavJson(bookId) {
+    let url = `${urlFavorites}/${bookId}`;
+    axios.delete(url)
+        .then(response => {
+            addToHistory("Removed from favorites", new Date, bookId)
+        })
+        .catch(error => showMessage(`Failed to remove book ${bookId}!`, false));
+}
+function showFavorites() {
+
+}
 function buildHistory(data, totalPages) {
     document.getElementById("get-button").style.display = 'none';
     booksContainer.innerHTML = "";
@@ -206,6 +253,9 @@ function displayBookInfo(book) {
             <div><p class="num-of-copies"><strong>Number of Copies:</strong> ${response.num_copies}</p> <button onclick="updateBookCopies(${response.id}, 'increase')">+</button> <button onclick="updateBookCopies(${response.id}, 'decrease')">-</button></div>
             <p><strong>Categories:</strong> ${response.categories}</p> </div>
          </div>
+        <p><strong>Short Description:</strong> ${response.short_description}</p>
+        <p><strong>ISBN:</strong> ${response.ISBN}</p>
+        <button onclick="deleteBook(${response.id})">Delete book</button>
         <p><strong>Short Description:</strong> ${response.short_description}</p>
         <p><strong>ISBN:</strong> ${response.ISBN}</p>
         <button onclick="deleteBook(${response.id})">Delete book</button>
@@ -276,9 +326,9 @@ async function updateBookCopies(id, action) {
         const currentAmountOfCopies = action === 'increase' ? numOfCopies + 1 : numOfCopies - 1;
         await axios.patch(`${urlBooks}/${id}`, { num_copies: currentAmountOfCopies });
         showMessage(`Book ${id} copies ${action}d successfully!`, true);
-        const elemNumOfCopies = document.querySelector('.num-of-copies')
-        elemNumOfCopies.innerHTML = `<strong>Number of Copies:</strong> ${currentAmountOfCopies}` // @@@@@@@@@@@@
-        addToHistory("update", new Date, id)
+        const elemNumOfCopies = document.querySelector('.num-of-copies');
+        elemNumOfCopies.innerHTML = `<strong>Number of Copies:</strong> ${currentAmountOfCopies}`;
+        addToHistory("update", new Date, id);
 
     } catch (error) {
         showMessage(`Failed to ${action} book ${id} copies!`, false);
@@ -312,10 +362,8 @@ function addToHistory(operation, time, bookId) {
         .then(response => {
             console.log("History added successfully!");
         })
-        .catch(error => console.log("Coul not add history element"));
+        .catch(error => console.error('Error adding to history:', error));
 }
-
-
 
 function showMessage(message, isSuccess) {
     elemMessage.textContent = message;
@@ -370,40 +418,43 @@ document.querySelector('#searchBarForm').addEventListener('submit', function (ev
 // fetchAndBuildTable()
 
 async function searchBook() {
-    currentPage = 1;
-    totalResponseArray = [];
     const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
-    let booksResultsCounter = 0;
-    const resultsFoundArray = [];
+    if (elemSearchValue !== "") {
 
-    try {
-        const response = await axios.get(urlBooks);
-        const allBooks = response.data;
-        // Filter the books based on the search value
-        for (const book of allBooks) {
-            // Convert book name to lowercase for case-insensitive search
-            const bookName = book.name.toLowerCase();
-            if (bookName.includes(elemSearchValue)) {
-                resultsFoundArray.push(book);
-                booksResultsCounter++;
+
+        let booksResultsCounter = 0;
+        const resultsFoundArray = [];
+        currentPage = 1;
+        totalResponseArray = [];
+        try {
+            const response = await axios.get(urlBooks);
+            const allBooks = response.data;
+            // Filter the books based on the search value
+            for (const book of allBooks) {
+                // Convert book name to lowercase for case-insensitive search
+                const bookName = book.name.toLowerCase();
+                if (bookName.includes(elemSearchValue)) {
+                    resultsFoundArray.push(book);
+                    booksResultsCounter++;
+                }
             }
+        } catch (error) {
+            console.error('Error fetching books data:', error);
         }
-    } catch (error) {
-        console.error('Error fetching books data:', error);
-    }
-    const pagingButtons = document.getElementById("paging-handell");
-    const listOfBooksDiv = document.querySelector(".book-list")
-    if (booksResultsCounter == 0) {
-        pagingButtons.innerHTML = `<div>No results found</div>`;
-        listOfBooksDiv.style.display = 'none';
-    }
-    else {
-        console.log('Final results:', resultsFoundArray);
-        let final = resposeToMappedArray(resultsFoundArray, true);
-        console.log(final);
-        console.log(final.length);
+        const pagingButtons = document.getElementById("paging-handell");
+        const listOfBooksDiv = document.querySelector(".book-list")
+        if (booksResultsCounter == 0) {
+            pagingButtons.innerHTML = `<div>No results found</div>`;
+            listOfBooksDiv.style.display = 'none';
+        }
+        else {
+            console.log('Final results:', resultsFoundArray);
+            let final = resposeToMappedArray(resultsFoundArray, true);
+            console.log(final);
+            console.log(final.length);
 
-        buildTable(final[currentPage - 1], final.length)
+            buildTable(final[currentPage - 1], final.length)
+        }
     }
 
 }
