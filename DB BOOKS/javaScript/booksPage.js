@@ -39,11 +39,6 @@ function hideTable() {
 }
 
 function resposeToMappedArray(apiResponse, fromSearch) {
-    // if (fromSearch == false) {
-    //     const apiResponse = apiResponse.data;
-    // }
-    console.log(apiResponse);
-
     const totalPages = Math.ceil(apiResponse.length / 10);
     console.log(totalPages);
     for (let i = 0; i < totalPages; i++) {
@@ -64,33 +59,19 @@ let totalResponseArray = [];
 function fetchAndBuildTable() {
     currentPage = 1;
     totalResponseArray = [];
-    booksContainer.style.display = 'block';
+    // booksContainer.style.display = 'block';
     axios.get(urlBooks)
         .then(response => {
             console.log(response);
             totalResponseArray = resposeToMappedArray(response.data, false);
-
             console.log(totalResponseArray);
             buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
         })
         .catch(error => console.log(error));
 }
-function nextHandler(totalPages) {
-    const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
-    if (currentPage < totalResponseArray.length) {
-        currentPage++;
-        buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
-    }
 
-}
-
-function previousHandler() {
-    if (currentPage > 1) {
-        currentPage--;
-        buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
-    }
-}
 function buildTable(data, totalPages) {
+    booksContainer.style.display = 'block';
     document.getElementById("get-button").style.display = 'none';
     booksContainer.innerHTML = "";
 
@@ -105,7 +86,7 @@ function buildTable(data, totalPages) {
 
     const pagingButtons = document.createElement("div");
     pagingButtons.setAttribute("id", "paging-handell");
-    pagingButtons.innerHTML = `<div>page ${currentPage} out of ${totalPages}</div><button onclick="previousHandler()"><</button><button onclick="nextHandler(${totalPages})">></button><div>`;
+    pagingButtons.innerHTML = `<div>page ${currentPage} out of ${totalPages}</div><button onclick="previousHandler()"><</button><button onclick="nextHandler()">></button><div>`;
     buttonContainer.appendChild(pagingButtons);
 
     booksContainer.appendChild(buttonContainer);
@@ -133,8 +114,20 @@ function buildTable(data, totalPages) {
         listOfBooksDiv.appendChild(currentBook);
         currentBook.addEventListener('click', () => displayBookInfo(book)); // Add click event listener
     }
-
     booksContainer.appendChild(listOfBooksDiv);
+}
+function nextHandler() {
+    if (currentPage < totalResponseArray.length) {
+        currentPage++;
+        buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
+    }
+}
+
+function previousHandler() {
+    if (currentPage > 1) {
+        currentPage--;
+        buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
+    }
 }
 
 function displayBookInfo(book) {
@@ -151,10 +144,8 @@ function displayBookInfo(book) {
         <p><strong>Categories:</strong> ${book.categories}</p>
         <p><strong>ISBN:</strong> ${book.ISBN}</p>
     `;
-    // Display the modal
     modal.style.display = "block";
 
-    // Close the modal when clicking on the close button
     const closeModalBtn = document.querySelector('.close-modal-btn');
     closeModalBtn.style.display = "inline"
     closeModalBtn.onclick = function () {
@@ -192,7 +183,6 @@ function clearNewBookForm() {
     document.querySelector('#BookName').value = '';
     document.querySelector('#newAuthor').value = '';
     document.querySelector('#newNumPages').value = '';
-
 }
 
 async function updateBookCopies(id, action) {
@@ -259,8 +249,8 @@ document.querySelector('#searchBarForm').addEventListener('submit', function (ev
 });
 
 async function searchBook() {
+    currentPage = 1;
     totalResponseArray = [];
-
     const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
     let booksResultsCounter = 0;
     const resultsFoundArray = [];
@@ -273,36 +263,29 @@ async function searchBook() {
             // Convert book name to lowercase for case-insensitive search
             const bookName = book.name.toLowerCase();
             if (bookName.includes(elemSearchValue)) {
-                const bookData = await printResult(book.id);
-                if (bookData) {
-                    resultsFoundArray.push(bookData);
-                    booksResultsCounter++;
-                }
+                resultsFoundArray.push(book);
+                booksResultsCounter++;
             }
         }
     } catch (error) {
         console.error('Error fetching books data:', error);
     }
-
-    console.log('Final results:', resultsFoundArray);
-    let final = resposeToMappedArray(resultsFoundArray, true);
-    console.log(final);
-    console.log(final.length);
-
-    buildTable(final[currentPage - 1], final.length)
-}
-
-
-async function printResult(id) {
-    currentPage = 1;
-    try {
-        const response = await axios.get(`${urlBooks}/${id}`);
-        return response.data;
-    } catch (error) {
-        console.error(`Error fetching book with ID ${id}:`, error);
-        return null;
+    const pagingButtons = document.getElementById("paging-handell");
+    if (booksResultsCounter == 0) {
+        pagingButtons.innerHTML = `<div>No results found</div>`;
+        //booksContainer.style.display = 'none';
     }
+    else {
+        console.log('Final results:', resultsFoundArray);
+        let final = resposeToMappedArray(resultsFoundArray, true);
+        console.log(final);
+        console.log(final.length);
+
+        buildTable(final[currentPage - 1], final.length)
+    }
+
 }
+
 
 // async function searchBook() {
 //     const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
