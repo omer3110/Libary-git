@@ -8,7 +8,8 @@ const booksContainer = document.getElementById("books-container");
 let elemMessage = document.querySelector('.message');
 let currentPage = 1;
 const selectElement = document.getElementById("typeOfCreation");
-let elemSuccessMessage = document.querySelector(".success-message")
+let elemSuccessMessage = document.querySelector(".success-message");
+let fellFreeMessage = document.getElementById('feel-free');
 
 selectElement.addEventListener("change", function () {
     const creationByIsbnForm = document.querySelector(".new-book-form-by-ISBN");
@@ -293,7 +294,8 @@ function displayBookInfo(book) {
     const closeModalBtn = document.querySelector('.close-modal-btn');
     closeModalBtn.style.display = "inline"
     closeModalBtn.onclick = function () {
-        modal.style.display = "none";
+        //modal.style.display = "none";
+        bookInfoDiv.innerHTML = `<p id="feel-free">Feel free to search a book... <i class="fa-regular fa-face-smile"></i></p>`;
     };
 }
 
@@ -337,7 +339,7 @@ function clearNewBookForm() {
 
 async function updateBookCopies(id, action) {
     try {
-        const response = await axios.get(`${urlBooks}/${id}`);
+        const response = await axios.get(`${urlBooks} /${id}`);
         const book = response.data;
         const numOfCopies = book.num_copies;
         if (!book) {
