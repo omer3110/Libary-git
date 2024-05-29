@@ -6305,6 +6305,116 @@
       "image": "asd",
       "num_copies": "2",
       "categories": "asd"
+    },
+    {
+      "id": "63c7",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "w",
+      "image": "asd",
+      "num_copies": "2",
+      "categories": "asd"
+    },
+    {
+      "id": "2b60",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "asd",
+      "image": "asd",
+      "num_copies": "2",
+      "categories": "asd"
+    },
+    {
+      "id": "703c",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "2",
+      "image": "asd",
+      "num_copies": "2",
+      "categories": "asd"
+    },
+    {
+      "id": "ef42",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "asd",
+      "image": "2",
+      "num_copies": "2",
+      "categories": "asd"
+    },
+    {
+      "id": "feeb",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "asd",
+      "image": "2",
+      "num_copies": "2",
+      "categories": "asd"
+    },
+    {
+      "id": "ce56",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "2",
+      "image": "asd",
+      "num_copies": "2",
+      "categories": "asd"
+    },
+    {
+      "id": "b9bd",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "asd",
+      "image": "asd",
+      "num_copies": "2",
+      "categories": "asd"
+    },
+    {
+      "id": "808f",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "asd",
+      "image": "2",
+      "num_copies": "2",
+      "categories": "asd"
+    },
+    {
+      "id": "aae1",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "asd",
+      "image": "asd",
+      "num_copies": "312",
+      "categories": "asd"
+    },
+    {
+      "id": "faa4",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "asd",
+      "image": "asd",
+      "num_copies": "124",
+      "categories": "asd"
+    },
+    {
+      "id": "6e76",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "asd",
+      "image": "asd",
+      "num_copies": "213",
+      "categories": "asd"
     }
   ],
   "history": [
@@ -7507,98 +7617,223 @@
       "operation": "Removed from favorites",
       "time": "2024-05-29T11:38:01.272Z",
       "bookId": 61
+    },
+    {
+      "id": "6838",
+      "operation": "create",
+      "time": "2024-05-29T11:48:36.318Z",
+      "bookId": "63c7"
+    },
+    {
+      "id": "4c76",
+      "operation": "create",
+      "time": "2024-05-29T11:48:56.368Z",
+      "bookId": "2b60"
+    },
+    {
+      "id": "b79a",
+      "operation": "create",
+      "time": "2024-05-29T11:50:33.173Z",
+      "bookId": "703c"
+    },
+    {
+      "id": "f887",
+      "operation": "create",
+      "time": "2024-05-29T11:51:40.029Z",
+      "bookId": "ef42"
+    },
+    {
+      "id": "c67e",
+      "operation": "create",
+      "time": "2024-05-29T11:52:00.706Z",
+      "bookId": "feeb"
+    },
+    {
+      "id": "3d7a",
+      "operation": "create",
+      "time": "2024-05-29T11:52:38.257Z",
+      "bookId": "ce56"
+    },
+    {
+      "id": "5c4d",
+      "operation": "create",
+      "time": "2024-05-29T11:53:16.477Z",
+      "bookId": "b9bd"
+    },
+    {
+      "id": "4023",
+      "operation": "create",
+      "time": "2024-05-29T11:53:30.509Z",
+      "bookId": "808f"
+    },
+    {
+      "id": "a387",
+      "operation": "create",
+      "time": "2024-05-29T11:53:45.132Z",
+      "bookId": "aae1"
+    },
+    {
+      "id": "d0bc",
+      "operation": "create",
+      "time": "2024-05-29T11:54:31.919Z",
+      "bookId": "faa4"
+    },
+    {
+      "id": "95b8",
+      "operation": "create",
+      "time": "2024-05-29T11:54:59.231Z",
+      "bookId": "6e76"
+    },
+    {
+      "id": "9ac8",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T12:02:40.201Z",
+      "bookId": "62"
+    },
+    {
+      "id": "4ce3",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T12:02:45.547Z",
+      "bookId": "62"
+    },
+    {
+      "id": "4996",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T12:02:46.158Z",
+      "bookId": "62"
+    },
+    {
+      "id": "794e",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T12:02:46.818Z",
+      "bookId": "63"
+    },
+    {
+      "id": "4e52",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T12:02:48.484Z",
+      "bookId": "62"
+    },
+    {
+      "id": "468b",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T12:02:48.990Z",
+      "bookId": "62"
+    },
+    {
+      "id": "e306",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T12:02:52.325Z",
+      "bookId": "62"
+    },
+    {
+      "id": "8475",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T12:02:52.887Z",
+      "bookId": "62"
+    },
+    {
+      "id": "474c",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T12:10:13.038Z",
+      "bookId": "70"
+    },
+    {
+      "id": "ed74",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T12:10:14.249Z",
+      "bookId": "71"
+    },
+    {
+      "id": "2412",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T12:10:15.130Z",
+      "bookId": "67"
+    },
+    {
+      "id": "bd64",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T12:10:16.293Z",
+      "bookId": "65"
+    },
+    {
+      "id": "04cf",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T12:10:16.968Z",
+      "bookId": "58"
+    },
+    {
+      "id": "1a8f",
+      "operation": "Removed from favorites",
+      "time": "2024-05-29T12:10:20.182Z",
+      "bookId": "90"
+    },
+    {
+      "id": "1b48",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T12:10:27.381Z",
+      "bookId": "62"
+    },
+    {
+      "id": "e867",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T12:10:28.541Z",
+      "bookId": "63"
+    },
+    {
+      "id": "d7b7",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T12:10:29.563Z",
+      "bookId": "64"
     }
   ],
   "favorites": [
     {
-      "id": "58",
-      "name": "Foolproof! Indie Publishing",
+      "id": "62",
+      "name": "Arthurian Romances",
       "authors": [
-        "J. S. Chapman"
+        "Troyes Cretien de"
       ],
-      "num_pages": 147,
-      "short_description": "WHEN IT COMES TO INDIE PUBLISHING, IT USED TO BE HARD AND EXPENSIVE TO PUBLISH YOUR OWN BOOK. But thanks to the digital publishing revolution, not only is it easy, it’s easy on the wallet … provided you know how to get it done. FOOLPROOF! INDIE PUBLISHING: The Cheapskate Guide for Publishing Your Way to Success promises to: · Demystify the digital bookscape · Show you how to put your books up for sale without going broke · Explain the macro picture so you can micromanage your career · Guide you from written word to published author Before charging headlong into self-publishing, you must first educate yourself about the digital bookscape. The indie publishing world is much larger than you might have imagined … filled with a vast network of bookstores, publishing services, distributors, aggregators, and vanity presses … along with countless specialists and experts who want your business. This book will provide all the information needed to be an indie author without going into debt. Simple terms, valuable resources, and easy-to-follow instructions will guide you from initial preparation to formatting and finally to publication. If you want to guide your own writing career and be your own boss, FOOLPROOF! INDIE PUBLISHING may be the only book you’ll ever need. It’s been written for cost-conscious authors who want to maximize earnings and minimize expenses the do-it-yourself way. In this book, you’ll learn about — · Publishing on a shoestring while making a professional splash · Earnings potential and the power of exponential sales · Why keywords and categories are critical to publishing success · How to do it yourself and why you should · Formatting your books for easy self-publishing · Where to publish your books · Ways to increase your productivity · Basics of marketing & advertising · What’s hot and what’s not in fiction and nonfiction · Selling yourself and your books · Putting your ebook up on Amazon with step-by-step instructions · Building your platform with social media · Determining whether you should ‘go wide’ or ‘go exclusive’ · Why Amazon may be the only place you need to publish your books If you can turn on your computer, you can self-publish your book. Find out how to do it by getting your copy of FOOLPROOF! INDIE PUBLISHING now!",
-      "image": "http://books.google.com/books/content?id=dWsrEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_pages": 510,
+      "short_description": "The Birth of King Arthur and the Knights of the Round Table“’My good sir, is she your daughter then?’ ‘Yes, but don't pay any attention to what she says,’ said the lord. ‘She's a child - a silly, foolish thing.’ ‘Indeed,’ said my lord Gawain, ‘then I'd be very ill-mannered not to do what she wants.’” - Chrétien de Troyes, Arthurian Romances Arthurian Romances by Chrétien de Troyes is a collection of short stories set in the Early Middle Ages, in England. They follow the path of several knights – including Lancelot’s dad – through adulthood focusing on their romantic affairs. What tests will the knights encounter in order to prove themselves worthy of a woman’s love?",
+      "image": "http://books.google.com/books/content?id=u_jzCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Young Adult Fiction"
+      ],
+      "ISBN": "9781681952574"
+    },
+    {
+      "id": "63",
+      "name": "The Reading Specialist",
+      "authors": [
+        "Rita M. Bean"
+      ],
+      "num_pages": 353,
+      "short_description": "A trusted practitioner guide and course text, this book provides a complete introduction to the multiple roles of the reading specialist in grades PreK-12. Rita M. Bean offers evidence-based best practices for working with struggling readers; supporting teachers through professional development and coaching; planning curricula; assessing at the individual, classroom, and school levels; and building strong school, family, and community partnerships. User-friendly features include helpful classroom vignettes, questions for discussion and reflection, follow-up activities, and ideas for instructors and workshop leaders. Reproducible forms and worksheets can be downloaded and printed in a convenient 8 1/2\" x 11\" size. New to This Edition New overarching framework that connects literacy leadership more directly to classroom instruction and assessment. Links to the Common Core State Standards (CCSS) and new standards-based examples are included throughout. Expanded coverage of literacy coaching, middle and high school grades, and response to intervention. Chapters now begin with key questions and include annotated resources for further reading.",
+      "image": "http://books.google.com/books/content?id=Qne_CQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "num_copies": 5,
       "categories": [
         "Language Arts & Disciplines"
       ],
-      "ISBN": "N/A"
+      "ISBN": "9781462521548"
     },
     {
-      "id": "65",
-      "name": "Stimulating Non-Fiction Writing!",
+      "id": "64",
+      "name": "Encyclopedia of Library and Information Science",
       "authors": [
-        "Emma Hughes-Evans",
-        "Simon Brownhill"
+        "Allen Kent",
+        "Harold Lancour",
+        "Jay E. Daily"
       ],
-      "num_pages": 166,
-      "short_description": "Stimulating Non-Fiction Writing! Inspiring Children Aged 7-11 offers innovative and exciting ways to engage children in non-fiction writing, giving professionals the confidence and practical advice that they need to support children in producing quality non-fiction texts in the classroom. Packed full of interesting ideas, resource suggestions and practical activities, the book explores the various ways professionals can purposefully encourage ‘child authors’ to develop their non-fiction writing skills. Tried-and-tested resources, ‘Gold star!’ tips and practical suggestions are underpinned by research-informed teaching strategies and academic information to strengthen professional practice associated with the teaching of non-fiction writing. By taking a stimulating approach to each text type and linking activities to known texts and stimuli, the book offers differentiated advice for working with children in Lower and Upper Key stage 2. Chapters consider text types that include: Instructions Persuasive texts Non-chronological reports Correspondence texts Discussion texts This new text is the perfect guide for inspiring children aged 7-11 in the classroom and will energise and enrich classroom provision and practice by being an essential resource for teachers and students on teacher training courses.",
-      "image": "http://books.google.com/books/content?id=rtKFDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_pages": 584,
+      "short_description": "\"The Encyclopedia of Library and Information Science provides an outstanding resource in 33 published volumes with 2 helpful indexes. This thorough reference set--written by 1300 eminent, international experts--offers librarians, information/computer scientists, bibliographers, documentalists, systems analysts, and students, convenient access to the techniques and tools of both library and information science. Impeccably researched, cross referenced, alphabetized by subject, and generously illustrated, the Encyclopedia of Library and Information Science integrates the essential theoretical and practical information accumulating in this rapidly growing field.\"",
+      "image": "http://books.google.com/books/content?id=jU3fwyjqS5UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "num_copies": 5,
       "categories": [
-        "Education"
+        "Language Arts & Disciplines"
       ],
-      "ISBN": "9781351581424"
-    },
-    {
-      "id": "67",
-      "name": "Navigator Non-Fiction Year 4: Eye See",
-      "authors": [
-        "Pearson Education"
-      ],
-      "num_pages": 38,
-      "short_description": "Navigator is a KS2 reading scheme which covers fiction and non-fiction. It provides material to give pupils a 20-minute guided reading sesson per week during each school year.",
-      "image": "http://books.google.com/books/content?id=N2xau48wxecC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Uncategorized"
-      ],
-      "ISBN": "9780433065463"
-    },
-    {
-      "id": "70",
-      "name": "Reaching Adolescents",
-      "authors": [
-        "Arthea J. S. Reed"
-      ],
-      "num_pages": 600,
-      "short_description": "A basic text for young and adult/adolescent literature courses. An exciting new young adult literature text...one that offers a holistic, inclusive approach to incorporating the popular books young adults like to read into a solid English language arts curriculum. A student-centered, whole language emphasis advocates a curriculum that encourages student response to literature and helps develop crucial critical thinking skills. The author suggests numerous approaches to using young adult literature, explores and demonstrates a variety of teaching methods, and discusses an array of literature appropriate for a wide range of students in a number of subject areas, including literature written specifically for children and young adults, popular adult literature, and the classics.",
-      "image": "http://books.google.com/books/content?id=IeUL6Pr7zeQC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Education"
-      ],
-      "ISBN": "0023988614"
-    },
-    {
-      "id": "71",
-      "name": "More Than a Game",
-      "authors": [
-        "Chris Crowe"
-      ],
-      "num_pages": 196,
-      "short_description": "Contains a bibliography of books for young adults that deal with sports and includes over 3,000 titles.",
-      "image": "http://books.google.com/books/content?id=dS7uAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Literary Criticism"
-      ]
-    },
-    {
-      "id": "90",
-      "name": "British Mystery Classics - Complete Collection (Including Martin Hewitt Series, The Dorrington Deed Box & The Green Eye of Goona) - Illustrated",
-      "authors": [
-        "Arthur Morrison"
-      ],
-      "num_pages": 4050,
-      "short_description": "This carefully crafted ebook: \"British Mystery Classics - Complete Collection (Including Martin Hewitt Series, The Dorrington Deed Box & The Green Eye of Goona) - Illustrated\" is formatted for your eReader with a functional and detailed table of contents. Arthur Morrison (1863-1945) was an English writer and journalist known for his detective stories, featuring the detective Martin Hewitt, low-key, realistic, lower class answer to Sherlock Holmes. Martin Hewitt stories are similar in style to those of Conan Doyle, cleverly plotted and very amusing. Morrison is also known for his realistic novels and stories about working-class life in London's East End, A Child of the Jago being the best known. Table of Contents: Martin Hewitt Series: Martin Hewitt, Investigator The Lenton Croft Robberies The Loss of Sammy Crockett The Case of Mr. Foggatt The Case of the Dixon Torpedo The Quinton Jewel Affair The Stanway Cameo Mystery The Affair of the Tortoise Chronicles of Martin Hewitt The Ivy Cottage Mystery The Nicobar Bullion Case The Holford Will Case The Case of the Missing Hand The Case of Laker, Absconded The Case of the Lost Foreigner Adventures of Martin Hewitt The Affair of Mrs. Seton's Child The Case of Mr. Geldard's Elopement The Case of the Dead Skipper The Case of the \"Flitterbat Lancers\" The Case of the Late Mr. Rewse The Case of the Ward Lane Tabernacle The Red Triangle The Affair of Samuel's Diamonds The Case of Mr. Jacob Mason The Case of the Lever Key The Case of the Burnt Barn The Case of the Admiralty Code The Adventure of Channel Marsh Other Detective Stories: The Dorrington Deed Box The Narrative of Mr. James Rigby The Case of Janissary The Case of \"The Mirror of Portugal\" The Affair of the \"Avalanche Bicycle & Tyre Co., Ltd.\" The Case of Mr. Loftus Deacon Old Cater's Money The Green Eye of Goona The First Magnum Mr. Norie's Magnum Mr. Clifton's Magnum The Steward's Magnum—and Another Mr. Pooley's Magnum A Box of Oddments Mr. Smith's Magnums The Green Eye",
-      "image": "http://books.google.com/books/content?id=J3grDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Fiction"
-      ],
-      "ISBN": "9788026853565"
+      "ISBN": "082472027X"
     }
   ]
 }
