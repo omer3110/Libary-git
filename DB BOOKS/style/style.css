@@ -49,6 +49,24 @@ button {
     cursor: pointer;
 }
 
+.favorite-icon {
+    font-size: 36px;
+    cursor: pointer;
+    color: #ccc;
+    /* Unfilled color */
+    transition: color 0.3s;
+}
+
+.favorite-icon.filled {
+    color: gold;
+    /* Filled color */
+}
+
+.book-name-and-fav-icon-wrapper {
+    display: flex;
+
+}
+
 /* header first div  */
 
 .header-and-search-wrapper {
@@ -82,7 +100,7 @@ button {
 
 .form-container {
     display: none;
-    position: fixed; 
+    position: fixed;
     width: 80vw;
     height: 80vh;
     font-size: 14px;
@@ -93,7 +111,7 @@ button {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    z-index: 9999; 
+    z-index: 9999;
 }
 
 .close-form-btn {
