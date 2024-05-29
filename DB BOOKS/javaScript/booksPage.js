@@ -22,15 +22,17 @@ selectElement.addEventListener("change", function () {
     }
 });
 
+
 function showForm(formId) {
-    const forms = document.querySelectorAll('.form-container');
-    forms.forEach(form => {
-        if (form.id === formId) {
-            form.classList.add('visible');
-        } else {
-            form.classList.remove('visible');
-        }
-    });
+    const form = document.getElementById(formId)
+    form.style.display = "flex"
+    form.style.flexDirection = "column"
+    form.style.alignItems = "center"
+}
+
+function hideForm(formId) {
+    const form = document.getElementById(formId)
+    form.style.display = "none"
 }
 
 function hideTable() {
@@ -38,9 +40,23 @@ function hideTable() {
     document.getElementById("get-button").style.display = 'block';
 }
 
+function showHistory() {
+    currentPage = 1;
+    totalResponseArray = [];
+    booksContainer.style.display = 'block';
+    axios.get(urlHistory)
+        .then(response => {
+            totalResponseArray = resposeToMappedArray(response.data, false);
+            console.log(totalResponseArray);
+            buildHistory(totalResponseArray[currentPage - 1], totalResponseArray.length);
+
+        })
+        .catch(error => console.log(error));
+}
+
+
 function resposeToMappedArray(apiResponse, fromSearch) {
     const totalPages = Math.ceil(apiResponse.length / 10);
-    console.log(totalPages);
     for (let i = 0; i < totalPages; i++) {
         const newPageArray = [];
         const startIndex = i * 10;
@@ -50,8 +66,6 @@ function resposeToMappedArray(apiResponse, fromSearch) {
         }
         totalResponseArray.push(newPageArray);
     }
-
-    console.log(totalResponseArray);
     return totalResponseArray;
 }
 
@@ -62,14 +76,37 @@ function fetchAndBuildTable() {
     // booksContainer.style.display = 'block';
     axios.get(urlBooks)
         .then(response => {
-            console.log(response);
             totalResponseArray = resposeToMappedArray(response.data, false);
             console.log(totalResponseArray);
             buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
         })
         .catch(error => console.log(error));
 }
+function nextHandler(type) {
+    if (type == 'history') {
+        if (currentPage < totalResponseArray.length) {
+            currentPage++;
+            buildHistory(totalResponseArray[currentPage - 1], totalResponseArray.length);
+        }
+    }
+    else if (currentPage < totalResponseArray.length) {
+        currentPage++;
+        buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
+    }
+}
 
+function previousHandler(type) {
+    if (type === 'history') {
+        if (currentPage > 1) {
+            currentPage--;
+            buildHistory(totalResponseArray[currentPage - 1], totalResponseArray.length);
+        }
+    }
+    else if (currentPage > 1) {
+        currentPage--;
+        buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
+    }
+}
 function buildTable(data, totalPages) {
     booksContainer.style.display = 'block';
     document.getElementById("get-button").style.display = 'none';
@@ -80,7 +117,7 @@ function buildTable(data, totalPages) {
 
     const hideButton = document.createElement("button");
     hideButton.classList.add("hide-button");
-    hideButton.textContent = "Hide Table";
+    hideButton.textContent = "Hide List";
     hideButton.addEventListener('click', hideTable);
     buttonContainer.appendChild(hideButton);
 
@@ -93,7 +130,6 @@ function buildTable(data, totalPages) {
 
     const listOfBooksDiv = document.createElement("div");
     listOfBooksDiv.classList.add("book-list");
-    console.log(data);
     // Replace data.forEach with a for loop
     for (let i = 0; i < data.length; i++) {
         const book = data[i];
@@ -116,33 +152,62 @@ function buildTable(data, totalPages) {
     }
     booksContainer.appendChild(listOfBooksDiv);
 }
-function nextHandler() {
-    if (currentPage < totalResponseArray.length) {
-        currentPage++;
-        buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
-    }
-}
 
-function previousHandler() {
-    if (currentPage > 1) {
-        currentPage--;
-        buildTable(totalResponseArray[currentPage - 1], totalResponseArray.length);
+function buildHistory(data, totalPages) {
+    document.getElementById("get-button").style.display = 'none';
+    booksContainer.innerHTML = "";
+
+    const buttonContainer = document.createElement("div");
+    buttonContainer.classList.add("button-container");
+
+    const hideButton = document.createElement("button");
+    hideButton.classList.add("hide-button");
+    hideButton.textContent = "Hide List";
+    hideButton.addEventListener('click', hideTable);
+    buttonContainer.appendChild(hideButton);
+
+    const pagingButtons = document.createElement("div");
+    pagingButtons.setAttribute("id", "paging-handell");
+    pagingButtons.innerHTML = `<div>page ${currentPage} out of ${totalPages}</div><button onclick="previousHandler('history')"><</button><button onclick="nextHandler('history')">></button><div>`;
+    buttonContainer.appendChild(pagingButtons);
+
+    booksContainer.appendChild(buttonContainer);
+
+    const listOfBooksDiv = document.createElement("div");
+    listOfBooksDiv.classList.add("book-list");
+    // Replace data.forEach with a for loop
+    for (let i = 0; i < data.length; i++) {
+        const action = data[i];
+        const currentBook = document.createElement("div");
+        currentBook.classList.add("each-book-in-list");
+
+        const currentActionDiv = document.createElement("div");
+        currentActionDiv.classList.add('each-book-content-wrapper');
+        currentActionDiv.innerHTML = `<p>Action operation : ${action.operation}</p> <p>Action time : ${action.time}</p> <p>Action book ID : ${action.bookId}</p>`;
+
+
+        currentBook.appendChild(currentActionDiv);
+        listOfBooksDiv.appendChild(currentBook);
     }
+
+    booksContainer.appendChild(listOfBooksDiv);
 }
 
 function displayBookInfo(book) {
     const modal = document.getElementById("modal");
     const bookInfoDiv = document.getElementById("book-info");
     bookInfoDiv.innerHTML = `
-        <button onclick="deleteBook(${book.id})">Delete book</button>
         <h2>${book.name}</h2>
-        <p><strong>Author(s):</strong> ${book.authors}</p>
-        <p><strong>Number of Pages:</strong> ${book.num_pages}</p>
+        <div class="img-and-info"><img src="${book.image}" alt="${book.name}" style="max-height: 600px;">
+            <div> <p><strong>Author(s):</strong> ${book.authors}</p>
+            <p><strong>Number of Pages:</strong> ${book.num_pages}</p>
+            <div><p class="num-of-copies"><strong>Number of Copies:</strong> ${book.num_copies}</p> <button onclick="updateBookCopies(${book.id}, 'increase')">+</button> <button onclick="updateBookCopies(${book.id}, 'decrease')">-</button></div>
+            <p><strong>Categories:</strong> ${book.categories}</p> </div>
+         </div>
         <p><strong>Short Description:</strong> ${book.short_description}</p>
-        <img src="${book.image}" alt="${book.name}" style="max-height: 100px;">
-        <div><p class="num-of-copies"><strong>Number of Copies:</strong> ${book.num_copies}</p> <button onclick="updateBookCopies(${book.id}, 'increase')">+</button> <button onclick="updateBookCopies(${book.id}, 'decrease')">-</button></div>
-        <p><strong>Categories:</strong> ${book.categories}</p>
         <p><strong>ISBN:</strong> ${book.ISBN}</p>
+        <button onclick="deleteBook(${book.id})">Delete book</button>
+
     `;
     modal.style.display = "block";
 
@@ -153,7 +218,7 @@ function displayBookInfo(book) {
     };
 }
 
-document.querySelector('#new-book-form').addEventListener('submit', function (event) {
+document.querySelector('#new-book-form-container').addEventListener('submit', function (event) {
     event.preventDefault();
     newBook();
 });

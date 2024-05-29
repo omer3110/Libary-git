@@ -12,6 +12,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+10+Charted&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jersey+10&family=Jersey+10+Charted&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
 
@@ -22,7 +26,7 @@
     </nav>
     <div class="main">
         <div class="header-and-search-wrapper">
-            <h1>Books Management</h1>
+            <h1>Our Libraray</h1>
             <div class="search-container">
                 <form id="searchBarForm">
                     <input id="searchBar" type="text" placeholder="Search book.." name="search">
@@ -31,13 +35,17 @@
             </div>
         </div>
 
-        <div class="actions-buttons-and-form">
-            <div class="create-update-delete-wrapper">
-                <button onclick="showForm('new-book-form')">Create New Book</button>
-            </div>
+        
             <div>
+                <button onclick="showForm('new-book-form-container')">Create New Book <i class="fa-solid fa-book"></i></button>
+                <button onclick="showHistory()">Show History</button>
+            </div>
 
-                <div id="new-book-form" class="form-container">
+            <div>
+                <div id="new-book-form-container" class="form-container">
+
+                    <button class="close-form-btn" onclick="hideForm('new-book-form-container')">Close</button>
+
                     <div>
                         <label for="typeOfCreation">Type of creation</label>
                         <select name="typeOfCreation" id="typeOfCreation">
@@ -45,50 +53,68 @@
                             <option value="google-api">By ISBN</option>
                         </select>
                     </div>
-                    <form class="new-book-form" class="pop-up">
+
+                    <form class="new-book-form pop-up">
                         <h3>Create new Book</h3>
-                        <label for="BookName">Book name :</label>
-                        <input id="BookName" type="text" placeholder="Book Name" required>
-                        <label for="Authors">Authors :</label>
-                        <input id="Authors" type="text" placeholder="Authors" required>
-                        <label for="NumPages">Num of pages :</label>
-                        <input id="NumPages" type="number" placeholder="Number of pages" required>
-                        <label for="description">Description :</label>
-                        <input id="description" type="text" placeholder="Short description">
-                        <label for="img">Img URL :</label>
-                        <input id="img" type="text" placeholder="Img URL">
-                        <label for="numOfCopies">Num of copies :</label>
-                        <input id="numOfCopies" type="number" placeholder="Number of copies" required>
-                        <label for="categories">Categories :</label>
-                        <input id="categories" type="text" placeholder="categories" required>
+                        <div>
+                            <label for="BookName">Book name :</label>
+                            <input id="BookName" type="text" placeholder="Book Name" required>
+                        </div>
+                        <div>
+                            <label for="Authors">Authors :</label>
+                            <input id="Authors" type="text" placeholder="Authors" required>
+                        </div>
+                        <div>
+                            <label for="NumPages">Num of pages :</label>
+                            <input id="NumPages" type="number" placeholder="Number of pages" required>
+                        </div>
+                        <div>
+                            <label for="description">Description :</label>
+                            <input id="description" type="text" placeholder="Short description">
+                        </div>
+                        <div>
+                            <label for="img">Img URL :</label>
+                            <input id="img" type="text" placeholder="Img URL">
+                        </div>
+                        <div>
+                            <label for="numOfCopies">Num of copies :</label>
+                            <input id="numOfCopies" type="number" placeholder="Number of copies" required>
+                        </div>
+                        <div>
+                            <label for="categories">Categories :</label>
+                            <input id="categories" type="text" placeholder="categories" required>
+                        </div>
                         <button id="submitNewBook" type="submit">Submit</button>
                         <div class="message"></div>
                     </form>
                 </div>
-                <form class="new-book-form-by-ISBN" class="pop-up">
+                <form class="new-book-form-by-ISBN pop-up">
                     <input id="ISBN" type="text" placeholder="ISBN" required>
                     <button id="submitNewBook" type="submit">Submit</button>
                 </form>
             </div>
-            <div class="message"></div>
-        </div>
+        
 
         <button id="get-button" onclick="fetchAndBuildTable()">Get All Books</button>
+
         <div class="modal-and-booklist-wrapper">
+
             <div id="books-container">
             </div>
+
             <div id="modal" class="modal">
                 <div class="modal-content">
-                    <div id="book-info"></div>
                     <button class="close-modal-btn">Close</button>
+                    <div id="book-info" class=""><img src="/DB BOOKS/images/backgroundbook.jpg" alt=""></div>
+                    
                 </div>
             </div>
         </div>
+
     </div>
 
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
-    <script src="/DB BOOKS/javaScript/booksPage.js">
-    </script>
+    <script src="/DB BOOKS/javaScript/booksPage.js"></script>
 </body>
 
 </html>

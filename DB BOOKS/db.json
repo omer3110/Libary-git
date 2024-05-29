@@ -1,68 +1,6 @@
 {
   "books": [
     {
-      "id": "4",
-      "name": "Exploring Science Through Science Fiction",
-      "authors": [
-        "Barry B. Luokkala"
-      ],
-      "num_pages": 335,
-      "short_description": "How does Einstein’s description of space and time compare with Doctor Who? Can James Bond really escape from an armor-plated railroad car by cutting through the floor with a laser concealed in a wristwatch? What would it take to create a fully intelligent android, such as Star Trek’s Commander Data? Exploring Science Through Science Fiction addresses these and other intriguing questions, using science fiction as a springboard for discussing fundamental science concepts and cutting-edge science research. It includes references to original research papers, landmark scientific publications and technical documents, as well as a broad range of science literature at a more popular level. The revised second edition includes expanded discussions on topics such as gravitational waves and black holes, machine learning and quantum computing, gene editing, and more. In all, the second edition now features over 220 references to specific scenes in more than 160 sci-fi movies and TV episodes, spanning over 100 years of cinematic history. Designed as the primary text for a college-level course, this book will appeal to students across the fine arts, humanities, and hard sciences, as well as any reader with an interest in science and science fiction. Praise for the first edition: \"This journey from science fiction to science fact provides an engaging and surprisingly approachable read...\" (Jen Jenkins, Journal of Science Fiction, Vol. 2 (1), September 2017)",
-      "image": "http://books.google.com/books/content?id=GJO7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 4,
-      "categories": [
-        "Science"
-      ],
-      "ISBN": "9783030293932"
-    },
-    {
-      "id": "6",
-      "name": "Desire and Domestic Fiction",
-      "authors": [
-        "Nancy Armstrong"
-      ],
-      "num_pages": 318,
-      "short_description": "Desire and Domestic Fictionargues that far from being removed from historical events, novels by writers from Richardson to Woolf were themselves agents of the rise of the middle class. Drawing on texts that range from 18th-century female conduct books and contract theory to modern psychoanalytic case histories and theories of reading, Armstrong shows that the emergence of a particular form of female subjectivity capable of reigning over the household paved the way for the establishment of institutions which today are accepted centers of political power. Neither passive subjects nor embattled rebels, the middle-class women who were authors and subjects of the major tradition of British fiction were among the forgers of a new form of power that worked in, and through, their writing to replace prevailing notions of \"identity\" with a gender-determined subjectivity. She also examines the works of such novelists as Richardson, Jane Austen, and the Bront s to reveal the ways in which these authors rewrite the domestic practices and sexual relations of the past to create the historical context through which modern institutional power would seem not only natural but also humane, and therefore to be desired.",
-      "image": "http://books.google.com/books/content?id=NYD5FSeERakC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 6,
-      "categories": [
-        "Language Arts & Disciplines"
-      ],
-      "ISBN": "9780195041798"
-    },
-    {
-      "id": "7",
-      "name": "Genesis: History, Fiction, or Neither?",
-      "authors": [
-        "James K. Hoffmeier",
-        "Gordon John Wenham",
-        "Kenton Sparks"
-      ],
-      "num_pages": 174,
-      "short_description": "The nature of the Genesis narrative has sparked much debate among Christians. This book introduces three predominant interpretive genres and their implications for biblical understanding. Each contributor identifies their position on the genre or genres of Genesis, chapters 1-11, addresses why their interpretation is respectful of and appropriate to the text, and contributes examples of its application to a variety of passages. The positions include: Theological History(Genesis can be taken seriously as both history and theology) – defended by James K. Hoffmeier. Proto-History (the early Genesis narratives consist of a variety of literary genres; which, nonetheless, do not obscure the book's theological teaching) – defended by Gordon J. Wenham. Ancient Historiography (an understanding of Genesis that seeks to reconcile the limitations of its human authors with the nature of it being the Word of God) defended by Kenton L. Sparks. General editor and Old Testament scholar Charles Halton explains the importance of genre and provides historical insight in the introduction and helpful summaries of each position in the conclusion. In the reader-friendly Counterpoints format, this book helps readers to reflect on the strengths and weaknesses of each view and draw informed conclusions in this much-debated topic.",
-      "image": "http://books.google.com/books/content?id=nfN9BAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Religion"
-      ],
-      "ISBN": "9780310514954"
-    },
-    {
-      "id": "8",
-      "name": "Uncle John's Bathroom Reader Presents Flush Fiction",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 288,
-      "short_description": "Quick fiction for readers on the go! Quick fiction for readers on the go! Uncle John’s Bathroom Reader Presents Flush Fiction is a tantalizing collection of 88 short-short stories custom-picked for the Bathroom Reader aficionado. We scoured the nation for talented writers and asked them to send us their best quick reads. The result: mysteries, horror, sci-fi, adventure, plenty of laughs--and a few gasps--in these startling short stories. They’re like little movies for your mind! Some titles to entice you: * “Nothing” * “Mr. Agreeable” * “Dead Man’s Float” * “The Unseeing Eye” * “Checking out a Geezer” * “My First Foreign Woman and the Sea” * “Rusty the Pirate (A Historical Feghoot)” * “The Loom of Doom Galls Mainly in the Tomb” What are these stories about? Check out Flush Fiction and you won’t be disappointed!",
-      "image": "http://books.google.com/books/content?id=TClZDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Fiction"
-      ],
-      "ISBN": "9781607106753"
-    },
-    {
       "id": "9",
       "name": "John Fowles's Fiction and the Poetics of Postmodernism",
       "authors": [
@@ -71,7 +9,7 @@
       "num_pages": 312,
       "short_description": "Salami presents, for instance, a critique of the self-conscious narrative of the diary form in The Collector, the intertextual relations of the multiplicity of voices, the problems of subjectivity, the reader's position, the politics of seduction, ideology, and history in The Magus and The French Lieutenant's Woman. The book also analyzes the ways in which Fowles uses and abuses the short-story genre, in which enigmas remain enigmatic and the author disappears to leave the characters free to construct their own texts. Salami centers, for example, on A Maggot, which embodies the postmodernist technique of dialogical narrative, the problem of narrativization of history, and the explicitly political critique of both past and present in terms of social and religious dissent. These political questions are also echoed in Fowles's nonfictional book The Aristos, in which he strongly rejects the totalization of narratives and the materialization of society.",
       "image": "http://books.google.com/books/content?id=EquizXeXb3kC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
+      "num_copies": 6,
       "categories": [
         "Language Arts & Disciplines"
       ],
@@ -163,7 +101,7 @@
       "num_pages": 303,
       "short_description": "No Description",
       "image": "http://books.google.com/books/content?id=6ls4qRIkHq4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 4,
+      "num_copies": 5,
       "categories": [
         "Modernism (Literature)"
       ],
@@ -2109,7 +2047,7 @@
       "num_pages": 224,
       "short_description": "\"A reliable guide to what science fiction is\" Christopher Priest, award-winning science fiction author \"A really good introduction to the genre\" SFX Magazine \"Perceptive and glorious\" Ian Watson, author of the screenplay for Steve Spielberg's A.I. Want to become a science fiction buff? Want to expand your reading in your favourite genre? This is a good place to start! From the publishers of the popular Good Reading Guide comes a rich selection of some of the finest SF novels ever published. With 100 of the best titles fully reviewed and a further 500 recommended, you'll quickly become an expert in the world of science fiction. The book is arranged by author and includes some thematic entries and special categories such as SF film adaptations, SF in rock music and Philip K. Dick in the mass media . It also includes a history of SF and a new definition of the genre, plus lists of award winners and book club recommendations. Foreword by Christopher Priest, the multiple award-winning SF author.",
       "image": "http://books.google.com/books/content?id=kra3zGXIjE0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
+      "num_copies": 10,
       "categories": [
         "Language Arts & Disciplines"
       ],
@@ -7070,6 +7008,36 @@
       "image": "2",
       "num_copies": "2",
       "categories": "2"
+    },
+    {
+      "id": "59b0",
+      "name": "nevo",
+      "authors": "asd",
+      "num_pages": "12",
+      "short_description": "asd",
+      "image": "asd",
+      "num_copies": "12",
+      "categories": "ASD"
+    },
+    {
+      "id": "864a",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "asd",
+      "image": "2",
+      "num_copies": "22",
+      "categories": "asd"
+    },
+    {
+      "id": "f66f",
+      "name": "asd",
+      "authors": "asd",
+      "num_pages": "2",
+      "short_description": "asd",
+      "image": "asd",
+      "num_copies": "2",
+      "categories": "asd"
     }
   ],
   "history": [
@@ -7162,6 +7130,102 @@
       "operation": "create",
       "time": "2024-05-27T14:52:39.929Z",
       "bookId": "1e30"
+    },
+    {
+      "id": "212d",
+      "operation": "update",
+      "time": "2024-05-28T15:05:39.477Z",
+      "bookId": 148
+    },
+    {
+      "id": "b684",
+      "operation": "update",
+      "time": "2024-05-28T15:05:53.047Z",
+      "bookId": 148
+    },
+    {
+      "id": "c4b2",
+      "operation": "update",
+      "time": "2024-05-28T15:05:53.540Z",
+      "bookId": 148
+    },
+    {
+      "id": "5013",
+      "operation": "update",
+      "time": "2024-05-28T15:05:55.136Z",
+      "bookId": 148
+    },
+    {
+      "id": "05b3",
+      "operation": "update",
+      "time": "2024-05-28T15:05:58.647Z",
+      "bookId": 148
+    },
+    {
+      "id": "4beb",
+      "operation": "create",
+      "time": "2024-05-28T15:37:28.231Z",
+      "bookId": "59b0"
+    },
+    {
+      "id": "83b5",
+      "operation": "create",
+      "time": "2024-05-28T15:48:41.685Z",
+      "bookId": "864a"
+    },
+    {
+      "id": "6786",
+      "operation": "create",
+      "time": "2024-05-28T16:01:04.923Z",
+      "bookId": "f66f"
+    },
+    {
+      "id": "83f9",
+      "operation": "update",
+      "time": "2024-05-28T16:06:46.491Z",
+      "bookId": 4
+    },
+    {
+      "id": "c8c0",
+      "operation": "update",
+      "time": "2024-05-28T16:07:02.937Z",
+      "bookId": 4
+    },
+    {
+      "id": "e91c",
+      "operation": "delete",
+      "time": "2024-05-28T16:43:15.063Z",
+      "bookId": 4
+    },
+    {
+      "id": "327d",
+      "operation": "delete",
+      "time": "2024-05-28T16:43:19.307Z",
+      "bookId": 6
+    },
+    {
+      "id": "7a4e",
+      "operation": "delete",
+      "time": "2024-05-28T16:44:02.300Z",
+      "bookId": 7
+    },
+    {
+      "id": "515b",
+      "operation": "delete",
+      "time": "2024-05-28T16:44:10.433Z",
+      "bookId": 8
+    },
+    {
+      "id": "1f3f",
+      "operation": "update",
+      "time": "2024-05-28T17:27:14.927Z",
+      "bookId": 18
+    },
+    {
+      "id": "0850",
+      "operation": "update",
+      "time": "2024-05-28T18:31:52.596Z",
+      "bookId": 9
     }
   ]
 }
