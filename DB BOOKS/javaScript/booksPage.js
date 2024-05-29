@@ -26,8 +26,6 @@ selectElement.addEventListener("change", function () {
     }
 });
 
-
-
 function showForm(formId) {
     const form = document.getElementById(formId)
     form.style.display = "flex"
@@ -147,7 +145,8 @@ function buildTable(data, totalPages) {
         const currentBookContentDiv = document.createElement("div");
         currentBookContentDiv.classList.add('each-book-content-wrapper');
         currentBookContentDiv.innerHTML = `<div class="book-name-and-fav-icon-wrapper"><p>Book Name : ${book.name}</p><span class="favorite-icon" onclick="toggleFavorite(this,${book.id})">☆</span> </div><p>Authors : ${book.authors}</p>`;
-
+        let elemNew = document.querySelector('.favorite-icon')
+        console.log(elemNew);
         currentBook.appendChild(image);
         currentBook.appendChild(currentBookContentDiv);
 
@@ -294,12 +293,16 @@ function newBook() {
             addToHistory("create", new Date, response.data.id)
             clearNewBookForm();
         })
-        .catch(error => showMessage("Failed to added!", false));
+        .catch(error => showMessage("Failed to create new book!", false));
 }
 function clearNewBookForm() {
     document.querySelector('#BookName').value = '';
-    document.querySelector('#newAuthor').value = '';
-    document.querySelector('#newNumPages').value = '';
+    document.querySelector('#Authors').value = '';
+    document.querySelector('#NumPages').value = '';
+    document.querySelector('#description').value = '';
+    document.querySelector('#img').value = '';
+    document.querySelector('#numOfCopies').value = '';
+    document.querySelector('#categories').value = '';
 }
 
 async function updateBookCopies(id, action) {

@@ -6811,6 +6811,76 @@
       "image": "13",
       "num_copies": "31",
       "categories": "2"
+    },
+    {
+      "id": "cbde",
+      "name": "wqerfgthe",
+      "authors": "rstdg",
+      "num_pages": "1234",
+      "short_description": "sdfg",
+      "image": "fdsgh",
+      "num_copies": "12345",
+      "categories": "sdfvb"
+    },
+    {
+      "id": "2b85",
+      "name": "df",
+      "authors": "rstdg",
+      "num_pages": "1234",
+      "short_description": "sdfg",
+      "image": "fdsgh",
+      "num_copies": "12345",
+      "categories": "sdfvb"
+    },
+    {
+      "id": "2aea",
+      "name": "sfd",
+      "authors": "dsf",
+      "num_pages": "12",
+      "short_description": "sfd",
+      "image": "fdfd",
+      "num_copies": "122",
+      "categories": "sdfbg"
+    },
+    {
+      "id": "97a7",
+      "name": "sfd2",
+      "authors": "dsf",
+      "num_pages": "12",
+      "short_description": "sfd",
+      "image": "fdfd",
+      "num_copies": "122",
+      "categories": "sdfbg"
+    },
+    {
+      "id": "31e2",
+      "name": "OMER123",
+      "authors": "wer",
+      "num_pages": "123",
+      "short_description": "edf",
+      "image": "2wsd",
+      "num_copies": "1",
+      "categories": "sasa"
+    },
+    {
+      "id": "7fab",
+      "name": "333",
+      "authors": "33",
+      "num_pages": "33",
+      "short_description": "33",
+      "image": "3",
+      "num_copies": "3",
+      "categories": "3"
+    },
+    {
+      "id": "28f0",
+      "name": "32",
+      "authors": "22",
+      "num_pages": "22",
+      "short_description": "2",
+      "image": "22",
+      "num_copies": "2",
+      "categories": "2"
     }
   ],
   "history": [
@@ -7107,6 +7177,66 @@
       "operation": "Add to favorites",
       "time": "2024-05-29T08:52:30.025Z",
       "bookId": "24"
+    },
+    {
+      "id": "0d92",
+      "operation": "create",
+      "time": "2024-05-29T10:59:36.795Z",
+      "bookId": "cbde"
+    },
+    {
+      "id": "45e5",
+      "operation": "create",
+      "time": "2024-05-29T10:59:47.685Z",
+      "bookId": "2b85"
+    },
+    {
+      "id": "39f4",
+      "operation": "create",
+      "time": "2024-05-29T11:00:52.651Z",
+      "bookId": "2aea"
+    },
+    {
+      "id": "603e",
+      "operation": "create",
+      "time": "2024-05-29T11:00:58.432Z",
+      "bookId": "97a7"
+    },
+    {
+      "id": "a93e",
+      "operation": "create",
+      "time": "2024-05-29T11:02:34.866Z",
+      "bookId": "31e2"
+    },
+    {
+      "id": "dba1",
+      "operation": "create",
+      "time": "2024-05-29T11:03:19.928Z",
+      "bookId": "7fab"
+    },
+    {
+      "id": "7f22",
+      "operation": "create",
+      "time": "2024-05-29T11:04:30.246Z",
+      "bookId": "28f0"
+    },
+    {
+      "id": "6d95",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:25:12.025Z",
+      "bookId": "24"
+    },
+    {
+      "id": "eee7",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:25:14.556Z",
+      "bookId": "24"
+    },
+    {
+      "id": "5cd5",
+      "operation": "Add to favorites",
+      "time": "2024-05-29T11:26:08.193Z",
+      "bookId": "26"
     }
   ],
   "favorites": [
@@ -7192,6 +7322,62 @@
       "num_copies": 5,
       "categories": [
         "Science fiction"
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Analog Science Fiction/science Fact",
+      "authors": [
+        "Unknown"
+      ],
+      "num_pages": 1082,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=i04EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Science fiction"
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Analog Science Fiction/science Fact",
+      "authors": [
+        "Unknown"
+      ],
+      "num_pages": 1082,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=i04EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Science fiction"
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Analog Science Fiction/science Fact",
+      "authors": [
+        "Unknown"
+      ],
+      "num_pages": 1082,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=i04EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Science fiction"
+      ]
+    },
+    {
+      "id": "26",
+      "name": "Catalogue of the Oakland Free Public Library",
+      "authors": [
+        "Oakland Free Library"
+      ],
+      "num_pages": 224,
+      "short_description": "No Description",
+      "image": "http://books.google.com/books/content?id=GZm9AAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_copies": 5,
+      "categories": [
+        "Uncategorized"
       ]
     }
   ]
