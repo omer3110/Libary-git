@@ -1,106 +1,6 @@
 {
   "books": [
     {
-      "id": "24",
-      "name": "Analog Science Fiction/science Fact",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 1082,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=i04EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Science fiction"
-      ]
-    },
-    {
-      "id": "26",
-      "name": "Catalogue of the Oakland Free Public Library",
-      "authors": [
-        "Oakland Free Library"
-      ],
-      "num_pages": 224,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=GZm9AAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Uncategorized"
-      ]
-    },
-    {
-      "id": "28",
-      "name": "Annual Report of the Board of Education and the Superintendent of Public Instruction of New Jersey, with Accompanying Documents, for the School Year Ending ...",
-      "authors": [
-        "New Jersey. State Board of Education"
-      ],
-      "num_pages": 640,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=--wTAAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Education"
-      ]
-    },
-    {
-      "id": "29",
-      "name": "The Immigrant Experience in American Fiction",
-      "authors": [
-        "Roberta Simone"
-      ],
-      "num_pages": 240,
-      "short_description": "Over 600 descriptive citations. Comprehensive coverage from the late 19th century through the first half of 1994 of adult and young adult novels, collections of stories, anthologies, and secondary sources.",
-      "image": "http://books.google.com/books/content?id=sFUWAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Reference"
-      ]
-    },
-    {
-      "id": "30",
-      "name": "Annual Report of the Trustees of the Public Library of the Cty of Boston",
-      "authors": [
-        "Trustees of the Public Library of the City of Boston"
-      ],
-      "num_pages": 254,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=C0YFAAAAQAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Libraries"
-      ]
-    },
-    {
-      "id": "31",
-      "name": "Assessing Middle and High School Social Studies & English",
-      "authors": [
-        "Sheryn Spencer-Waterman"
-      ],
-      "num_pages": 162,
-      "short_description": "For middle and high school teachers teachers of social studies and English, this book is filled with examples of instructional strategies that address students’ readiness levels, interests, and learning preferences. It shows teachers how to formatively assess their students by addressing differentiated learning targets. Included are detailed examples of differentiated formative assessment schedules plus tips on how to collaborate with others to improve assessment processes. Teachers will learn how to adjust instruction for the whole class, for small groups, and for individuals. They will also uncover step-by-step procedures for creating their own lessons infused with opportunities to formatively assess students who participate in differentiated learning activities.",
-      "image": "http://books.google.com/books/content?id=FSIjAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Education"
-      ],
-      "ISBN": "9781317924524"
-    },
-    {
-      "id": "32",
-      "name": "The Impact of Racism on African American Families",
-      "authors": [
-        "Professor Paul C Rosenblatt"
-      ],
-      "num_pages": 193,
-      "short_description": "In spite of the existence of statistics and numerical data on various aspects of African American life, including housing, earnings, assets, unemployment, household violence, teen pregnancy and encounters with the criminal justice system, social science literature on how racism affects the everyday interactions of African American families is limited. How does racism come home to and affect African American families? If a father in an African American family is denied employment on the basis of his race or a wife is demeaned at work by racist slurs, how is their family life affected? Given the lack of social science literature responding to these questions, this volume turns to an alternative source in order to address them: literature. Engaging with novels written by African American authors, it explores their rich depictions of African American family life, showing how these can contribute to our sociological knowledge and making the case for the novel as an object and source of social research. As such, it will appeal to scholars and students of the sociology of the family, race and ethnicity, cultural studies and literature.",
-      "image": "http://books.google.com/books/content?id=K_ncAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Social Science"
-      ],
-      "ISBN": "9781472415608"
-    },
-    {
       "id": "33",
       "name": "Women, the Novel, and Natural Philosophy, 1660–1727",
       "authors": [
@@ -114,21 +14,6 @@
         "Fiction"
       ],
       "ISBN": "9781137386762"
-    },
-    {
-      "id": "34",
-      "name": "The Broken Estate",
-      "authors": [
-        "James Wood"
-      ],
-      "num_pages": 403,
-      "short_description": "This book recalls an era when criticism could change the way we look at the world. In the tradition of Matthew Arnold and Edmund Wilson, James Wood reads literature expansively, always pursuing its role and destiny in our lives. In a series of essays about such figures as Melville, Flaubert, Chekhov, Virginia Woolf, and Don DeLillo, Wood relates their fiction to questions of religious and philosophical belief. He suggests that the steady ebb of the sea of faith has much to do with the revo- lutionary power of the novel, as it has developed over the last two centuries. To read James Wood is to be shocked into both thinking and feeling how great our debt to the novel is. In the grand tradition of criticism, Wood's work is both commentary and literature in its own right--fiercely written, polemical, and richly poetic in style. This book marks the debut of a masterly literary voice.",
-      "image": "http://books.google.com/books/content?id=7axRAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Literary Criticism"
-      ],
-      "ISBN": "9780804151900"
     },
     {
       "id": "35",
@@ -170,7 +55,7 @@
       "num_pages": 539,
       "short_description": "Methodological know-how has become one of the key qualifications in contemporary linguistics, which has a strong empirical focus. Containing 23 chapters, each devoted to a different research method, this volume brings together the expertise and insight of a range of established practitioners. The chapters are arranged in three parts, devoted to three different stages of empirical research: data collection, analysis and evaluation. In addition to detailed step-by-step introductions and illustrative case studies focusing on variation and change in English, each chapter addresses the strengths and weaknesses of the methodology and concludes with suggestions for further reading. This systematic, state-of-the-art survey is ideal for both novice researchers and professionals interested in extending their methodological repertoires. The book also has a companion website which provides readers with further information, links, resources, demonstrations, exercises and case studies related to each chapter.",
       "image": "http://books.google.com/books/content?id=IfPMAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
+      "num_copies": 4,
       "categories": [
         "Language Arts & Disciplines"
       ],
@@ -280,22 +165,6 @@
         "Education"
       ],
       "ISBN": "9780743933841"
-    },
-    {
-      "id": "45",
-      "name": "Exploring Nonfiction with Young Learners",
-      "authors": [
-        "Darla Miner",
-        "Jill Zitnay"
-      ],
-      "num_pages": 152,
-      "short_description": "Exploring Nonfiction with Young Learners explores the four basic nonfiction structures that the youngest learners are most likely to encounter: descriptive, recount/collection, procedural, and explanatory texts. This book also includes information to help teach four, more complex structures that younger readers sometimes encounter during read-alouds: comparison, response, causation/cause and effect, and persuasive genres. This book is organized to help plan lessons using each type of nonfiction structure. Strategies and suggestions for activities to use before, during and after reading are included. Templates and graphic organizers are also provided in order to facilitate planning, and offer additional resources. Detailed information about each text structure as well as mentor texts to illustrate each type is included. Text structures, as well as text access features, are defined and located in easy reference charts. Whole class and small group planning ideas are included throughout the book in order to allow for differentiation. Additionally, assessment ideas, sample think-alouds, lesson planning templates, and sample lessons with completed graphic organizers are included for each text structure.",
-      "image": "http://books.google.com/books/content?id=nCJPpH3-2bIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Education"
-      ],
-      "ISBN": "9781610484954"
     },
     {
       "id": "46",
@@ -6811,388 +6680,99 @@
       "image": "13",
       "num_copies": "31",
       "categories": "2"
+    },
+    {
+      "id": "cbde",
+      "name": "wqerfgthe",
+      "authors": "rstdg",
+      "num_pages": "1234",
+      "short_description": "sdfg",
+      "image": "fdsgh",
+      "num_copies": "12345",
+      "categories": "sdfvb"
+    },
+    {
+      "id": "2b85",
+      "name": "df",
+      "authors": "rstdg",
+      "num_pages": "1234",
+      "short_description": "sdfg",
+      "image": "fdsgh",
+      "num_copies": "12345",
+      "categories": "sdfvb"
+    },
+    {
+      "id": "2aea",
+      "name": "sfd",
+      "authors": "dsf",
+      "num_pages": "12",
+      "short_description": "sfd",
+      "image": "fdfd",
+      "num_copies": "122",
+      "categories": "sdfbg"
+    },
+    {
+      "id": "97a7",
+      "name": "sfd2",
+      "authors": "dsf",
+      "num_pages": "12",
+      "short_description": "sfd",
+      "image": "fdfd",
+      "num_copies": "122",
+      "categories": "sdfbg"
+    },
+    {
+      "id": "31e2",
+      "name": "OMER123",
+      "authors": "wer",
+      "num_pages": "123",
+      "short_description": "edf",
+      "image": "2wsd",
+      "num_copies": "1",
+      "categories": "sasa"
+    },
+    {
+      "id": "7fab",
+      "name": "333",
+      "authors": "33",
+      "num_pages": "33",
+      "short_description": "33",
+      "image": "3",
+      "num_copies": "3",
+      "categories": "3"
+    },
+    {
+      "id": "28f0",
+      "name": "32",
+      "authors": "22",
+      "num_pages": "22",
+      "short_description": "2",
+      "image": "22",
+      "num_copies": "2",
+      "categories": "2"
     }
   ],
   "history": [
     {
-      "id": "q",
-      "operation": "delete",
-      "time": "5/27/24",
-      "bookId": "2"
-    },
-    {
-      "id": "3b41",
-      "operation": "update",
-      "time": "2024-05-27T12:50:06.895Z",
-      "bookId": 18
-    },
-    {
-      "id": "d756",
-      "operation": "update",
-      "time": "2024-05-29T06:43:35.211Z",
-      "bookId": 18
-    },
-    {
-      "id": "4672",
-      "operation": "update",
-      "time": "2024-05-29T06:43:37.775Z",
-      "bookId": 17
-    },
-    {
-      "id": "82ab",
-      "operation": "update",
-      "time": "2024-05-29T07:30:55.039Z",
-      "bookId": 15
-    },
-    {
-      "id": "4a3a",
-      "operation": "update",
-      "time": "2024-05-29T07:30:57.919Z",
-      "bookId": 15
-    },
-    {
-      "id": "7cde",
-      "operation": "update",
-      "time": "2024-05-29T07:31:04.529Z",
-      "bookId": 15
-    },
-    {
-      "id": "cbdf",
-      "operation": "update",
-      "time": "2024-05-29T07:31:11.600Z",
-      "bookId": 17
-    },
-    {
-      "id": "247d",
-      "operation": "update",
-      "time": "2024-05-29T07:38:01.078Z",
-      "bookId": 17
-    },
-    {
-      "id": "8f26",
-      "operation": "create",
-      "time": "2024-05-29T07:38:40.023Z",
-      "bookId": "aeca"
-    },
-    {
-      "id": "e0d1",
-      "operation": "update",
-      "time": "2024-05-29T07:39:07.384Z",
-      "bookId": 15
-    },
-    {
-      "id": "1714",
-      "operation": "update",
-      "time": "2024-05-29T07:39:36.614Z",
-      "bookId": 15
-    },
-    {
-      "id": "d2a6",
-      "operation": "update",
-      "time": "2024-05-29T07:39:44.192Z",
-      "bookId": 15
-    },
-    {
-      "id": "bbd7",
-      "operation": "update",
-      "time": "2024-05-29T07:39:49.873Z",
-      "bookId": 17
-    },
-    {
-      "id": "711d",
-      "operation": "delete",
-      "time": "2024-05-29T07:40:05.859Z",
-      "bookId": 19
-    },
-    {
-      "id": "c9b7",
-      "operation": "delete",
-      "time": "2024-05-29T07:40:09.400Z",
-      "bookId": 20
-    },
-    {
-      "id": "f048",
-      "operation": "update",
-      "time": "2024-05-29T07:41:17.029Z",
-      "bookId": 15
-    },
-    {
-      "id": "81c3",
-      "operation": "update",
-      "time": "2024-05-29T07:41:59.917Z",
-      "bookId": 15
-    },
-    {
-      "id": "20ef",
-      "operation": "update",
-      "time": "2024-05-29T07:42:09.743Z",
-      "bookId": 18
-    },
-    {
-      "id": "b627",
-      "operation": "update",
-      "time": "2024-05-29T07:42:12.322Z",
-      "bookId": 15
-    },
-    {
-      "id": "b809",
-      "operation": "update",
-      "time": "2024-05-29T07:42:47.057Z",
-      "bookId": 15
-    },
-    {
-      "id": "9c70",
-      "operation": "update",
-      "time": "2024-05-29T07:43:48.203Z",
-      "bookId": 15
-    },
-    {
-      "id": "ab98",
-      "operation": "update",
-      "time": "2024-05-29T07:44:19.046Z",
-      "bookId": 15
-    },
-    {
-      "id": "7ce6",
-      "operation": "update",
-      "time": "2024-05-29T07:44:21.420Z",
-      "bookId": 15
-    },
-    {
-      "id": "b798",
-      "operation": "update",
-      "time": "2024-05-29T07:46:26.996Z",
-      "bookId": 15
-    },
-    {
-      "id": "f12b",
-      "operation": "update",
-      "time": "2024-05-29T07:46:31.258Z",
-      "bookId": 15
-    },
-    {
-      "id": "e6ce",
-      "operation": "update",
-      "time": "2024-05-29T07:47:36.695Z",
-      "bookId": 15
-    },
-    {
-      "id": "fab1",
-      "operation": "update",
-      "time": "2024-05-29T07:47:38.040Z",
-      "bookId": 15
-    },
-    {
-      "id": "e014",
-      "operation": "create",
-      "time": "2024-05-29T07:48:38.360Z",
-      "bookId": "0d57"
-    },
-    {
-      "id": "3380",
-      "operation": "create",
-      "time": "2024-05-29T07:50:13.892Z",
-      "bookId": "4de6"
-    },
-    {
-      "id": "dc53",
-      "operation": "create",
-      "time": "2024-05-29T07:50:41.982Z",
-      "bookId": "03e4"
-    },
-    {
-      "id": "d8d0",
-      "operation": "delete",
-      "time": "2024-05-29T07:51:30.464Z",
-      "bookId": 15
-    },
-    {
-      "id": "b664",
-      "operation": "delete",
-      "time": "2024-05-29T07:51:34.186Z",
-      "bookId": 17
-    },
-    {
-      "id": "ff23",
-      "operation": "delete",
-      "time": "2024-05-29T07:51:36.557Z",
-      "bookId": 18
-    },
-    {
-      "id": "1a58",
-      "operation": "delete",
-      "time": "2024-05-29T07:51:45.222Z",
-      "bookId": 52
-    },
-    {
-      "id": "8528",
-      "operation": "delete",
-      "time": "2024-05-29T07:53:23.970Z",
-      "bookId": 22
-    },
-    {
-      "id": "4560",
-      "operation": "delete",
-      "time": "2024-05-29T07:54:29.735Z",
-      "bookId": 23
-    },
-    {
-      "id": "d159",
-      "operation": "delete",
-      "time": "2024-05-29T07:54:38.688Z",
-      "bookId": 25
-    },
-    {
-      "id": "7fea",
-      "operation": "delete",
-      "time": "2024-05-29T07:54:46.186Z",
-      "bookId": 27
-    },
-    {
-      "id": "ed0d",
+      "id": "5ad7",
       "operation": "Add to favorites",
-      "time": "2024-05-29T08:45:59.209Z",
-      "bookId": "24"
+      "bookId": "33",
+      "bookName": "Women, the Novel, and Natural Philosophy, 1660–1727",
+      "time": "2024-05-29T13:33:27.473Z"
     },
     {
-      "id": "6e41",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T08:46:00.779Z",
-      "bookId": "24"
+      "id": "a067",
+      "operation": "Removed from favorites",
+      "bookId": "33",
+      "bookName": "Women, the Novel, and Natural Philosophy, 1660–1727",
+      "time": "2024-05-29T13:34:01.427Z"
     },
     {
-      "id": "0918",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T08:46:02.059Z",
-      "bookId": "24"
-    },
-    {
-      "id": "1ea1",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T08:46:32.147Z",
-      "bookId": "26"
-    },
-    {
-      "id": "69a0",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T08:50:27.159Z",
-      "bookId": "24"
-    },
-    {
-      "id": "a776",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T08:51:12.208Z",
-      "bookId": "26"
-    },
-    {
-      "id": "4d39",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T08:52:27.485Z",
-      "bookId": "24"
-    },
-    {
-      "id": "91af",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T08:52:28.396Z",
-      "bookId": "24"
-    },
-    {
-      "id": "fa8d",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T08:52:29.234Z",
-      "bookId": "24"
-    },
-    {
-      "id": "f658",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T08:52:30.025Z",
-      "bookId": "24"
+      "id": "2ad0",
+      "operation": "Deletion",
+      "bookId": "2024-05-29T13:34:12.515Z",
+      "bookName": 34
     }
   ],
-  "favorites": [
-    {
-      "id": "24",
-      "name": "Analog Science Fiction/science Fact",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 1082,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=i04EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Science fiction"
-      ]
-    },
-    {
-      "id": "26",
-      "name": "Catalogue of the Oakland Free Public Library",
-      "authors": [
-        "Oakland Free Library"
-      ],
-      "num_pages": 224,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=GZm9AAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Uncategorized"
-      ]
-    },
-    {
-      "id": "24",
-      "name": "Analog Science Fiction/science Fact",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 1082,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=i04EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Science fiction"
-      ]
-    },
-    {
-      "id": "24",
-      "name": "Analog Science Fiction/science Fact",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 1082,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=i04EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Science fiction"
-      ]
-    },
-    {
-      "id": "24",
-      "name": "Analog Science Fiction/science Fact",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 1082,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=i04EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Science fiction"
-      ]
-    },
-    {
-      "id": "24",
-      "name": "Analog Science Fiction/science Fact",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 1082,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=i04EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Science fiction"
-      ]
-    }
-  ]
+  "favorites": []
 }

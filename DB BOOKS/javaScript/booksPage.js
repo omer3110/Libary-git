@@ -7,10 +7,8 @@ const urlFavorites = "http://localhost:8001/favorites";
 const booksContainer = document.getElementById("books-container");
 let elemMessage = document.querySelector('.message');
 let currentPage = 1;
-let favoriteBooksArray = JSON.parse(localStorage.getItem("favorite-books")) || [];
-
-
 const selectElement = document.getElementById("typeOfCreation");
+let elemSuccessMessage = document.querySelector(".success-message")
 
 selectElement.addEventListener("change", function () {
     const creationByIsbnForm = document.querySelector(".new-book-form-by-ISBN");
@@ -25,8 +23,6 @@ selectElement.addEventListener("change", function () {
         creationManuallyForm.style.display = "none";
     }
 });
-
-
 
 function showForm(formId) {
     const form = document.getElementById(formId)
@@ -43,19 +39,6 @@ function hideForm(formId) {
 function hideTable() {
     booksContainer.style.display = 'none';
     document.getElementById("get-button").style.display = 'block';
-}
-
-function showHistory() {
-    currentPage = 1;
-    totalResponseArray = [];
-    axios.get(urlHistory)
-        .then(response => {
-            console.log(response);
-            totalResponseArray = resposeToMappedArray(response.data);
-            console.log(totalResponseArray);
-            buildHistory(totalResponseArray[currentPage - 1], totalResponseArray.length);
-        })
-        .catch(error => console.log(error));
 }
 
 function resposeToMappedArray(apiResponse) {
@@ -118,7 +101,7 @@ function buildTable(data, totalPages) {
 
     const pagingButtons = document.createElement("div");
     pagingButtons.setAttribute("id", "paging-handell");
-    pagingButtons.innerHTML = `<div>page ${currentPage} out of ${totalPages}</div><button onclick="previousHandler()"><</button><button onclick="nextHandler()">></button><div>`;
+    pagingButtons.innerHTML = `<div>page ${currentPage} out of ${totalPages}</div><div id="pages-arrows"><button onclick="previousHandler()"><</button><button onclick="nextHandler()">></button></div>`;
     buttonContainer.appendChild(pagingButtons);
 
     booksContainer.appendChild(buttonContainer);
@@ -138,9 +121,9 @@ function buildTable(data, totalPages) {
         currentBookContentDiv.classList.add('each-book-content-wrapper');
         currentBookContentDiv.innerHTML = `<div class="book-name-and-fav-icon-wrapper"><p>Book Name : ${book.name}</p></div><p>Authors : ${book.authors}</p>`;
         let favoriteIcon = document.createElement("span");
-        favoriteIcon.innerHTML= '☆';
+        favoriteIcon.innerHTML = '☆';
         favoriteIcon.classList.add('favorite-icon')
-        favoriteIcon.addEventListener('click', () => toggleFavorite(favoriteIcon , book.id)); // Add click event listener
+        favoriteIcon.addEventListener('click', () => toggleFavorite(favoriteIcon, book.id)); // Add click event listener
         currentBookContentDiv.appendChild(favoriteIcon);
 
         currentBook.appendChild(image);
@@ -166,24 +149,22 @@ function toggleFavorite(element, bookId) {
         axios.get(url)
             .then(response => {
                 response = response.data;
-                favoriteBooksArray.push(response);
                 addBookToFavJson(response);
-                localStorage.setItem("favorite-books", JSON.stringify(favoriteBooksArray));
                 console.log(response);
             })
             .catch(error => console.error('Error:', error));
         // Do something when the star is unfilled (unmarked as favorite)
     }
     element.classList.toggle("filled");
-
 }
+
 function addBookToFavJson(bookData) {
     console.log(bookData);
     axios.post(urlFavorites, bookData)
         .then(response => {
             showMessage("Book added successfully!", true);
             console.log(response.data.id);
-            addToHistory("Add to favorites", new Date, response.data.id)
+            addToHistory("Add to favorites", response.data.id, response.data.name, new Date);
         })
         .catch(error => showMessage("Failed to added!", false));
 }
@@ -191,7 +172,7 @@ function removeBookFromFavJson(bookId) {
     let url = `${urlFavorites}/${bookId}`;
     axios.delete(url)
         .then(response => {
-            addToHistory("Removed from favorites", new Date, bookId)
+            addToHistory("Removed from favorites", response.data.id, response.data.name, new Date);
         })
         .catch(error => showMessage(`Failed to remove book ${bookId}!`, false));
 }
@@ -201,18 +182,23 @@ function showFavorites() {
     booksContainer.style.display = 'block';
 
     axios.get(urlFavorites)
-            .then(response => {
-                //localStorage.setItem("favorite-books", JSON.stringify(favoriteBooksArray));
-                console.log(response);
-                response = response.data;
+        .then(response => {
+            response = response.data;
+            console.log(response);
+            if (response.length == 0) {
+                const listOfBooksDiv = document.querySelector(".book-list")
+                const pagingButtons = document.getElementById("paging-handell");
+                pagingButtons.innerHTML = `<div>No favorites books chosen</div>`;
+                listOfBooksDiv.style.display = 'none';
+            }
+            else {
                 let favResponse = resposeToMappedArray(response);
                 console.log(favResponse);
                 buildTable(favResponse[currentPage - 1], favResponse.length)
-
-            })
-            .catch(error => console.error('Error:', error));
+            }
+        })
+        .catch(error => console.error('Error:', error));
 }
-
 
 async function fetchFavoritesWithBookList(bookId, elem) {
     try {
@@ -227,21 +213,28 @@ async function fetchFavoritesWithBookList(bookId, elem) {
     }
 }
 
+function showHistory() {
+    currentPage = 1;
+    totalResponseArray = [];
+    axios.get(urlHistory)
+        .then(response => {
+            console.log(response);
+            totalResponseArray = resposeToMappedArray(response.data);
+            console.log(totalResponseArray);
+            buildHistory(totalResponseArray[currentPage - 1], totalResponseArray.length);
+        })
+        .catch(error => console.log(error));
+}
+
 function buildHistory(data, totalPages) {
     booksContainer.innerHTML = "";
 
     const buttonContainer = document.createElement("div");
     buttonContainer.classList.add("button-container");
 
-    const hideButton = document.createElement("button");
-    hideButton.classList.add("hide-button");
-    hideButton.textContent = "Hide List";
-    hideButton.addEventListener('click', hideTable);
-    buttonContainer.appendChild(hideButton);
-
     const pagingButtons = document.createElement("div");
     pagingButtons.setAttribute("id", "paging-handell");
-    pagingButtons.innerHTML = `<div>page ${currentPage} out of ${totalPages}</div><button onclick="previousHandler('history')"><</button><button onclick="nextHandler('history')">></button><div>`;
+    pagingButtons.innerHTML = `<div>page ${currentPage} out of ${totalPages}</div><div id="pages-arrows"><button onclick="previousHandler('history')"><</button><button onclick="nextHandler('history')">></button></div>`;
     buttonContainer.appendChild(pagingButtons);
 
     booksContainer.appendChild(buttonContainer);
@@ -256,14 +249,21 @@ function buildHistory(data, totalPages) {
 
         const currentActionDiv = document.createElement("div");
         currentActionDiv.classList.add('each-book-content-wrapper');
-        currentActionDiv.innerHTML = `<p>Action operation : ${action.operation}</p> <p>Action time : ${action.time}</p> <p>Action book ID : ${action.bookId}</p>`;
+        currentActionDiv.innerHTML = `<p>Action operation : ${action.operation}</p><p>Book ID : ${action.bookId}</p><p>Book Name : ${action.bookName}</p> <p>Action time : ${action.time}</p> `;
 
 
         currentBook.appendChild(currentActionDiv);
         listOfBooksDiv.appendChild(currentBook);
     }
-
     booksContainer.appendChild(listOfBooksDiv);
+}
+
+function addToHistory(operation, bookId, bookName, time) {
+    axios.post(urlHistory, { operation: operation, bookId: bookId, bookName: bookName, time: time })
+        .then(response => {
+            console.log("History added successfully!");
+        })
+        .catch(error => console.error('Error adding to history:', error));
 }
 
 function displayBookInfo(book) {
@@ -294,7 +294,7 @@ function displayBookInfo(book) {
     closeModalBtn.style.display = "inline"
     closeModalBtn.onclick = function () {
         modal.style.display = "none";
-    };
+    };
 }
 
 document.querySelector('#new-book-form-container').addEventListener('submit', function (event) {
@@ -317,7 +317,7 @@ function newBook() {
     })
         .then(response => {
             showMessage("Book added successfully!", true);
-            addToHistory("create", new Date, response.data.id)
+            addToHistory("Creation", response.data.id, response.data.name, new Date)
             setTimeout(() => {
                 hideForm('new-book-form-container')
                 clearNewBookForm()
@@ -355,13 +355,12 @@ async function updateBookCopies(id, action) {
         showMessage(`Book ${id} copies ${action}d successfully!`, true);
         const elemNumOfCopies = document.querySelector('.num-of-copies');
         elemNumOfCopies.innerHTML = `<strong>Number of Copies:</strong> ${currentAmountOfCopies}`;
-        addToHistory("update", new Date, id);
+        addToHistory("update copies", id, book.name, new Date);
 
     } catch (error) {
         showMessage(`Failed to ${action} book ${id} copies!`, false);
         console.error('Error:', error);
     }
-
 }
 
 function deleteBook(id) {
@@ -369,27 +368,23 @@ function deleteBook(id) {
     const elemDeleteBookMessage = document.querySelector('.delete-book-message')
     axios.delete(`${urlBooks}/${id}`)
         .then(response => {
-            removeBookFromFavJson(id)
-            addToHistory("delete", new Date, id)
-            elemDeleteBookMessage.style.color = 'red'
-            elemDeleteBookMessage.textContent = "Deleting Book..."
+            console.log(response);
+            removeBookFromFavJson(id);
+            addToHistory("Deletion", new Date, id);
+            elemDeleteBookMessage.style.color = 'red';
+            elemDeleteBookMessage.textContent = "Deleting Book...";
+
             setTimeout(() => {
                 fetchAndBuildTable();
-                elemDeleteBookMessage.textContent = ""
+                elemDeleteBookMessage.textContent = "";
                 modal.innerHTML = `<p>Feel free to search a book...<i class="fa-regular fa-face-smile"></i></p>`;
-                modal.style.display = 'flex'
-            } , 1000);
-        })
-        .catch(error => showMessage(`Failed to delete book ${id}!`, false));    
+                modal.style.display = 'flex';
+            }, 1000);
+            setTimeout(() => { elemSuccessMessage.style.display = "block"; }, 2000);
 
-}
-
-function addToHistory(operation, time, bookId) {
-    axios.post(urlHistory, { operation: operation, time: time, bookId: bookId })
-        .then(response => {
-            console.log("History added successfully!");
         })
-        .catch(error => console.error('Error adding to history:', error));
+        .catch(error => showMessage(`Failed to delete book ${id}!`, false));
+
 }
 
 function showMessage(message, isSuccess) {
@@ -405,49 +400,9 @@ document.querySelector('#searchBarForm').addEventListener('submit', function (ev
     searchBook();
 });
 
-// async function searchBook() {
-//     currentPage = 1;
-//     totalResponseArray = [];
-//     const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
-//     let booksResultsCounter = 0;
-//     const resultsFoundArray = [];
-
-//     try {
-//         const response = await axios.get(urlBooks);
-//         const allBooks = response.data;
-//         // Filter the books based on the search value
-//         for (const book of allBooks) {
-//             // Convert book name to lowercase for case-insensitive search
-//             const bookName = book.name.toLowerCase();
-//             if (bookName.includes(elemSearchValue)) {
-//                 resultsFoundArray.push(book);
-//                 booksResultsCounter++;
-//             }
-//         }
-//     } catch (error) {
-//         console.error('Error fetching books data:', error);
-//     }
-//     const pagingButtons = document.getElementById("paging-handell");
-//     if (booksResultsCounter == 0) {
-//         pagingButtons.innerHTML = `<div>No results found</div>`;
-//         // booksContainer.style.display = 'none';
-//     }
-//     else {
-//         console.log('Final results:', resultsFoundArray);
-//         let final = resposeToMappedArray(resultsFoundArray, true);
-//         console.log(final);
-//         console.log(final.length);
-
-//         buildTable(final[currentPage - 1], final.length)
-//     }
-// }
-
-// fetchAndBuildTable()
-
 async function searchBook() {
     const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
     if (elemSearchValue !== "") {
-
 
         let booksResultsCounter = 0;
         const resultsFoundArray = [];
@@ -483,7 +438,6 @@ async function searchBook() {
             buildTable(final[currentPage - 1], final.length)
         }
     }
-
 }
 
 fetchAndBuildTable();

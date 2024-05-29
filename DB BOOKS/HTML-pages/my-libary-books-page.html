@@ -22,10 +22,10 @@
 </head>
 
 <body>
-    <nav>
+    <!-- <nav>
         <a href="/DB BOOKS/HTML-pages/main-libary-page.html">Main Page</a>
         <a href="/DB BOOKS/HTML-pages/my-libary-users-page.html">Users Page</a>
-    </nav>
+    </nav> -->
     <div class="main">
         <div class="header-and-search-wrapper">
             <h1>Our Libraray</h1>
@@ -45,6 +45,7 @@
             <button onclick="showFavorites()">☆ My favorites books </button>
             <button onclick="showHistory()">Show history</button>
         </div>
+        <div class="success-message" style="display: none;"> Operation succeed</div>
 
         <div>
             <div id="new-book-form-container" class="form-container">
@@ -110,7 +111,9 @@
             <div id="modal" class="modal">
                 <div class="modal-content">
                     <button class="close-modal-btn">Close</button>
-                    <div id="book-info" class="book-info-before-show"><p>Feel free to search a book... <i class="fa-regular fa-face-smile"></i></p></div>
+                    <div id="book-info" class="book-info-before-show">
+                        <p id="feel-free">Feel free to search a book... <i class="fa-regular fa-face-smile"></i></p>
+                    </div>
                     <p class="delete-book-message"></p>
                 </div>
             </div>

@@ -9,6 +9,16 @@ body {
 }
 
 /* nav bar  */
+.success-message {
+    position: absolute;
+    color: black;
+    border: solid 1px #00fc0d;
+    border-radius: 5px;
+    background-color: #73d378;
+    padding: 5px;
+    left: 80vw;
+    top: 20vh;
+}
 
 nav {
     background-color: #333;
@@ -33,6 +43,7 @@ nav a {
     background: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 button:hover {
@@ -46,6 +57,11 @@ button {
     border-radius: 5px;
     padding: 4px;
     cursor: pointer;
+}
+
+#feel-free {
+    margin-top: 50px;
+    font-size: 24px;
 }
 
 .favorite-icon {
@@ -74,7 +90,7 @@ button {
 }
 
 .header-and-search-wrapper h1 {
-    font-family: "Cormorant Garamond", serif;
+    /* font-family: "Cormorant Garamond", serif; */
     font-weight: 700;
     font-style: normal;
 }
@@ -163,10 +179,7 @@ button {
 }
 
 .button-container {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 10px;
-    align-items: center;
 }
 
 .message {
@@ -175,6 +188,14 @@ button {
 }
 
 #paging-handell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    gap: 5px;
+}
+
+#pages-arrows {
     display: flex;
     gap: 5px;
 }
