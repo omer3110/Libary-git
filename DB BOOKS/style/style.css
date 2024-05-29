@@ -5,8 +5,7 @@ body {
     background-color: #f4f4f9;
     margin: 0;
     padding: 0;
-    /* background-image: url("/DB BOOKS/images/books.jpg"); */
-    background-image: url("/DB BOOKS/images/backgroundbook.jpg");
+    background-color: #e6e2e096;
 }
 
 /* nav bar  */
@@ -171,10 +170,13 @@ button {
     background-color: #F9F5F3;
     padding: 2rem;
     border-radius: 10px;
+    width: 40vw;
 }
 
 .modal {
+    display: flex;
     width: 70vw;
+    justify-content: center;
 }
 
 #book-info {

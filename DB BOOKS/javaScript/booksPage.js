@@ -49,18 +49,16 @@ function showHistory() {
             totalResponseArray = resposeToMappedArray(response.data, false);
             console.log(totalResponseArray);
             buildHistory(totalResponseArray[currentPage - 1], totalResponseArray.length);
-
         })
         .catch(error => console.log(error));
 }
 
-
 function resposeToMappedArray(apiResponse, fromSearch) {
-    const totalPages = Math.ceil(apiResponse.length / 10);
+    const totalPages = Math.ceil(apiResponse.length / 5);
     for (let i = 0; i < totalPages; i++) {
         const newPageArray = [];
-        const startIndex = i * 10;
-        const endIndex = Math.min(startIndex + 10, apiResponse.length);
+        const startIndex = i * 5;
+        const endIndex = Math.min(startIndex + 5, apiResponse.length);
         for (let j = startIndex; j < endIndex; j++) {
             newPageArray.push(apiResponse[j]);
         }
@@ -196,26 +194,32 @@ function buildHistory(data, totalPages) {
 function displayBookInfo(book) {
     const modal = document.getElementById("modal");
     const bookInfoDiv = document.getElementById("book-info");
-    bookInfoDiv.innerHTML = `
-        <h2>${book.name}</h2>
-        <div class="img-and-info"><img src="${book.image}" alt="${book.name}" style="max-height: 600px;">
-            <div> <p><strong>Author(s):</strong> ${book.authors}</p>
-            <p><strong>Number of Pages:</strong> ${book.num_pages}</p>
-            <div><p class="num-of-copies"><strong>Number of Copies:</strong> ${book.num_copies}</p> <button onclick="updateBookCopies(${book.id}, 'increase')">+</button> <button onclick="updateBookCopies(${book.id}, 'decrease')">-</button></div>
-            <p><strong>Categories:</strong> ${book.categories}</p> </div>
+    const url = `${urlBooks}/${book.id}`;
+    axios.get(url)
+        .then(response => {
+            response = response.data
+            bookInfoDiv.innerHTML = `
+        <h2>${response.name}</h2>
+        <div class="img-and-info"><img src="${response.image}" alt="${response.name}" style="max-height: 600px;">
+            <div> <p><strong>Author(s):</strong> ${response.authors}</p>
+            <p><strong>Number of Pages:</strong> ${response.num_pages}</p>
+            <div><p class="num-of-copies"><strong>Number of Copies:</strong> ${response.num_copies}</p> <button onclick="updateBookCopies(${response.id}, 'increase')">+</button> <button onclick="updateBookCopies(${response.id}, 'decrease')">-</button></div>
+            <p><strong>Categories:</strong> ${response.categories}</p> </div>
          </div>
-        <p><strong>Short Description:</strong> ${book.short_description}</p>
-        <p><strong>ISBN:</strong> ${book.ISBN}</p>
-        <button onclick="deleteBook(${book.id})">Delete book</button>
-
+        <p><strong>Short Description:</strong> ${response.short_description}</p>
+        <p><strong>ISBN:</strong> ${response.ISBN}</p>
+        <button onclick="deleteBook(${response.id})">Delete book</button>
     `;
-    modal.style.display = "block";
+            modal.style.display = "block";
+        })
+        .catch(error => console.error('Error:', error));
+
 
     const closeModalBtn = document.querySelector('.close-modal-btn');
     closeModalBtn.style.display = "inline"
     closeModalBtn.onclick = function () {
         modal.style.display = "none";
-    };
+    };
 }
 
 document.querySelector('#new-book-form-container').addEventListener('submit', function (event) {
@@ -246,8 +250,12 @@ function newBook() {
 }
 function clearNewBookForm() {
     document.querySelector('#BookName').value = '';
-    document.querySelector('#newAuthor').value = '';
-    document.querySelector('#newNumPages').value = '';
+    document.querySelector('#Authors').value = '';
+    document.querySelector('#NumPages').value = '';
+    document.querySelector('#description').value = '';
+    document.querySelector('#img').value = '';
+    document.querySelector('#numOfCopies').value = '';
+    document.querySelector('#categories').value = '';
 }
 
 async function updateBookCopies(id, action) {
@@ -280,10 +288,20 @@ async function updateBookCopies(id, action) {
 }
 
 function deleteBook(id) {
+    const modal = document.querySelector('.modal')
+    const elemDeleteBookMessage = document.querySelector('.delete-book-message')
     axios.delete(`${urlBooks}/${id}`)
         .then(response => {
-            showMessage(`Book ${id} deleted successfully!`, true);
             addToHistory("delete", new Date, id)
+            elemDeleteBookMessage.style.color = 'red'
+            elemDeleteBookMessage.textContent = "Deleting Book..."
+            setTimeout(() => {
+                fetchAndBuildTable();
+                elemDeleteBookMessage.textContent = ""
+                modal.innerHTML = `<p>Feel free to search a book...<i class="fa-regular fa-face-smile"></i></p>`;
+                modal.style.display = 'flex'
+
+            } , 1000);
         })
         .catch(error => showMessage(`Failed to delete book ${id}!`, false));
 
@@ -293,7 +311,6 @@ function addToHistory(operation, time, bookId) {
     axios.post(urlHistory, { operation: operation, time: time, bookId: bookId })
         .then(response => {
             console.log("History added successfully!");
-            clearNewBookForm();
         })
         .catch(error => console.log("Coul not add history element"));
 }
@@ -312,6 +329,45 @@ document.querySelector('#searchBarForm').addEventListener('submit', function (ev
     event.preventDefault();
     searchBook();
 });
+
+// async function searchBook() {
+//     currentPage = 1;
+//     totalResponseArray = [];
+//     const elemSearchValue = document.querySelector("#searchBar").value.trim().toLowerCase();
+//     let booksResultsCounter = 0;
+//     const resultsFoundArray = [];
+
+//     try {
+//         const response = await axios.get(urlBooks);
+//         const allBooks = response.data;
+//         // Filter the books based on the search value
+//         for (const book of allBooks) {
+//             // Convert book name to lowercase for case-insensitive search
+//             const bookName = book.name.toLowerCase();
+//             if (bookName.includes(elemSearchValue)) {
+//                 resultsFoundArray.push(book);
+//                 booksResultsCounter++;
+//             }
+//         }
+//     } catch (error) {
+//         console.error('Error fetching books data:', error);
+//     }
+//     const pagingButtons = document.getElementById("paging-handell");
+//     if (booksResultsCounter == 0) {
+//         pagingButtons.innerHTML = `<div>No results found</div>`;
+//         // booksContainer.style.display = 'none';
+//     }
+//     else {
+//         console.log('Final results:', resultsFoundArray);
+//         let final = resposeToMappedArray(resultsFoundArray, true);
+//         console.log(final);
+//         console.log(final.length);
+
+//         buildTable(final[currentPage - 1], final.length)
+//     }
+// }
+
+// fetchAndBuildTable()
 
 async function searchBook() {
     currentPage = 1;
@@ -336,9 +392,10 @@ async function searchBook() {
         console.error('Error fetching books data:', error);
     }
     const pagingButtons = document.getElementById("paging-handell");
+    const listOfBooksDiv = document.querySelector(".book-list")
     if (booksResultsCounter == 0) {
         pagingButtons.innerHTML = `<div>No results found</div>`;
-        //booksContainer.style.display = 'none';
+        listOfBooksDiv.style.display = 'none';
     }
     else {
         console.log('Final results:', resultsFoundArray);
@@ -350,6 +407,8 @@ async function searchBook() {
     }
 
 }
+
+fetchAndBuildTable();
 
 
 // async function searchBook() {
