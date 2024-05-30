@@ -1,323 +1,6 @@
 {
   "books": [
     {
-      "id": "62",
-      "name": "Arthurian Romances",
-      "authors": [
-        "Troyes Cretien de"
-      ],
-      "num_pages": 510,
-      "short_description": "The Birth of King Arthur and the Knights of the Round Table“’My good sir, is she your daughter then?’ ‘Yes, but don't pay any attention to what she says,’ said the lord. ‘She's a child - a silly, foolish thing.’ ‘Indeed,’ said my lord Gawain, ‘then I'd be very ill-mannered not to do what she wants.’” - Chrétien de Troyes, Arthurian Romances Arthurian Romances by Chrétien de Troyes is a collection of short stories set in the Early Middle Ages, in England. They follow the path of several knights – including Lancelot’s dad – through adulthood focusing on their romantic affairs. What tests will the knights encounter in order to prove themselves worthy of a woman’s love?",
-      "image": "http://books.google.com/books/content?id=u_jzCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Young Adult Fiction"
-      ],
-      "ISBN": "9781681952574"
-    },
-    {
-      "id": "63",
-      "name": "The Reading Specialist",
-      "authors": [
-        "Rita M. Bean"
-      ],
-      "num_pages": 353,
-      "short_description": "A trusted practitioner guide and course text, this book provides a complete introduction to the multiple roles of the reading specialist in grades PreK-12. Rita M. Bean offers evidence-based best practices for working with struggling readers; supporting teachers through professional development and coaching; planning curricula; assessing at the individual, classroom, and school levels; and building strong school, family, and community partnerships. User-friendly features include helpful classroom vignettes, questions for discussion and reflection, follow-up activities, and ideas for instructors and workshop leaders. Reproducible forms and worksheets can be downloaded and printed in a convenient 8 1/2\" x 11\" size. New to This Edition New overarching framework that connects literacy leadership more directly to classroom instruction and assessment. Links to the Common Core State Standards (CCSS) and new standards-based examples are included throughout. Expanded coverage of literacy coaching, middle and high school grades, and response to intervention. Chapters now begin with key questions and include annotated resources for further reading.",
-      "image": "http://books.google.com/books/content?id=Qne_CQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Language Arts & Disciplines"
-      ],
-      "ISBN": "9781462521548"
-    },
-    {
-      "id": "64",
-      "name": "Encyclopedia of Library and Information Science",
-      "authors": [
-        "Allen Kent",
-        "Harold Lancour",
-        "Jay E. Daily"
-      ],
-      "num_pages": 584,
-      "short_description": "\"The Encyclopedia of Library and Information Science provides an outstanding resource in 33 published volumes with 2 helpful indexes. This thorough reference set--written by 1300 eminent, international experts--offers librarians, information/computer scientists, bibliographers, documentalists, systems analysts, and students, convenient access to the techniques and tools of both library and information science. Impeccably researched, cross referenced, alphabetized by subject, and generously illustrated, the Encyclopedia of Library and Information Science integrates the essential theoretical and practical information accumulating in this rapidly growing field.\"",
-      "image": "http://books.google.com/books/content?id=jU3fwyjqS5UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Language Arts & Disciplines"
-      ],
-      "ISBN": "082472027X"
-    },
-    {
-      "id": "65",
-      "name": "Stimulating Non-Fiction Writing!",
-      "authors": [
-        "Emma Hughes-Evans",
-        "Simon Brownhill"
-      ],
-      "num_pages": 166,
-      "short_description": "Stimulating Non-Fiction Writing! Inspiring Children Aged 7-11 offers innovative and exciting ways to engage children in non-fiction writing, giving professionals the confidence and practical advice that they need to support children in producing quality non-fiction texts in the classroom. Packed full of interesting ideas, resource suggestions and practical activities, the book explores the various ways professionals can purposefully encourage ‘child authors’ to develop their non-fiction writing skills. Tried-and-tested resources, ‘Gold star!’ tips and practical suggestions are underpinned by research-informed teaching strategies and academic information to strengthen professional practice associated with the teaching of non-fiction writing. By taking a stimulating approach to each text type and linking activities to known texts and stimuli, the book offers differentiated advice for working with children in Lower and Upper Key stage 2. Chapters consider text types that include: Instructions Persuasive texts Non-chronological reports Correspondence texts Discussion texts This new text is the perfect guide for inspiring children aged 7-11 in the classroom and will energise and enrich classroom provision and practice by being an essential resource for teachers and students on teacher training courses.",
-      "image": "http://books.google.com/books/content?id=rtKFDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Education"
-      ],
-      "ISBN": "9781351581424"
-    },
-    {
-      "id": "66",
-      "name": "Non-Fiction Guided Reading Handbook",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 52,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=w3RNalrp16cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Uncategorized"
-      ],
-      "ISBN": "9780435157678"
-    },
-    {
-      "id": "67",
-      "name": "Navigator Non-Fiction Year 4: Eye See",
-      "authors": [
-        "Pearson Education"
-      ],
-      "num_pages": 38,
-      "short_description": "Navigator is a KS2 reading scheme which covers fiction and non-fiction. It provides material to give pupils a 20-minute guided reading sesson per week during each school year.",
-      "image": "http://books.google.com/books/content?id=N2xau48wxecC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Uncategorized"
-      ],
-      "ISBN": "9780433065463"
-    },
-    {
-      "id": "68",
-      "name": "The Publishers' Trade List Annual",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 1872,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=F55BAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "American literature"
-      ]
-    },
-    {
-      "id": "69",
-      "name": "Virginia English Bulletin",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 256,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=TBpKAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "English language"
-      ]
-    },
-    {
-      "id": "70",
-      "name": "Reaching Adolescents",
-      "authors": [
-        "Arthea J. S. Reed"
-      ],
-      "num_pages": 600,
-      "short_description": "A basic text for young and adult/adolescent literature courses. An exciting new young adult literature text...one that offers a holistic, inclusive approach to incorporating the popular books young adults like to read into a solid English language arts curriculum. A student-centered, whole language emphasis advocates a curriculum that encourages student response to literature and helps develop crucial critical thinking skills. The author suggests numerous approaches to using young adult literature, explores and demonstrates a variety of teaching methods, and discusses an array of literature appropriate for a wide range of students in a number of subject areas, including literature written specifically for children and young adults, popular adult literature, and the classics.",
-      "image": "http://books.google.com/books/content?id=IeUL6Pr7zeQC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Education"
-      ],
-      "ISBN": "0023988614"
-    },
-    {
-      "id": "71",
-      "name": "More Than a Game",
-      "authors": [
-        "Chris Crowe"
-      ],
-      "num_pages": 196,
-      "short_description": "Contains a bibliography of books for young adults that deal with sports and includes over 3,000 titles.",
-      "image": "http://books.google.com/books/content?id=dS7uAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Literary Criticism"
-      ]
-    },
-    {
-      "id": "72",
-      "name": "The Publishers Weekly",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 1732,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=lHmVFthOFQgC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "American literature"
-      ]
-    },
-    {
-      "id": "73",
-      "name": "2004 Novel and Short Story Writer's Market",
-      "authors": [
-        "Anne Bowling",
-        "Michael Schweer",
-        "Vanessa Lyman"
-      ],
-      "num_pages": 694,
-      "short_description": "Lists addresses and information on contacts, pay rates, and submission requirements, and includes essays on the craft of writing.",
-      "image": "http://books.google.com/books/content?id=OTB1OfPQp3cC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Language Arts & Disciplines"
-      ],
-      "ISBN": "1582971935"
-    },
-    {
-      "id": "74",
-      "name": "Connecting with Reluctant Teen Readers",
-      "authors": [
-        "Patrick Jones",
-        "Maureen L. Hartman",
-        "Patricia Taylor"
-      ],
-      "num_pages": 344,
-      "short_description": "A practical guide to defining and attracting reluctant readers is divided into three parts: \"Tips That Work,\" \"Titles That Work,\" and \"Tools That Work.\"",
-      "image": "http://books.google.com/books/content?id=CVXhAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Language Arts & Disciplines"
-      ]
-    },
-    {
-      "id": "75",
-      "name": "Essentials of Young Adult Literature",
-      "authors": [
-        "Carl M. Tomlinson",
-        "Carol Lynch-Brown"
-      ],
-      "num_pages": 308,
-      "short_description": "\"Essentials of Young Adult Literature\" Based on a genre approach to literature, this long-awaited book offers a comprehensive, clear, and succinct overview of adolescent literature. It includes recommended books listed by genre and topic, and engages readers by offering a thorough discussion of the major trends and issues affecting young adult literature such as censorship, the literary canon, and accountability. It provides clearly stated positions on the current issues affecting schools and literature. Written by well-known authors Carl Tomlinson and Carol Lynch-Brown, \"Essentials of Young Adult Literature\" places emphasis on reading a wide variety of young adult literature and addresses all types and formats of literature including novels, short stories, graphic novels, and picture books for older readers. In addition, notable authors are featured in each genre chapter and multicultural and international literature is integrated throughout the book and then treated more fully in its own chapter. Current and future teachers will appreciate the authors' practical strategies for connecting secondary school students with young adult books, such as how to select books that students will read and enjoy, how to motivate resistant readers to read, and how to develop text sets for classroom study across the curriculum. Readers will be equipped with the knowledge to use trade books as excellent teaching and learning materials and will not be limited to using textbooks alone. Key Features \"Literature Across the Curriculum\" features found in all genre chapters give examples of how young adult literature can help students and teachers in the content areas learn or present course content in a more interesting, memorable way. Extensive lists of recommended books briefly annotated with topics and age levels follow each genre chapter. One full chapter devoted to addressing the specific needs of resistant readers give middle and high school teachers much-needed strategies for addressing common obstacles to reading and for motivating students to read. Every chapter presents one to three charts with information about milestone books, history of specific genres, and research. Appendices feature Young Adult Book Award lists and YA Magazines, organized by content area and include ordering information. By the same authors Essentials of Children's Literature, Fifth Edition (c)2005, Allyn & Bacon, ISBN 0-205-42015-X For more information, please visit www.ablongman.com",
-      "image": "http://books.google.com/books/content?id=Sx_uAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Education"
-      ]
-    },
-    {
-      "id": "76",
-      "name": "School Library Media Activities Monthly",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 472,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=RjkPAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Audio-visual library service"
-      ]
-    },
-    {
-      "id": "77",
-      "name": "Guide to Literary Agents 96",
-      "authors": [
-        "Kristen C Holm",
-        "Kirsten C. Holm"
-      ],
-      "num_pages": 316,
-      "short_description": "This directory lists nearly 500 agents across the United States--and even a few in Canada. Writers will find listings organized by literary agents (fee-charging and non-fee-charging) and script agents (TV, movies, and plays). Through articles written by professionals, the book also answers the most frequently asked questions about agents--what they do, where they are, and how to sign and work with them.",
-      "image": "http://books.google.com/books/content?id=j0eClYAaJzIC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Language Arts & Disciplines"
-      ],
-      "ISBN": "0898797152"
-    },
-    {
-      "id": "78",
-      "name": "The Writer's Market",
-      "authors": [
-        "Kirsten Campbell Holm"
-      ],
-      "num_pages": 384,
-      "short_description": "Here you will find thousands of completely updated listings (plus 1,100+ brand new publishing opportunities) for book publishers, consumer magazines, script buyers, trade & professional journals, plus more than 300 agents! No other reference provides such complete AND current information.",
-      "image": "http://books.google.com/books/content?id=omyVMSsrJgEC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Authorship"
-      ]
-    },
-    {
-      "id": "79",
-      "name": "McGraw-Hill's SAT Subject Test Literature, 2nd Edition",
-      "authors": [
-        "Stephanie Muntone"
-      ],
-      "num_pages": 306,
-      "short_description": "Expert guidance on the Literature exam Many colleges and universities require you to take one or more SAT II Subject Tests to demonstrate your mastery of specific high school subjects. McGraw-Hill's SAT Subject Test: Literature is written by experts in the field, and gives you the guidance you need perform at your best. This book includes: 9 full-length sample tests (8 practice tests plus one diagnostic test) with complete answer explanations 30 top tips to remember on test day Glossary of tested literature terms Everything you need to know about the SAT Subject Test in Literature: testing requirements, when to register, how scores are reported, and more Diagnostic test to pinpoint strengths and weaknesses Sample exams and problems designed to match the real test in content and level of difficulty Step-by-step review of important books and authors in both American and British Literature Practice tests just like the real SAT Subject Test in Literature",
-      "image": "http://books.google.com/books/content?id=CsJE43Y_VKUC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Education"
-      ],
-      "ISBN": "9780071763356"
-    },
-    {
-      "id": "80",
-      "name": "1999 Writer's Market",
-      "authors": [
-        "Mark Garvey",
-        "Holm"
-      ],
-      "num_pages": 1128,
-      "short_description": "Does everything but stamp your self-addressed envelopes.--St. Paul PioneerPress. IBM-compatible CD-ROM.",
-      "image": "http://books.google.com/books/content?id=2RZi42MSunkC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Computers"
-      ],
-      "ISBN": "0898798558"
-    },
-    {
-      "id": "81",
-      "name": "The Mystery of the Howling Dog (The Mystery Series Short Story Book 7)",
-      "authors": [
-        "Paul Moxham"
-      ],
-      "num_pages": 14,
-      "short_description": "Are you up for a thrilling adventure? When Amy hears a dog howling in the woods, she's the first to come to the animal's aid. After taking the animal to the vet, the Mystery Kids attempt to locate his owner, but things don't quite turn out as planned. Where has the dog come from? Why does the animal try to enter a cottage after the owner declares he has never seen the animal before? What causes the children to pursue two men into the woods? Set in 1950's Britain, this adventure story will suit anyone who enjoys Nancy Drew, the Hardy Boys or the Famous Five. THE MYSTERY SERIES This middle grade series set in 1950's UK will delight children of all ages. Perfect for fans of Enid Blyton (Famous Five/Secret Seven), Carolyn Keene (Nancy Drew), Franklin Dixon (Hardy Boys) and Gertrude Chandler Warner (The Boxcar Children). Suitable for children 6-8, 9-12, and even adults who love a clean and wholesome story. Full Length Novels: The Mystery of Smugglers Cove The Mystery of Adventure Island The Mystery of Hidden Valley The Mystery of Claw Mountain The Mystery of the Golden Dragons The Mystery of Treasure Island The Mystery of Four Towers Short Stories: The Mystery of the Missing Money The Mystery of the Missing Gnomes The Mystery of the Mysterious Man The Mystery of the Strange Notebook The Mystery of the Golden Elephant The Mystery of the Red Balloon The Mystery of the Howling Dog The Mystery of the Hidden Suitcase",
-      "image": "http://books.google.com/books/content?id=wUUNDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Juvenile Fiction"
-      ],
-      "ISBN": "N/A"
-    },
-    {
-      "id": "82",
-      "name": "The Mystery and the World",
-      "authors": [
-        "Maria Clara Bingemer"
-      ],
-      "num_pages": 402,
-      "short_description": "During the past century, an enormous effervescence of events changed the sociopolitical configuration of the world. The interpretation of these facts helped further deepen the crisis in which modern thought already found itself--and it generated the uncertain and unstable environment in which we live today, the so-called postmodernity, late modernity, or hypermodernity. In this context, one of the most profound impacts is most certainly the one on religion. During the twentieth century, religion proved not to be banished from the human horizon as the masters of suspicion intended. Known as the godless century, the twentieth century saw also a resuscitation of the search for the sense of life and spirituality. With the crisis of modern reason, humankind turned toward consumerism and provisional and \"light\" practices. The last century represents not only the height of the postmodernization process but also the rescue of the transcendent and absolute, even if it is an absolute without face and identity. It is in this scenario that religious experiences, apparently exiled by modern rationality, begin to occur and multiply again. Mystical experiences will be, then, the basis for highlighting recurrent characteristics with universal import. But they will show a different configuration than before. One will be able to find them not in so-called sacred spaces but in very secular ones; not so much within institutions but at the borders, or even outside them; not configured by a specific tradition but in an interface that makes more than one tradition meet and dialogue.",
-      "image": "http://books.google.com/books/content?id=5kxQDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Religion"
-      ],
-      "ISBN": "9781498276337"
-    },
-    {
       "id": "83",
       "name": "Teaching World History as Mystery",
       "authors": [
@@ -332,51 +15,6 @@
         "Education"
       ],
       "ISBN": "9781135147464"
-    },
-    {
-      "id": "84",
-      "name": "The Mystery of the Taj Mahal (India)",
-      "authors": [
-        "Carole Marsh"
-      ],
-      "num_pages": 160,
-      "short_description": "Super-sleuth siblings Christina and Grand head for the exotic country of India to visit the famous, amazing, and mysterious Taj Mahal. Things quickly get confusing and even more mysterious when they actually meet two new friends, a boy named Taj and a girl named Mahal. The foursome continues on a journey filled with jolting rides and jewels galore, not to mention riddles, traps, peril, and a cobra named Charlie! Can they assess the clues ñfloatingî their way in time to solve the mystery and save the day? Maybe??? Read and see! Watch out, kids donÍt get trapped in the tomb! The Mystery at the Taj Mahal (India) will also incorporate history, geography, culture and cliffhanger chapters that will keep kids begging for more! This mystery will include SAT words, educational facts, fun and humor, built-in book club and activities. Below is the Reading Levels Guide for this book: Grade Levels: 3-6 Accelerated Reader Reading Level: 4.6 Accelerated Reader Points: 2 Accelerated Reader Quiz Number: 167203 Lexile Measure: 660 Fountas & Pinnell Guided Reading Level: Q Developmental Assessment Level: 40",
-      "image": "http://books.google.com/books/content?id=f6lhCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Juvenile Fiction"
-      ],
-      "ISBN": "9780635111715"
-    },
-    {
-      "id": "85",
-      "name": "The Sandy Steele Mystery MEGAPACK®: 6 Young Adult Novels (Complete Series)",
-      "authors": [
-        "Roger Barlow"
-      ],
-      "num_pages": 710,
-      "short_description": "This volume collects the entire Sandy Steele mystery/adventure series. Included are: 1. BLACK TREASURE Sandy Steele and Quiz spend an action-filled summer in the oil fields of the Southwest. In their search for oil and uranium, they unmask a dangerous masquerader. 2. DANGER AT MORMON CROSSING On a hunting trip in the Lost River section of Idaho, Sandy and Mike ride the rapids, bag a mountain lion, and stumble onto the answer to a hundred-year-old mystery. 3. STORMY VOYAGE Sandy and Jerry James ship as deck hands on one of the “long boats” of the Great Lakes. They are plunged into a series of adventures and find themselves involved in a treacherous plot. 4. FIRE AT RED LAKE Sandy and his friends pitch in to fight a forest fire in Minnesota. Only they and Sandy’s uncle know that there is an unexploded A-bomb in the area to add to the danger. 5. SECRET MISSION TO ALASKA A pleasant Christmas trip turns into a startling adventure. Sandy and Jerry participate in a perilous dog-sled race, encounter a wounded bear, and are taken as hostages by a ruthless enemy. 6. TROUBLED WATERS When Sandy and Jerry mistakenly sail off in a stranger’s sloop instead of their own, they land in a sea of trouble. Their attempts to outmaneuver a desperate crew are intertwined with fascinating sailing lore. If you enjoy this ebook, don't forget to search your favorite ebook store for \"Wildside Press Megapack\" to see more of the 280+ volumes in this series, covering adventure, historical fiction, mysteries, westerns, ghost stories, science fiction -- and much, much more!",
-      "image": "http://books.google.com/books/content?id=PxPuCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Fiction"
-      ],
-      "ISBN": "9781479421244"
-    },
-    {
-      "id": "86",
-      "name": "The Mystery at Big Ben (London, England)",
-      "authors": [
-        "Carole Marsh"
-      ],
-      "num_pages": 160,
-      "short_description": "Mimi and Papa speed away to London, England in their little red and white airplane, The Mystery Girl. Tagging along are grandchildren Christina, 10, and Grant, 7. Mimi, a children's mystery book writer, has an appointment with the Queen! Papa is headed for the Rosetta Stone. The kids are supposed to go to the Tower of London and \"behave themselves.\" But, uh-oh, Grant spots a big problem with Big Ben...and he and his sister, along with their two new best friends, George and Maggie, take a whirlwind tour from the top of the Eye, up the Thames River, down into a dungeon, and more -- in search of clues to solve The Mystery of Big Ben!Ê LOOK what's in this mystery - people, places, history, and more! Places: The Ritz Hotel - Big Ben (where Clue #1 is found) - Eye in the Sky Ferris wheel - The British Museum (where clue #2 is found) - HarrodÕs department store - Tower of London - St. PaulÕs Cathedral - CleopatraÕs Needle - Globe Theater - 221b Baker Street (fictional home of Sherlock Holmes) - Madame TussaudÕs Wax Museum - Buckingham Palace - Heathrow Airport - Paris, France - London Bridge - Tower Bridge - Piccadilly Circus - Times Square (New York), USA - London Underground - Thames River - Outer Banks, North Carolina, USA - Savannah, Georgia - Washington, D.C., USA Educational Items: The plays and productions of William Shakespeare - Rosetta Stone - History of St. PaulÕs Cathedral - History of the Tower of London - History of the Globe Theater - Eros (mythology) - Big Ben - Elgin Marbles - London Bridge - Crown Jewels - Bubonic Plague - Statue of Liberty - Changing of the Guard People: Sherlock Holmes - Lindow Man - Jack the Ripper - Blackbeard the Pirate - Sir Walter Raleigh This mystery incorporates history, geography, culture and cliffhanger chapters that keep kids begging for more! This mystery includes SAT words, educational facts, fun and humor, Built-In Book Club and activities. This book includes a map, inline glossary definitions, and lots more! This Carole Marsh Mystery also has an Accelerated Reader quiz, a Lexile Level, a Fountas & Pinnell guided reading level and a Developmental Reading Assessment. Below is the Reading Levels Guide for this book: Grade Levels: 3-6 Accelerated Reader Reading Level: 4.7 Accelerated Reader Points: 3 Accelerated Reader Quiz Number: 103233 Lexile Measure: 730 Fountas & Pinnell Guided Reading Level: Q Developmental Assessment Level: 40",
-      "image": "http://books.google.com/books/content?id=cXNhCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Juvenile Fiction"
-      ],
-      "ISBN": "9780635068538"
     },
     {
       "id": "87",
@@ -467,25 +105,6 @@
         "Juvenile Fiction"
       ],
       "ISBN": "1616515600"
-    },
-    {
-      "id": "94",
-      "name": "Bookshop Mysteries",
-      "authors": [
-        "John Harvey",
-        "Ian Rankin",
-        "Joyce Carol Oates",
-        "Peter Lovesey",
-        "Laura Lippman"
-      ],
-      "num_pages": 208,
-      "short_description": "Five thrilling tales of mystery, mayhem, and murder from an exceptional quintet of Edgar, CWA Dagger, and National Book Award winners. Crime and literature make strange and sinister bedfellows in this winning anthology of book-themed whodunits by five acclaimed masters of mystery and suspense. Multiple award-winning, bestselling authors provide the literary thrills and chills in this masterful collection of five ingeniously puzzling mysteries that belong in the library of every crime fiction aficionado. Dead Dames Don’t Sing by John Harvey: Looking for a big payday but finding big trouble instead, ex-London-cop-turned-private-investigator Jack Kiley attempts to uncover the true origins of a controversial, pseudonymously written pulp novel. The Travelling Companion by Ian Rankin: A young Scotsman in Paris is drawn into a shocking mystery that resides within the pages of an unpublished manuscript allegedly penned by Robert Louis Stevenson. Mystery, Inc. by Joyce Carol Oates: When an obsessive collector of bookstores discovers a charming new shop, he decides he must have it at any cost—even if he has to commit murder. Remaindered by Peter Lovesey: For some nefarious reason, the widow and former associates of a slain gangster are determined to keep the Precious Finds Bookstore open following the unfortunate demise of the shop’s owner. The Book Thing by Laura Lippman: Private investigator Tess Monaghan must help the irascible proprietor of a Baltimore children’s bookstore keep her business afloat by unmasking an elusive and utterly ingenious book thief.",
-      "image": "http://books.google.com/books/content?id=zmowDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Fiction"
-      ],
-      "ISBN": "9781504048019"
     },
     {
       "id": "95",
@@ -713,7 +332,7 @@
       "num_pages": 249,
       "short_description": "This book is written with the one big purpose of being helpful to everyone who reads it. Whether this reading is only for a few moments to merely glance at its pages or to read it consecutively chapter after chapter; it has in it, in every line of it, a statement of fact learned from every day life. It will teach the avid reader the principles of healing through the three-fold method of: suggestion through the hand; suggestion through the spoken and written word; suggestion through telepathy, as explained in the home method of healing.",
       "image": "http://books.google.com/books/content?id=JeESAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
+      "num_copies": 7,
       "categories": [
         "Uncategorized"
       ],
@@ -793,20 +412,6 @@
       ]
     },
     {
-      "id": "116",
-      "name": "The Holy Communion. A Course of Sermons Preached on the Sundays in Lent and Easter Day, 1871, in the Parish Church of Chipping Sodbury, Gloucestershire",
-      "authors": [
-        "Jonas Pascal Fitzwilliam DAVIDSON"
-      ],
-      "num_pages": 128,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=h6iY5otjnGQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Easter"
-      ]
-    },
-    {
       "id": "117",
       "name": "A HUMAN VENTURE",
       "authors": [
@@ -880,22 +485,6 @@
         "Literary Criticism"
       ],
       "ISBN": "0853238553"
-    },
-    {
-      "id": "122",
-      "name": "New Boundaries in Political Science Fiction",
-      "authors": [
-        "Donald M. Hassler",
-        "Clyde Wilcox"
-      ],
-      "num_pages": 384,
-      "short_description": "Surveying the vast expanse of politically-charged science fiction, this book posits that the defining dilemma for these tales rests in whether identity and meaning germinate from progressive linear changes or progress, or from a continuous return to primitive realities of war, death and the competition for survival.",
-      "image": "http://books.google.com/books/content?id=-8iD6iuO-iAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Fiction"
-      ],
-      "ISBN": "1570037361"
     },
     {
       "id": "123",
@@ -6099,1741 +5688,259 @@
       "ISBN": "9780199876204"
     },
     {
-      "id": "475",
-      "name": "New York Magazine",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 152,
-      "short_description": "New York magazine was born in 1968 after a run as an insert of the New York Herald Tribune and quickly made a place for itself as the trusted resource for readers across the country. With award-winning writing and photography covering everything from politics and food to theater and fashion, the magazine's consistent mission has been to reflect back to its audience the energy and excitement of the city itself, while celebrating New York as both a place and an idea.",
-      "image": "http://books.google.com/books/content?id=SOQCAAAAMBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Uncategorized"
-      ],
-      "ISBN": "N/A"
-    },
-    {
-      "id": "476",
-      "name": "Palestine Directory",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 926,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=NTLVAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Industries"
-      ]
-    },
-    {
-      "id": "477",
-      "name": "Popular Mechanics",
-      "authors": [
-        "Unknown"
-      ],
-      "num_pages": 164,
-      "short_description": "Popular Mechanics inspires, instructs and influences readers to help them master the modern world. Whether it’s practical DIY home-improvement tips, gadgets and digital technology, information on the newest cars or the latest breakthroughs in science -- PM is the ultimate guide to our high-tech lifestyle.",
-      "image": "http://books.google.com/books/content?id=VM8DAAAAMBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Uncategorized"
-      ],
-      "ISBN": "N/A"
-    },
-    {
-      "id": "478",
-      "name": "“The” Works of Francis Bacon",
-      "authors": [
-        "Francis Bacon"
-      ],
-      "num_pages": 788,
-      "short_description": "No Description",
-      "image": "http://books.google.com/books/content?id=vkJLfIO7DHIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "num_copies": 5,
-      "categories": [
-        "Uncategorized"
-      ]
-    },
-    {
-      "id": "9b2b",
-      "name": "aasd",
-      "authors": "asd",
-      "num_pages": "22",
-      "short_description": "asd",
-      "image": "2",
-      "num_copies": "22",
-      "categories": "asd"
-    },
-    {
-      "id": "1c1d",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "22",
-      "short_description": "asd",
-      "image": "2",
-      "num_copies": "2",
-      "categories": "asd"
-    },
-    {
-      "id": "1cff",
-      "name": "asd",
-      "authors": "w",
-      "num_pages": "22",
-      "short_description": "asd",
-      "image": "asd",
-      "num_copies": "33",
-      "categories": "asd"
-    },
-    {
-      "id": "58cc",
-      "name": "asd",
+      "id": "d2ad",
+      "name": "asdasd",
       "authors": "asd",
       "num_pages": "2",
-      "short_description": "asd",
-      "image": "asd",
-      "num_copies": "3",
-      "categories": "asd"
-    },
-    {
-      "id": "fc73",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "2",
-      "image": "asd",
-      "num_copies": "2",
-      "categories": "asd"
-    },
-    {
-      "id": "e35f",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "asd",
-      "image": "22",
-      "num_copies": "32",
-      "categories": "asd"
-    },
-    {
-      "id": "87db",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "22",
-      "short_description": "asd",
-      "image": "asd",
-      "num_copies": "23",
-      "categories": "asd"
-    },
-    {
-      "id": "c815",
-      "name": "asda",
-      "authors": "asd",
-      "num_pages": "23",
-      "short_description": "asd",
-      "image": "1asd",
-      "num_copies": "23",
-      "categories": "asdd"
-    },
-    {
-      "id": "1e30",
-      "name": "as",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "2",
-      "image": "2",
-      "num_copies": "2",
-      "categories": "2"
-    },
-    {
-      "id": "59b0",
-      "name": "nevo",
-      "authors": "asd",
-      "num_pages": "12",
-      "short_description": "asd",
+      "short_description": "12",
       "image": "asd",
       "num_copies": "12",
-      "categories": "ASD"
-    },
-    {
-      "id": "864a",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "asd",
-      "image": "2",
-      "num_copies": "22",
       "categories": "asd"
     },
     {
-      "id": "f66f",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "asd",
-      "image": "asd",
-      "num_copies": "2",
-      "categories": "asd"
-    },
-    {
-      "id": "00a8",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "asd",
-      "image": "2",
-      "num_copies": "2",
-      "categories": "asd"
-    },
-    {
-      "id": "7bc7",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "asd",
-      "image": "asd",
-      "num_copies": "2",
-      "categories": "asd"
-    },
-    {
-      "id": "759e",
-      "name": "asd",
-      "authors": "2",
-      "num_pages": "2",
-      "short_description": "asd",
-      "image": "asd",
-      "num_copies": "2",
-      "categories": "asd"
-    },
-    {
-      "id": "63c7",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "w",
-      "image": "asd",
-      "num_copies": "2",
-      "categories": "asd"
-    },
-    {
-      "id": "2b60",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "asd",
-      "image": "asd",
-      "num_copies": "2",
-      "categories": "asd"
-    },
-    {
-      "id": "703c",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "2",
-      "image": "asd",
-      "num_copies": "2",
-      "categories": "asd"
-    },
-    {
-      "id": "ef42",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "asd",
-      "image": "2",
-      "num_copies": "2",
-      "categories": "asd"
-    },
-    {
-      "id": "feeb",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "asd",
-      "image": "2",
-      "num_copies": "2",
-      "categories": "asd"
-    },
-    {
-      "id": "ce56",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "2",
-      "image": "asd",
-      "num_copies": "2",
-      "categories": "asd"
-    },
-    {
-      "id": "b9bd",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "asd",
-      "image": "asd",
-      "num_copies": "2",
-      "categories": "asd"
-    },
-    {
-      "id": "808f",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "asd",
-      "image": "2",
-      "num_copies": "2",
-      "categories": "asd"
-    },
-    {
-      "id": "aae1",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "asd",
-      "image": "asd",
-      "num_copies": "312",
-      "categories": "asd"
-    },
-    {
-      "id": "faa4",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "asd",
-      "image": "asd",
-      "num_copies": "124",
-      "categories": "asd"
-    },
-    {
-      "id": "6e76",
-      "name": "asd",
-      "authors": "asd",
-      "num_pages": "2",
-      "short_description": "asd",
-      "image": "asd",
-      "num_copies": "213",
-      "categories": "asd"
+      "id": "16c4",
+      "name": "Nevo",
+      "authors": "Nevo",
+      "num_pages": "200",
+      "short_description": "sadasd",
+      "image": "https://marketplace.canva.com/EAFaQMYuZbo/1/0/1003w/canva-brown-rusty-mystery-novel-book-cover-hG1QhA7BiBU.jpg",
+      "num_copies": "5",
+      "categories": "aasd"
     }
   ],
   "history": [
     {
-      "id": "q",
-      "operation": "delete",
-      "time": "5/27/24",
-      "bookId": "2"
-    },
-    {
-      "id": "53ee",
-      "operation": "update",
-      "time": "2024-05-27T12:56:54.395Z",
-      "bookId": 4
-    },
-    {
-      "id": "ba87",
-      "operation": "update",
-      "time": "2024-05-27T12:56:56.177Z",
-      "bookId": 4
-    },
-    {
-      "id": "6685",
-      "operation": "update",
-      "time": "2024-05-27T12:56:56.611Z",
-      "bookId": 4
-    },
-    {
-      "id": "371f",
-      "operation": "update",
-      "time": "2024-05-27T13:33:08.701Z",
-      "bookId": 4
-    },
-    {
-      "id": "a901",
-      "operation": "update",
-      "time": "2024-05-27T13:33:27.336Z",
-      "bookId": 4
-    },
-    {
-      "id": "78dc",
-      "operation": "update",
-      "time": "2024-05-27T13:33:36.116Z",
-      "bookId": 6
-    },
-    {
-      "id": "85e4",
-      "operation": "update",
-      "time": "2024-05-27T14:30:39.644Z",
-      "bookId": 4
-    },
-    {
-      "id": "012c",
-      "operation": "create",
-      "time": "2024-05-27T14:36:05.152Z",
-      "bookId": "1c1d"
-    },
-    {
-      "id": "45f3",
-      "operation": "create",
-      "time": "2024-05-27T14:38:43.097Z",
-      "bookId": "1cff"
-    },
-    {
-      "id": "0d18",
-      "operation": "create",
-      "time": "2024-05-27T14:40:44.559Z",
-      "bookId": "58cc"
-    },
-    {
-      "id": "d560",
-      "operation": "create",
-      "time": "2024-05-27T14:44:24.060Z",
-      "bookId": "fc73"
-    },
-    {
-      "id": "e988",
-      "operation": "create",
-      "time": "2024-05-27T14:47:04.983Z",
-      "bookId": "e35f"
-    },
-    {
-      "id": "d8d7",
-      "operation": "create",
-      "time": "2024-05-27T14:48:47.623Z",
-      "bookId": "c815"
-    },
-    {
-      "id": "0c5c",
-      "operation": "create",
-      "time": "2024-05-27T14:52:39.929Z",
-      "bookId": "1e30"
-    },
-    {
-      "id": "212d",
-      "operation": "update",
-      "time": "2024-05-28T15:05:39.477Z",
-      "bookId": 148
-    },
-    {
-      "id": "b684",
-      "operation": "update",
-      "time": "2024-05-28T15:05:53.047Z",
-      "bookId": 148
-    },
-    {
-      "id": "c4b2",
-      "operation": "update",
-      "time": "2024-05-28T15:05:53.540Z",
-      "bookId": 148
-    },
-    {
-      "id": "5013",
-      "operation": "update",
-      "time": "2024-05-28T15:05:55.136Z",
-      "bookId": 148
-    },
-    {
-      "id": "05b3",
-      "operation": "update",
-      "time": "2024-05-28T15:05:58.647Z",
-      "bookId": 148
-    },
-    {
-      "id": "4beb",
-      "operation": "create",
-      "time": "2024-05-28T15:37:28.231Z",
-      "bookId": "59b0"
-    },
-    {
-      "id": "83b5",
-      "operation": "create",
-      "time": "2024-05-28T15:48:41.685Z",
-      "bookId": "864a"
-    },
-    {
-      "id": "6786",
-      "operation": "create",
-      "time": "2024-05-28T16:01:04.923Z",
-      "bookId": "f66f"
-    },
-    {
-      "id": "83f9",
-      "operation": "update",
-      "time": "2024-05-28T16:06:46.491Z",
-      "bookId": 4
-    },
-    {
-      "id": "c8c0",
-      "operation": "update",
-      "time": "2024-05-28T16:07:02.937Z",
-      "bookId": 4
-    },
-    {
-      "id": "e91c",
-      "operation": "delete",
-      "time": "2024-05-28T16:43:15.063Z",
-      "bookId": 4
-    },
-    {
-      "id": "327d",
-      "operation": "delete",
-      "time": "2024-05-28T16:43:19.307Z",
-      "bookId": 6
-    },
-    {
-      "id": "7a4e",
-      "operation": "delete",
-      "time": "2024-05-28T16:44:02.300Z",
-      "bookId": 7
-    },
-    {
-      "id": "515b",
-      "operation": "delete",
-      "time": "2024-05-28T16:44:10.433Z",
-      "bookId": 8
-    },
-    {
-      "id": "1f3f",
-      "operation": "update",
-      "time": "2024-05-28T17:27:14.927Z",
-      "bookId": 18
-    },
-    {
-      "id": "0850",
-      "operation": "update",
-      "time": "2024-05-28T18:31:52.596Z",
-      "bookId": 9
-    },
-    {
-      "id": "212e",
-      "operation": "update",
-      "time": "2024-05-29T06:58:47.495Z",
-      "bookId": 16
-    },
-    {
-      "id": "052b",
-      "operation": "update",
-      "time": "2024-05-29T06:58:51.388Z",
-      "bookId": 9
-    },
-    {
-      "id": "9886",
-      "operation": "update",
-      "time": "2024-05-29T06:58:51.795Z",
-      "bookId": 9
-    },
-    {
-      "id": "704d",
-      "operation": "update",
-      "time": "2024-05-29T07:03:36.296Z",
-      "bookId": 9
-    },
-    {
-      "id": "7479",
-      "operation": "update",
-      "time": "2024-05-29T07:25:38.144Z",
-      "bookId": 9
-    },
-    {
-      "id": "2bbb",
-      "operation": "update",
-      "time": "2024-05-29T07:27:35.697Z",
-      "bookId": 11
-    },
-    {
-      "id": "1d5b",
-      "operation": "update",
-      "time": "2024-05-29T07:27:46.795Z",
-      "bookId": 9
-    },
-    {
-      "id": "67f7",
-      "operation": "update",
-      "time": "2024-05-29T07:27:49.888Z",
-      "bookId": 11
-    },
-    {
-      "id": "54af",
-      "operation": "update",
-      "time": "2024-05-29T07:27:52.841Z",
-      "bookId": 11
-    },
-    {
-      "id": "ffdd",
-      "operation": "update",
-      "time": "2024-05-29T07:28:04.769Z",
-      "bookId": 15
-    },
-    {
-      "id": "6d1e",
-      "operation": "update",
-      "time": "2024-05-29T07:31:42.766Z",
-      "bookId": 9
-    },
-    {
-      "id": "069f",
-      "operation": "update",
-      "time": "2024-05-29T07:31:43.449Z",
-      "bookId": 9
-    },
-    {
-      "id": "48a6",
-      "operation": "update",
-      "time": "2024-05-29T07:31:48.010Z",
-      "bookId": 9
-    },
-    {
-      "id": "f651",
-      "operation": "update",
-      "time": "2024-05-29T07:31:50.031Z",
-      "bookId": 9
-    },
-    {
-      "id": "5292",
-      "operation": "update",
-      "time": "2024-05-29T07:31:51.075Z",
-      "bookId": 9
-    },
-    {
-      "id": "3e12",
-      "operation": "update",
-      "time": "2024-05-29T07:31:51.532Z",
-      "bookId": 9
-    },
-    {
-      "id": "dcc1",
-      "operation": "update",
-      "time": "2024-05-29T07:31:54.480Z",
-      "bookId": 11
-    },
-    {
-      "id": "7403",
-      "operation": "update",
-      "time": "2024-05-29T07:36:45.117Z",
-      "bookId": 9
-    },
-    {
-      "id": "5a5e",
-      "operation": "update",
-      "time": "2024-05-29T07:36:49.182Z",
-      "bookId": 11
-    },
-    {
-      "id": "6fd4",
-      "operation": "update",
-      "time": "2024-05-29T07:36:53.099Z",
-      "bookId": 13
-    },
-    {
-      "id": "5b80",
-      "operation": "create",
-      "time": "2024-05-29T07:38:14.488Z",
-      "bookId": "00a8"
-    },
-    {
-      "id": "4767",
-      "operation": "update",
-      "time": "2024-05-29T07:38:52.056Z",
-      "bookId": 9
-    },
-    {
-      "id": "776b",
-      "operation": "update",
-      "time": "2024-05-29T07:39:46.026Z",
-      "bookId": 9
-    },
-    {
-      "id": "72ea",
-      "operation": "update",
-      "time": "2024-05-29T07:39:46.995Z",
-      "bookId": 9
-    },
-    {
-      "id": "28cc",
-      "operation": "update",
-      "time": "2024-05-29T07:39:47.440Z",
-      "bookId": 9
-    },
-    {
-      "id": "320f",
-      "operation": "update",
-      "time": "2024-05-29T07:39:47.795Z",
-      "bookId": 9
-    },
-    {
-      "id": "a120",
-      "operation": "update",
-      "time": "2024-05-29T07:39:51.719Z",
-      "bookId": 11
-    },
-    {
-      "id": "fe6e",
-      "operation": "update",
-      "time": "2024-05-29T07:39:51.720Z",
-      "bookId": 11
-    },
-    {
-      "id": "2357",
-      "operation": "update",
-      "time": "2024-05-29T07:39:51.721Z",
-      "bookId": 11
-    },
-    {
-      "id": "0c7e",
-      "operation": "update",
-      "time": "2024-05-29T07:39:51.722Z",
-      "bookId": 11
-    },
-    {
-      "id": "af0a",
-      "operation": "update",
-      "time": "2024-05-29T07:39:51.931Z",
-      "bookId": 11
-    },
-    {
-      "id": "f1d4",
-      "operation": "update",
-      "time": "2024-05-29T07:39:52.763Z",
-      "bookId": 11
-    },
-    {
-      "id": "707f",
-      "operation": "update",
-      "time": "2024-05-29T07:39:53.228Z",
-      "bookId": 11
-    },
-    {
-      "id": "98a9",
-      "operation": "update",
-      "time": "2024-05-29T07:39:53.582Z",
-      "bookId": 11
-    },
-    {
-      "id": "1962",
-      "operation": "update",
-      "time": "2024-05-29T07:39:53.921Z",
-      "bookId": 11
-    },
-    {
-      "id": "6466",
-      "operation": "update",
-      "time": "2024-05-29T07:39:54.610Z",
-      "bookId": 11
-    },
-    {
-      "id": "de71",
-      "operation": "delete",
-      "time": "2024-05-29T07:40:13.720Z",
-      "bookId": 9
-    },
-    {
-      "id": "8657",
-      "operation": "update",
-      "time": "2024-05-29T07:44:09.602Z",
-      "bookId": 11
-    },
-    {
-      "id": "5b35",
-      "operation": "create",
-      "time": "2024-05-29T07:50:36.032Z",
-      "bookId": "7bc7"
-    },
-    {
-      "id": "04f1",
-      "operation": "create",
-      "time": "2024-05-29T07:50:47.304Z",
-      "bookId": "759e"
-    },
-    {
-      "id": "5cb4",
-      "operation": "delete",
-      "time": "2024-05-29T07:51:17.721Z",
-      "bookId": 16
-    },
-    {
-      "id": "a523",
-      "operation": "delete",
-      "time": "2024-05-29T07:51:31.860Z",
-      "bookId": 11
-    },
-    {
-      "id": "5765",
-      "operation": "delete",
-      "time": "2024-05-29T07:52:41.213Z",
-      "bookId": 13
-    },
-    {
-      "id": "1ebb",
-      "operation": "delete",
-      "time": "2024-05-29T07:53:42.361Z",
-      "bookId": 18
-    },
-    {
-      "id": "2578",
-      "operation": "delete",
-      "time": "2024-05-29T07:56:25.743Z",
-      "bookId": 15
-    },
-    {
-      "id": "55ac",
-      "operation": "delete",
-      "time": "2024-05-29T07:56:35.595Z",
-      "bookId": 17
-    },
-    {
-      "id": "5fa7",
-      "operation": "delete",
-      "time": "2024-05-29T07:56:45.252Z",
-      "bookId": 19
-    },
-    {
-      "id": "c055",
-      "operation": "delete",
-      "time": "2024-05-29T07:57:56.170Z",
-      "bookId": 20
-    },
-    {
-      "id": "bc09",
-      "operation": "delete",
-      "time": "2024-05-29T07:58:33.355Z",
-      "bookId": 22
-    },
-    {
-      "id": "a567",
-      "operation": "delete",
-      "time": "2024-05-29T07:58:40.014Z",
-      "bookId": 21
-    },
-    {
-      "id": "2dd0",
-      "operation": "delete",
-      "time": "2024-05-29T08:03:15.271Z",
-      "bookId": 23
-    },
-    {
-      "id": "792c",
-      "operation": "delete",
-      "time": "2024-05-29T08:03:25.448Z",
-      "bookId": 24
-    },
-    {
-      "id": "9f38",
-      "operation": "delete",
-      "time": "2024-05-29T08:03:48.727Z",
-      "bookId": 25
-    },
-    {
-      "id": "ea29",
-      "operation": "delete",
-      "time": "2024-05-29T08:06:10.231Z",
-      "bookId": 26
-    },
-    {
-      "id": "bfce",
-      "operation": "delete",
-      "time": "2024-05-29T08:06:17.017Z",
-      "bookId": 27
-    },
-    {
-      "id": "04c9",
-      "operation": "delete",
-      "time": "2024-05-29T08:10:23.207Z",
-      "bookId": 28
-    },
-    {
-      "id": "f521",
-      "operation": "delete",
-      "time": "2024-05-29T08:10:34.849Z",
-      "bookId": 29
-    },
-    {
-      "id": "e84a",
-      "operation": "delete",
-      "time": "2024-05-29T08:12:37.257Z",
-      "bookId": 30
-    },
-    {
-      "id": "9a5b",
-      "operation": "delete",
-      "time": "2024-05-29T08:12:45.899Z",
-      "bookId": 31
-    },
-    {
-      "id": "293c",
-      "operation": "delete",
-      "time": "2024-05-29T08:13:06.155Z",
-      "bookId": 32
-    },
-    {
-      "id": "cd39",
-      "operation": "delete",
-      "time": "2024-05-29T08:14:04.194Z",
-      "bookId": 34
-    },
-    {
-      "id": "071f",
-      "operation": "delete",
-      "time": "2024-05-29T08:19:42.432Z",
-      "bookId": 33
-    },
-    {
-      "id": "fc29",
-      "operation": "delete",
-      "time": "2024-05-29T08:19:52.620Z",
-      "bookId": 35
-    },
-    {
-      "id": "b7cd",
-      "operation": "delete",
-      "time": "2024-05-29T08:20:12.169Z",
-      "bookId": 36
-    },
-    {
-      "id": "80e7",
-      "operation": "delete",
-      "time": "2024-05-29T08:21:25.703Z",
-      "bookId": 37
-    },
-    {
-      "id": "684c",
-      "operation": "delete",
-      "time": "2024-05-29T08:23:12.948Z",
-      "bookId": 38
-    },
-    {
-      "id": "a4c6",
-      "operation": "delete",
-      "time": "2024-05-29T08:24:50.306Z",
-      "bookId": 39
-    },
-    {
-      "id": "a5e7",
-      "operation": "delete",
-      "time": "2024-05-29T08:28:23.274Z",
-      "bookId": 40
-    },
-    {
-      "id": "14a0",
-      "operation": "delete",
-      "time": "2024-05-29T08:31:09.875Z",
-      "bookId": 41
-    },
-    {
-      "id": "0b89",
-      "operation": "delete",
-      "time": "2024-05-29T08:34:20.502Z",
-      "bookId": 42
-    },
-    {
-      "id": "2be8",
-      "operation": "delete",
-      "time": "2024-05-29T08:34:26.980Z",
-      "bookId": 43
-    },
-    {
-      "id": "015a",
-      "operation": "delete",
-      "time": "2024-05-29T08:38:58.915Z",
-      "bookId": 44
-    },
-    {
-      "id": "5fbb",
-      "operation": "delete",
-      "time": "2024-05-29T08:40:34.970Z",
-      "bookId": 45
-    },
-    {
-      "id": "779a",
-      "operation": "delete",
-      "time": "2024-05-29T08:40:42.879Z",
-      "bookId": 46
-    },
-    {
-      "id": "6abf",
-      "operation": "delete",
-      "time": "2024-05-29T08:40:51.617Z",
-      "bookId": 47
-    },
-    {
-      "id": "e5be",
-      "operation": "delete",
-      "time": "2024-05-29T08:41:13.002Z",
-      "bookId": 48
-    },
-    {
-      "id": "76db",
-      "operation": "delete",
-      "time": "2024-05-29T08:43:06.661Z",
-      "bookId": 49
-    },
-    {
-      "id": "c294",
-      "operation": "delete",
-      "time": "2024-05-29T08:44:53.608Z",
-      "bookId": 50
-    },
-    {
-      "id": "2844",
-      "operation": "delete",
-      "time": "2024-05-29T08:46:01.667Z",
-      "bookId": 51
-    },
-    {
-      "id": "ae42",
-      "operation": "delete",
-      "time": "2024-05-29T08:46:10.216Z",
-      "bookId": 52
-    },
-    {
-      "id": "7bb9",
-      "operation": "delete",
-      "time": "2024-05-29T08:47:14.227Z",
-      "bookId": 53
-    },
-    {
-      "id": "f267",
-      "operation": "delete",
-      "time": "2024-05-29T08:47:35.860Z",
-      "bookId": 56
-    },
-    {
-      "id": "b245",
-      "operation": "delete",
-      "time": "2024-05-29T08:50:12.617Z",
-      "bookId": 55
-    },
-    {
-      "id": "378d",
-      "operation": "delete",
-      "time": "2024-05-29T09:03:37.910Z",
-      "bookId": 54
-    },
-    {
-      "id": "852d",
-      "operation": "delete",
-      "time": "2024-05-29T09:05:18.088Z",
-      "bookId": 59
-    },
-    {
-      "id": "5429",
-      "operation": "delete",
-      "time": "2024-05-29T09:05:23.986Z",
-      "bookId": 60
-    },
-    {
-      "id": "e855",
+      "id": "fa1f",
       "operation": "Add to favorites",
-      "time": "2024-05-29T09:05:30.418Z",
-      "bookId": null
+      "bookId": null,
+      "bookName": "McGraw-Hill's SAT Subject Test Literature, 2nd Edition",
+      "time": "2024-05-30T07:25:40.819Z"
     },
     {
-      "id": "014b",
-      "operation": "delete",
-      "time": "2024-05-29T09:05:58.961Z",
-      "bookId": 57
+      "id": "19f8",
+      "operation": "Deletion",
+      "bookId": "2024-05-30T07:27:27.440Z",
+      "bookName": 73
     },
     {
-      "id": "bf53",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:07:07.358Z",
-      "bookId": null
+      "id": "c472",
+      "operation": "Deletion",
+      "bookId": "2024-05-30T07:27:40.641Z",
+      "bookName": 78
     },
     {
-      "id": "dfc4",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:07:22.750Z",
-      "bookId": null
-    },
-    {
-      "id": "87ed",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:08:09.460Z",
-      "bookId": null
-    },
-    {
-      "id": "b1f5",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:09:41.206Z",
-      "bookId": null
-    },
-    {
-      "id": "ed38",
+      "id": "aeb3",
       "operation": "Removed from favorites",
-      "time": "2024-05-29T09:09:47.774Z",
-      "bookId": 58
+      "bookId": null,
+      "bookName": "Guide to Literary Agents 96",
+      "time": "2024-05-30T07:36:08.616Z"
     },
     {
-      "id": "008e",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:09:56.091Z",
-      "bookId": null
-    },
-    {
-      "id": "0b95",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:09:57.707Z",
-      "bookId": null
-    },
-    {
-      "id": "fae9",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:14:03.777Z",
-      "bookId": "757c"
-    },
-    {
-      "id": "b700",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:15:16.562Z",
-      "bookId": null
-    },
-    {
-      "id": "4c8e",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:21:14.898Z",
-      "bookId": null
-    },
-    {
-      "id": "563a",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:21:15.804Z",
-      "bookId": null
-    },
-    {
-      "id": "3ccd",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:21:17.107Z",
-      "bookId": "62"
-    },
-    {
-      "id": "8479",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:25:03.806Z",
-      "bookId": "63"
-    },
-    {
-      "id": "f5a0",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:25:04.726Z",
-      "bookId": "62"
-    },
-    {
-      "id": "f352",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:25:05.960Z",
-      "bookId": "64"
-    },
-    {
-      "id": "9d91",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:34:16.474Z",
-      "bookId": "75"
-    },
-    {
-      "id": "1b74",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:35:46.109Z",
-      "bookId": null
-    },
-    {
-      "id": "5b6a",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:35:57.944Z",
-      "bookId": "85"
-    },
-    {
-      "id": "694d",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T09:36:27.654Z",
-      "bookId": "80"
-    },
-    {
-      "id": "b271",
+      "id": "f58b",
       "operation": "Removed from favorites",
-      "time": "2024-05-29T09:36:29.032Z",
-      "bookId": 80
+      "bookId": null,
+      "bookName": "Essentials of Young Adult Literature",
+      "time": "2024-05-30T07:39:50.036Z"
     },
     {
-      "id": "2728",
+      "id": "c505",
+      "operation": "Deletion",
+      "bookId": "2024-05-30T07:45:56.411Z",
+      "bookName": 75
+    },
+    {
+      "id": "2633",
+      "operation": "Deletion",
+      "bookId": "2024-05-30T07:46:26.537Z",
+      "bookName": 77
+    },
+    {
+      "id": "4ef9",
+      "operation": "Deletion",
+      "bookId": "2024-05-30T07:46:50.645Z",
+      "bookName": 79
+    },
+    {
+      "id": "2331",
+      "operation": "Deletion",
+      "bookId": "2024-05-30T08:01:59.190Z",
+      "bookName": 80
+    },
+    {
+      "id": "ad4d",
       "operation": "Add to favorites",
-      "time": "2024-05-29T09:39:08.339Z",
-      "bookId": null
+      "bookId": null,
+      "bookName": "The Mystery of the Howling Dog (The Mystery Series Short Story Book 7)",
+      "time": "2024-05-30T08:03:07.157Z"
     },
     {
-      "id": "c1cf",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T09:39:08.765Z",
-      "bookId": 58
-    },
-    {
-      "id": "d798",
+      "id": "8012",
       "operation": "Add to favorites",
-      "time": "2024-05-29T09:39:09.558Z",
-      "bookId": null
+      "bookId": "83",
+      "bookName": "Teaching World History as Mystery",
+      "time": "2024-05-30T08:03:11.129Z"
     },
     {
-      "id": "ad92",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T09:39:09.902Z",
-      "bookId": 61
-    },
-    {
-      "id": "e954",
+      "id": "8059",
       "operation": "Add to favorites",
-      "time": "2024-05-29T10:18:02.133Z",
-      "bookId": null
+      "bookId": null,
+      "bookName": "The Mystery of the Howling Dog (The Mystery Series Short Story Book 7)",
+      "time": "2024-05-30T08:03:12.683Z"
     },
     {
-      "id": "5ea6",
+      "id": "b697",
       "operation": "Removed from favorites",
-      "time": "2024-05-29T10:18:03.273Z",
-      "bookId": 58
+      "bookId": null,
+      "bookName": "The Mystery and the World",
+      "time": "2024-05-30T08:03:18.417Z"
     },
     {
-      "id": "819d",
+      "id": "9405",
+      "operation": "Removed from favorites",
+      "bookId": null,
+      "bookName": "The Mystery and the World",
+      "time": "2024-05-30T08:03:23.070Z"
+    },
+    {
+      "id": "25df",
+      "operation": "Removed from favorites",
+      "bookId": null,
+      "bookName": "The Mystery of the Taj Mahal (India)",
+      "time": "2024-05-30T08:03:24.674Z"
+    },
+    {
+      "id": "126b",
+      "operation": "Deletion",
+      "bookId": "2024-05-30T08:16:46.283Z",
+      "bookName": 81
+    },
+    {
+      "id": "e564",
+      "operation": "Deletion",
+      "bookId": "2024-05-30T08:17:07.471Z",
+      "bookName": 84
+    },
+    {
+      "id": "4e5d",
       "operation": "Add to favorites",
-      "time": "2024-05-29T10:18:19.084Z",
-      "bookId": null
+      "bookId": null,
+      "bookName": "The Mystery and the World",
+      "time": "2024-05-30T08:21:25.932Z"
     },
     {
-      "id": "aad1",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T10:18:20.548Z",
-      "bookId": 58
-    },
-    {
-      "id": "aebe",
+      "id": "5de0",
       "operation": "Add to favorites",
-      "time": "2024-05-29T10:18:26.248Z",
-      "bookId": null
+      "bookId": null,
+      "bookName": "The Sandy Steele Mystery MEGAPACK®: 6 Young Adult Novels (Complete Series)",
+      "time": "2024-05-30T08:21:49.041Z"
     },
     {
-      "id": "16df",
+      "id": "dbc1",
+      "operation": "update copies",
+      "bookId": 110,
+      "bookName": "The Healing Hand",
+      "time": "2024-05-30T08:22:56.396Z"
+    },
+    {
+      "id": "1033",
+      "operation": "update copies",
+      "bookId": 82,
+      "bookName": "The Mystery and the World",
+      "time": "2024-05-30T08:23:15.873Z"
+    },
+    {
+      "id": "923c",
+      "operation": "update copies",
+      "bookId": 82,
+      "bookName": "The Mystery and the World",
+      "time": "2024-05-30T08:23:16.453Z"
+    },
+    {
+      "id": "9d90",
+      "operation": "Creation",
+      "bookId": "16c4",
+      "bookName": "Nevo",
+      "time": "2024-05-30T08:24:27.861Z"
+    },
+    {
+      "id": "8083",
+      "operation": "Deletion",
+      "bookId": "2024-05-30T08:25:15.379Z",
+      "bookName": 86
+    },
+    {
+      "id": "3e37",
+      "operation": "Deletion",
+      "bookId": "2024-05-30T08:25:31.885Z",
+      "bookName": 85
+    },
+    {
+      "id": "1796",
       "operation": "Removed from favorites",
-      "time": "2024-05-29T10:18:28.929Z",
-      "bookId": 58
+      "bookId": "85",
+      "bookName": "The Sandy Steele Mystery MEGAPACK®: 6 Young Adult Novels (Complete Series)",
+      "time": "2024-05-30T08:25:31.960Z"
     },
     {
-      "id": "1948",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T10:18:40.555Z",
-      "bookId": null
+      "id": "45ef",
+      "operation": "Deletion",
+      "bookId": "2024-05-30T08:25:54.842Z",
+      "bookName": 82
     },
     {
-      "id": "82d7",
+      "id": "25c9",
       "operation": "Removed from favorites",
-      "time": "2024-05-29T10:18:42.198Z",
-      "bookId": 58
-    },
-    {
-      "id": "2473",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T10:18:43.701Z",
-      "bookId": null
-    },
-    {
-      "id": "915c",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T10:18:56.555Z",
-      "bookId": 58
-    },
-    {
-      "id": "c2ed",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T10:18:57.373Z",
-      "bookId": null
-    },
-    {
-      "id": "0f1f",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T10:18:58.828Z",
-      "bookId": 58
-    },
-    {
-      "id": "ff47",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T10:18:59.768Z",
-      "bookId": null
-    },
-    {
-      "id": "ae96",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T10:19:17.578Z",
-      "bookId": 58
-    },
-    {
-      "id": "33b6",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T10:19:18.741Z",
-      "bookId": null
-    },
-    {
-      "id": "dfaa",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T10:19:20.192Z",
-      "bookId": 58
-    },
-    {
-      "id": "3676",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T10:19:22.035Z",
-      "bookId": null
-    },
-    {
-      "id": "111d",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T10:19:23.535Z",
-      "bookId": 58
-    },
-    {
-      "id": "42be",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T10:46:55.905Z",
-      "bookId": null
-    },
-    {
-      "id": "eae1",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T10:47:00.088Z",
-      "bookId": 58
-    },
-    {
-      "id": "948f",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:14:10.602Z",
-      "bookId": null
-    },
-    {
-      "id": "c7fc",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:14:13.654Z",
-      "bookId": null
-    },
-    {
-      "id": "b775",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:14:15.493Z",
-      "bookId": 58
-    },
-    {
-      "id": "ab62",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:14:56.855Z",
-      "bookId": null
-    },
-    {
-      "id": "70df",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:14:57.424Z",
-      "bookId": 58
-    },
-    {
-      "id": "1d70",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:15:08.166Z",
-      "bookId": "64"
-    },
-    {
-      "id": "e919",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:15:56.218Z",
-      "bookId": null
-    },
-    {
-      "id": "ae57",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:15:57.113Z",
-      "bookId": 58
-    },
-    {
-      "id": "3993",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:16:20.871Z",
-      "bookId": "64"
-    },
-    {
-      "id": "867e",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:29:02.012Z",
-      "bookId": "65"
-    },
-    {
-      "id": "3671",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:29:07.155Z",
-      "bookId": "66"
-    },
-    {
-      "id": "64c2",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:29:10.005Z",
-      "bookId": "65"
-    },
-    {
-      "id": "d0dd",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:29:11.109Z",
-      "bookId": "66"
-    },
-    {
-      "id": "3103",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:29:13.664Z",
-      "bookId": "65"
-    },
-    {
-      "id": "be52",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:29:23.723Z",
-      "bookId": null
-    },
-    {
-      "id": "43a0",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:29:24.701Z",
-      "bookId": null
-    },
-    {
-      "id": "7fe7",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:29:25.826Z",
-      "bookId": "62"
-    },
-    {
-      "id": "2f29",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:29:26.786Z",
-      "bookId": "63"
-    },
-    {
-      "id": "58ca",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:29:27.653Z",
-      "bookId": "64"
-    },
-    {
-      "id": "c247",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:29:33.965Z",
-      "bookId": "62"
-    },
-    {
-      "id": "54ca",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:29:35.020Z",
-      "bookId": null
-    },
-    {
-      "id": "5e56",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:29:39.539Z",
-      "bookId": "75"
-    },
-    {
-      "id": "fd7b",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:29:40.380Z",
-      "bookId": "85"
-    },
-    {
-      "id": "8bb9",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:29:41.457Z",
-      "bookId": "64"
-    },
-    {
-      "id": "7134",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:29:42.484Z",
-      "bookId": "64"
-    },
-    {
-      "id": "029f",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:29:43.286Z",
-      "bookId": "65"
-    },
-    {
-      "id": "be63",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:29:53.030Z",
-      "bookId": null
-    },
-    {
-      "id": "35e1",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:29:54.027Z",
-      "bookId": null
-    },
-    {
-      "id": "0c3e",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:32:16.531Z",
-      "bookId": "65"
-    },
-    {
-      "id": "9525",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:32:18.889Z",
-      "bookId": "67"
-    },
-    {
-      "id": "f1a2",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:32:28.094Z",
-      "bookId": "70"
-    },
-    {
-      "id": "fe4d",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:32:34.900Z",
-      "bookId": "71"
-    },
-    {
-      "id": "d7ba",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T11:35:02.173Z",
-      "bookId": null
-    },
-    {
-      "id": "366e",
-      "operation": "delete",
-      "time": "2024-05-29T11:35:21.476Z",
-      "bookId": 90
-    },
-    {
-      "id": "c4d3",
-      "operation": "delete",
-      "time": "2024-05-29T11:35:55.369Z",
-      "bookId": 58
-    },
-    {
-      "id": "082c",
-      "operation": "delete",
-      "time": "2024-05-29T11:38:01.236Z",
-      "bookId": 61
-    },
-    {
-      "id": "4c79",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T11:38:01.272Z",
-      "bookId": 61
-    },
-    {
-      "id": "6838",
-      "operation": "create",
-      "time": "2024-05-29T11:48:36.318Z",
-      "bookId": "63c7"
-    },
-    {
-      "id": "4c76",
-      "operation": "create",
-      "time": "2024-05-29T11:48:56.368Z",
-      "bookId": "2b60"
-    },
-    {
-      "id": "b79a",
-      "operation": "create",
-      "time": "2024-05-29T11:50:33.173Z",
-      "bookId": "703c"
-    },
-    {
-      "id": "f887",
-      "operation": "create",
-      "time": "2024-05-29T11:51:40.029Z",
-      "bookId": "ef42"
-    },
-    {
-      "id": "c67e",
-      "operation": "create",
-      "time": "2024-05-29T11:52:00.706Z",
-      "bookId": "feeb"
-    },
-    {
-      "id": "3d7a",
-      "operation": "create",
-      "time": "2024-05-29T11:52:38.257Z",
-      "bookId": "ce56"
-    },
-    {
-      "id": "5c4d",
-      "operation": "create",
-      "time": "2024-05-29T11:53:16.477Z",
-      "bookId": "b9bd"
-    },
-    {
-      "id": "4023",
-      "operation": "create",
-      "time": "2024-05-29T11:53:30.509Z",
-      "bookId": "808f"
-    },
-    {
-      "id": "a387",
-      "operation": "create",
-      "time": "2024-05-29T11:53:45.132Z",
-      "bookId": "aae1"
-    },
-    {
-      "id": "d0bc",
-      "operation": "create",
-      "time": "2024-05-29T11:54:31.919Z",
-      "bookId": "faa4"
-    },
-    {
-      "id": "95b8",
-      "operation": "create",
-      "time": "2024-05-29T11:54:59.231Z",
-      "bookId": "6e76"
-    },
-    {
-      "id": "9ac8",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T12:02:40.201Z",
-      "bookId": "62"
-    },
-    {
-      "id": "4ce3",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T12:02:45.547Z",
-      "bookId": "62"
-    },
-    {
-      "id": "4996",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T12:02:46.158Z",
-      "bookId": "62"
-    },
-    {
-      "id": "794e",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T12:02:46.818Z",
-      "bookId": "63"
-    },
-    {
-      "id": "4e52",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T12:02:48.484Z",
-      "bookId": "62"
-    },
-    {
-      "id": "468b",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T12:02:48.990Z",
-      "bookId": "62"
-    },
-    {
-      "id": "e306",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T12:02:52.325Z",
-      "bookId": "62"
-    },
-    {
-      "id": "8475",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T12:02:52.887Z",
-      "bookId": "62"
-    },
-    {
-      "id": "474c",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T12:10:13.038Z",
-      "bookId": "70"
-    },
-    {
-      "id": "ed74",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T12:10:14.249Z",
-      "bookId": "71"
-    },
-    {
-      "id": "2412",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T12:10:15.130Z",
-      "bookId": "67"
-    },
-    {
-      "id": "bd64",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T12:10:16.293Z",
-      "bookId": "65"
-    },
-    {
-      "id": "04cf",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T12:10:16.968Z",
-      "bookId": "58"
-    },
-    {
-      "id": "1a8f",
-      "operation": "Removed from favorites",
-      "time": "2024-05-29T12:10:20.182Z",
-      "bookId": "90"
-    },
-    {
-      "id": "1b48",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T12:10:27.381Z",
-      "bookId": "62"
-    },
-    {
-      "id": "e867",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T12:10:28.541Z",
-      "bookId": "63"
-    },
-    {
-      "id": "d7b7",
-      "operation": "Add to favorites",
-      "time": "2024-05-29T12:10:29.563Z",
-      "bookId": "64"
+      "bookId": "82",
+      "bookName": "The Mystery and the World",
+      "time": "2024-05-30T08:25:54.925Z"
     }
   ],
   "favorites": [
     {
-      "id": "62",
-      "name": "Arthurian Romances",
+      "id": "91",
+      "name": "The Graphic Canon of Crime and Mystery, Vol. 1",
       "authors": [
-        "Troyes Cretien de"
+        "Russ Kick"
       ],
-      "num_pages": 510,
-      "short_description": "The Birth of King Arthur and the Knights of the Round Table“’My good sir, is she your daughter then?’ ‘Yes, but don't pay any attention to what she says,’ said the lord. ‘She's a child - a silly, foolish thing.’ ‘Indeed,’ said my lord Gawain, ‘then I'd be very ill-mannered not to do what she wants.’” - Chrétien de Troyes, Arthurian Romances Arthurian Romances by Chrétien de Troyes is a collection of short stories set in the Early Middle Ages, in England. They follow the path of several knights – including Lancelot’s dad – through adulthood focusing on their romantic affairs. What tests will the knights encounter in order to prove themselves worthy of a woman’s love?",
-      "image": "http://books.google.com/books/content?id=u_jzCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_pages": 354,
+      "short_description": "The first of two volumes builds on the brilliant and original Graphic Canon series in retelling classic works of literature as comics and other visual forms. Organized thematically, Volume 1 opens with \"The Act\" (think In Cold Blood and A Clockwork Orange), followed by sections dedicated to \"Criminals,\" Whodunit,\" \"Judgment\" (Scarlet Letter, anyone?), and \"Punishment.\" Here you'll find stunning and suspenseful adaptations starring classic PIs Sherlock Holmes, Auguste Dupin, Hercule Poirot, Father Brown, Mike Hammer, and teenage girl-detective Violet Strange. But the mystery, intrigue, and foul play don't end (or begin) there. The artists also bring to life crime stories from the Arabian Nights, the Bible, The Canterbury Tales, China's Song Dynasty, Shakespeare, James Joyce's Dubliners, Patricia Highsmith, Truman Capote, and current writers like Stephen King, Jo Nesbo, and Sara Paretsky. Rick Geary brings his crisp style to Dostoevsky's Crime and Punishment. Teddy Goldenberg gives us a dense, murky treatment of Dashiell Hammett's \"The Road Home,\" often considered the first hardboiled detective story ever published. C. Frakes resurrects the forgotten novella \"Talma Gordon,\" the first mystery written by an African American; and Shawn Cheng renders the first serial-killer story, the so-called fairy tale \"Bluebeard\" by Charles Perrault. Even the very natures of crime, justice, and punishment are up for grabs. Landis Blair reimagines The Trial, as a choose-your-own-adventure story that you cannot win, Ted Rall retells an O. Henry story about a petty criminal who just can't get arrested. From The Marquis de Sade to James Cain, Aeschylus to Paula Hawkins, crime and mystery has never been so brilliantly reimagined.",
+      "image": "http://books.google.com/books/content?id=wDM9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "num_copies": 5,
       "categories": [
-        "Young Adult Fiction"
+        "Comics & Graphic Novels"
       ],
-      "ISBN": "9781681952574"
+      "ISBN": "9781609807863"
     },
     {
-      "id": "63",
-      "name": "The Reading Specialist",
+      "id": "92",
+      "name": "THE PHANTOM OF RAYMOND VILLA : The KOOL-5 Mystery Series",
       "authors": [
-        "Rita M. Bean"
+        "SONU DABRAL"
       ],
-      "num_pages": 353,
-      "short_description": "A trusted practitioner guide and course text, this book provides a complete introduction to the multiple roles of the reading specialist in grades PreK-12. Rita M. Bean offers evidence-based best practices for working with struggling readers; supporting teachers through professional development and coaching; planning curricula; assessing at the individual, classroom, and school levels; and building strong school, family, and community partnerships. User-friendly features include helpful classroom vignettes, questions for discussion and reflection, follow-up activities, and ideas for instructors and workshop leaders. Reproducible forms and worksheets can be downloaded and printed in a convenient 8 1/2\" x 11\" size. New to This Edition New overarching framework that connects literacy leadership more directly to classroom instruction and assessment. Links to the Common Core State Standards (CCSS) and new standards-based examples are included throughout. Expanded coverage of literacy coaching, middle and high school grades, and response to intervention. Chapters now begin with key questions and include annotated resources for further reading.",
-      "image": "http://books.google.com/books/content?id=Qne_CQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_pages": 230,
+      "short_description": "Sale of souls, the name itself suggests a serious and important story–Deccan Chronicle.",
+      "image": "http://books.google.com/books/content?id=GOPGBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "num_copies": 5,
       "categories": [
-        "Language Arts & Disciplines"
+        "Literary Criticism"
       ],
-      "ISBN": "9781462521548"
+      "ISBN": "9789381115817"
     },
     {
-      "id": "64",
-      "name": "Encyclopedia of Library and Information Science",
+      "id": "83",
+      "name": "Teaching World History as Mystery",
       "authors": [
-        "Allen Kent",
-        "Harold Lancour",
-        "Jay E. Daily"
+        "Jack Zevin",
+        "David Gerwin"
       ],
-      "num_pages": 584,
-      "short_description": "\"The Encyclopedia of Library and Information Science provides an outstanding resource in 33 published volumes with 2 helpful indexes. This thorough reference set--written by 1300 eminent, international experts--offers librarians, information/computer scientists, bibliographers, documentalists, systems analysts, and students, convenient access to the techniques and tools of both library and information science. Impeccably researched, cross referenced, alphabetized by subject, and generously illustrated, the Encyclopedia of Library and Information Science integrates the essential theoretical and practical information accumulating in this rapidly growing field.\"",
-      "image": "http://books.google.com/books/content?id=jU3fwyjqS5UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "num_pages": 256,
+      "short_description": "Offering a philosophy, methodology, and examples for history instruction that are active, imaginative, and provocative, this text presents a fully developed pedagogy based on problem-solving methods that promote reasoning and judgment and restore a sense of imagination and participation to classroom learning. It is designed to draw readers into the detective process that characterizes the work of professional historians and social scientists ─ sharing raw data, defining terms, building interpretations, and testing competing theories. An inquiry framework drives both the pedagogy and the choice of historical materials, with selections favoring the unsolved, controversial, and fragmented rather than the neatly wrapped up analysis of past events. Teaching World History as Mystery: Provides a balanced combination of interestingly arranged historical content, and clearly explained instructional strategies Features case studies of commonly and not so commonly taught topics within a typical world/global history curriculum using combinations of primary and secondary documents Discusses ways of dealing with ethical and moral issues in world history classrooms, drawing students into persisting questions of historical truth, bias, and judgment",
+      "image": "http://books.google.com/books/content?id=bKOLAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "num_copies": 5,
       "categories": [
-        "Language Arts & Disciplines"
+        "Education"
       ],
-      "ISBN": "082472027X"
+      "ISBN": "9781135147464"
     }
   ]
 }

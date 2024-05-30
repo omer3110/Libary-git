@@ -9,18 +9,8 @@ body {
 }
 
 /* nav bar  */
-.success-message {
-    position: absolute;
-    color: black;
-    border: solid 1px #00fc0d;
-    border-radius: 5px;
-    background-color: #73d378;
-    padding: 5px;
-    left: 80vw;
-    top: 20vh;
-}
 
-nav {
+/* nav {
     background-color: #333;
     color: #fff;
     padding: 10px;
@@ -31,7 +21,7 @@ nav a {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
-}
+} */
 
 /* main container  */
 
@@ -47,7 +37,8 @@ nav a {
 }
 
 button:hover {
-    background-color: #73d378;
+    /* background-color: #73d378; */
+    background-color: #75b3f5;
 }
 
 button {
@@ -59,29 +50,6 @@ button {
     cursor: pointer;
 }
 
-#feel-free {
-    margin-top: 50px;
-    font-size: 24px;
-}
-
-.favorite-icon {
-    font-size: 36px;
-    cursor: pointer;
-    color: #262323;
-    /* Unfilled color */
-    transition: color 0.3s;
-}
-
-.favorite-icon.filled {
-    color: gold;
-    /* Filled color */
-}
-
-.book-name-and-fav-icon-wrapper {
-    display: flex;
-
-}
-
 /* header first div  */
 
 .header-and-search-wrapper {
@@ -90,7 +58,6 @@ button {
 }
 
 .header-and-search-wrapper h1 {
-    /* font-family: "Cormorant Garamond", serif; */
     font-weight: 700;
     font-style: normal;
 }
@@ -100,11 +67,38 @@ button {
     gap: 10px;
 }
 
-.search-container button {
-    width: 50px;
+#searchBar {
+
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
 }
 
-/* buttons + form second div  */
+#searchBar:focus {
+    border-color: #b1cce9;
+
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: 1px solid #007BFF;
+    border-radius: 0 5px 5px 0;
+    background-color: #4c9cf1;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #356ca7;
+    border-color: #0056b3;
+}
+
+/* buttons + CREATE BOOK FORM second div  */
 
 .buttons-div-container {
     align-items: center;
@@ -117,7 +111,7 @@ button {
     display: none;
     position: fixed;
     width: 80vw;
-    height: 80vh;
+    height: 90vh;
     font-size: 14px;
     top: 50%;
     left: 50%;
@@ -127,6 +121,10 @@ button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     z-index: 9999;
+}
+
+.h2-in-form {
+    align-self: center;
 }
 
 .close-form-btn {
@@ -152,39 +150,126 @@ button {
     gap: 10px;
 }
 
-.new-book-form input {
-    width: 600px;
-}
-
 .new-book-form div {
     display: flex;
     justify-content: space-between;
 }
 
-.new-book-form-by-ISBN {
-    display: none;
+
+.new-book-form input {
+    width: 600px;
 }
 
-.hide-button {
-    background-color: #333;
-    color: white;
-    border: none;
+.submit-new-book-button {
+    align-self: center;
+    width: 120px;
+}
+
+.new-book-form input[type="text"],
+.new-book-form input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 4px;
-    cursor: pointer;
 }
 
-.hide-button:hover {
+.new-book-form input[type="text"]:focus,
+.new-book-form input[type="number"]:focus {
+    border-color: #b1cce9;
+    outline: none;
+}
+
+
+/* Third div right side of book information div  */
+
+#feel-free {
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+.modal-and-booklist-wrapper { /* makes gap between the left div of books and the right div of information */
+    display: flex;
+    gap: 1.5rem;
+}
+
+.modal {
+    display: flex;
+    width: 70vw;
+    justify-content: center;
+}
+
+.close-modal-btn {
+    display: none;
+    margin-bottom: 1rem;
+    color: white;
     background-color: #ba1111;
 }
 
-.button-container {
-    margin-bottom: 10px;
+.close-modal-btn:hover, .delete-book-button:hover {
+    background-color: #a00d0d;
 }
 
-.message {
-    background: #e7f3fe;
-    color: #31708f;
+.delete-book-button {
+    color: white;
+    background-color: #ba1111;
+    width: 150px;
+}
+
+.img-and-info { /* Arrange the information of the book when it clicked  */
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.right-to-img-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 250px;
+}
+
+.copies-and-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.increase-and-decrease-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+/* Third div left side of book list div  */
+
+/* .book-name-and-fav-icon-wrapper {
+    display: flex;
+} */
+
+.favorite-icon {
+    font-size: 36px;
+    cursor: pointer;
+    color: #262323;
+    transition: color 0.2s;
+    width: 30px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.favorite-icon:hover {
+    color: gold;
+}
+
+.favorite-icon.filled {
+    color: gold;
+}
+
+.button-container { /* the prev and next buttons container  */
+    margin-bottom: 1rem;
+}
+
+#pages-arrows {
+    display: flex;
+    gap: 5px;
 }
 
 #paging-handell {
@@ -195,40 +280,21 @@ button {
     gap: 5px;
 }
 
-#pages-arrows {
-    display: flex;
-    gap: 5px;
-}
-
-.modal-and-booklist-wrapper {
-    display: flex;
-    gap: 1rem;
-}
-
-#books-container {
+#books-container { /*  */
     background-color: #F9F5F3;
     padding: 2rem;
     border-radius: 10px;
     width: 40vw;
 }
 
-.modal {
-    display: flex;
-    width: 70vw;
-    justify-content: center;
-}
-
 #book-info {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
-.close-modal-btn {
-    display: none;
-}
 
-.book-list {
+.book-list { /* gap between each book container in list */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -239,27 +305,94 @@ button {
     flex-direction: column;
     justify-content: space-around;
     font-size: 14px;
+    gap: 4px;
+    
 }
 
 .each-book-in-list {
+    position: relative;
     display: flex;
     gap: 8px;
     background-color: #e6e2e096;
     border-radius: 5px;
     padding: 20px;
     width: 30vw;
-}
-
-.img-and-info {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
+    transition: transform 0.3s ease-in-out; /* Add transition effect */
 }
 
 .each-book-in-list:hover {
     cursor: pointer;
     background-color: #cec8c8;
+    transform: translateX(-5px); /* Move the element 5px higher on hover */
 }
+
+/* other  */
+
+.success-message {
+    position: absolute;
+    color: black;
+    border: solid 1px #00fc0d;
+    border-radius: 5px;
+    background-color: #73d378;
+    padding: 5px;
+    left: 80vw;
+    top: 20vh;
+}
+
+/* loader */
+
+.loader {
+    position: relative;
+    width: 33px;
+    height: 33px;
+    perspective: 67px;
+  }
+  
+  .loader div {
+    width: 100%;
+    height: 100%;
+    background: #2f3545;
+    position: absolute;
+    left: 50%;
+    transform-origin: left;
+    animation: loader 2s infinite;
+  }
+  
+  .loader div:nth-child(1) {
+    animation-delay: 0.15s;
+  }
+  
+  .loader div:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  .loader div:nth-child(3) {
+    animation-delay: 0.45s;
+  }
+  
+  .loader div:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  
+  .loader div:nth-child(5) {
+    animation-delay: 0.75s;
+  }
+  
+  @keyframes loader {
+    0% {
+      transform: rotateY(0deg);
+    }
+  
+    50%, 80% {
+      transform: rotateY(-180deg);
+    }
+  
+    90%, 100% {
+      opacity: 0;
+      transform: rotateY(-180deg);
+    }
+  }
+
 
 @media (max-width: 600px) {
     .btn-container {
@@ -270,3 +403,41 @@ button {
         margin: 10px 0;
     }
 }
+
+@media (max-width: 800px) {
+    .main p {
+        font-size: 12px;
+    }
+
+    .main button {
+        font-size: 12px;
+    }
+
+    .buttons-div-container {
+        gap: 20px;
+    }
+
+    #book-info {
+        font-size: 12px;
+    }
+
+    #feel-free {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal-and-booklist-wrapper {
+        flex-direction: column;
+    }
+}
+
+/* @media (max-width: 600px) {
+    .btn-container {
+        flex-direction: column;
+    }
+
+    .btn-container button {
+        margin: 10px 0;
+    }
+} */
