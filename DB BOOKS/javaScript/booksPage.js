@@ -277,18 +277,17 @@ function addToHistory(operation, bookId, bookName, time) { // add to history
 }
 
 function displayBookInfo(book) { // display the book info on page when clicked
+    console.log(book);
     const modal = document.getElementById("modal");
     const bookInfoDiv = document.getElementById("book-info");
     const url = `${urlBooks}/${book.id}`;
-
-
 
     axios.get(url)
         .then(response => {
             response = response.data
             bookInfoDiv.innerHTML = `
         <h2>${response.name}</h2>
-        <div class="img-and-info"><img src="${response.image}" alt="${response.name}" style="max-height: 600px;">
+        <div class="img-and-info"><img src="${response.image}" alt="${response.name}" style="max-height:200px;">
             <div class="right-to-img-info"> <p><strong>Author(s):</strong> ${response.authors}</p>
             <p><strong>Number of Pages:</strong> ${response.num_pages}</p>
             <div class="copies-and-buttons"><p class="num-of-copies"><strong>Number of Copies:</strong> ${response.num_copies}</p><div class="increase-and-decrease-buttons"><button onclick="updateBookCopies(${response.id}, 'increase')">+</button> <button onclick="updateBookCopies(${response.id}, 'decrease')">-</button></div></div>
@@ -379,7 +378,6 @@ function deleteBook(id) {
     const elemDeleteBookMessage = document.querySelector('.delete-book-message')
     axios.delete(`${urlBooks}/${id}`)
         .then(response => {
-            console.log(response);
             removeBookFromFavJson(id);
             addToHistory("Deletion", new Date, id);
             elemDeleteBookMessage.style.color = 'red';
@@ -391,7 +389,6 @@ function deleteBook(id) {
                 modal.innerHTML = `<p>Feel free to search a book...<i class="fa-regular fa-face-smile"></i></p>`;
                 modal.style.display = 'flex';
             }, 1000);
-            setTimeout(() => { elemSuccessMessage.style.display = "block"; }, 2000);
 
         })
         .catch(error => showMessage(`Failed to delete book ${id}!`, false));

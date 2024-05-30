@@ -403,3 +403,41 @@ button {
         margin: 10px 0;
     }
 }
+
+@media (max-width: 800px) {
+    .main p {
+        font-size: 12px;
+    }
+
+    .main button {
+        font-size: 12px;
+    }
+
+    .buttons-div-container {
+        gap: 20px;
+    }
+
+    #book-info {
+        font-size: 12px;
+    }
+
+    #feel-free {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal-and-booklist-wrapper {
+        flex-direction: column;
+    }
+}
+
+/* @media (max-width: 600px) {
+    .btn-container {
+        flex-direction: column;
+    }
+
+    .btn-container button {
+        margin: 10px 0;
+    }
+} */
